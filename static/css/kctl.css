@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*input, textarea { font-family: 微软雅黑, 黑体, Arial, Helvetica, sans-serif; }*/
+
+/*查看图片*/
+.viewer-button { display: none; }
+
+.viewBtnWrap { display: none; position: fixed; z-index: 2020; height: 40px; right: 40px; bottom: 40px; opacity: 0.8; background: #585F6B; border-radius: 26px; padding: 5px 30px; }
+.viewBtnWrap #viewPrev, .viewBtnWrap #viewNext { position: fixed; width: 52px; height: 52px; top: 50%; margin-top: -28px; }
+.viewBtnWrap #viewPrev { left: 30px; background: url(/mooc2-ans/images/coursedata/viewPrev.png); }
+.viewBtnWrap #viewNext { right: 30px; background: url(/mooc2-ans/images/coursedata/viewNext.png); }
+.viewBtnWrap #viewPrev.unactive { background: url(/mooc2-ans/images/coursedata/viewPrevNone.png); }
+.viewBtnWrap #viewNext.unactive { right: 30px; background: url(/mooc2-ans/images/coursedata/viewNextNone.png); }
+.viewBtnWrap .viewBtn { float: left; width: 28px; height: 40px; }
+.viewBtnWrap .viewBtn:hover, .viewBtnWrap #viewNext:hover, .viewBtnWrap #viewPrev:hover { opacity: 0.7; }
+.viewBtnWrap #viewNext.unactive:hover, .viewBtnWrap #viewPrev.unactive:hover { opacity: 1; }
+.viewBtnWrap .viewSplit { float: left; height: 28px; width: 1px; margin-top: 6px; opacity: 0.5; background: rgba(255, 255, 255, 0.34); }
+.viewBtnWrap #viewZoomIn { margin-right: 27px; background: url(/mooc2-ans/images/coursedata/view_zoomIn.png) center center no-repeat; }
+.viewBtnWrap #viewZoomOut { margin-right: 30px; background: url(/mooc2-ans/images/coursedata/view_zoomOut.png) center center no-repeat; }
+.viewBtnWrap #viewFlip { margin-right: 24px; background: url(/mooc2-ans/images/coursedata/view_flip.png) center center no-repeat; }
+.viewBtnWrap #viewClose { margin-left: 20px; background: url(/mooc2-ans/images/coursedata/view_close.png) center center no-repeat; }

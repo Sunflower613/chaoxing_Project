@@ -1,0 +1,356 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/static/css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/css/pop.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/css/q_chapter_icon.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/css/q_chapter.css"/>
+	<style>
+        *{outline: none}
+	    .chapter_item{cursor: pointer}
+	    .dataSearch{ width:200px; height:36px; border-radius:40px;position:relative;}
+        .dataSearch_input{ width:122px; height:34px;font-size:14px; color:#131B26;  border:1px solid #D5D7D9;background:none;position:absolute;left:0;top:0;z-index:2;padding:0 62px 0 14px; border-radius:40px;font-family:microsoft Yahei;}
+        .dataSearch_input:hover,.dataSearch:hover .dataSearch_input{border:1px solid #3a8bff;}
+        .dataSearch_input:focus{outline:none;border:1px solid #3a8bff;}
+        .dataSearch_bnt{ width:16px; height:16px;background:url(/mooc2-ans/images/knowledgepoints/ico-search.png) no-repeat 0 0; background-size:16px auto; border:0 none; cursor:pointer;position:absolute;right:14px;top:50%;margin-top:-8px;z-index:3;outline:none; overflow:hidden;}
+        .dataSearch_input:hover+.dataSearch_bnt,.dataSearch_input:focus+.dataSearch_bnt,.dataSearch:hover .dataSearch_bnt{background-position:0 -20px; background-size:16px auto;}
+        .dataSearch_dele{ width:14px; height:14px; background:url(/mooc2-ans/images/search_dele.png) no-repeat center/14px; display:block; position:absolute; right:40px; top:50%; margin-top:-7px; display:none; z-index:3;}
+        @supports (caret-color:#3a8bff) {
+            .dataSearch_input{
+                color:#131B26;
+                caret-color:#3a8bff;
+            }
+        }
+        .breadcrumb_a {
+             color: #3A8BFF;
+             display: block;
+             max-width: 100px;
+             overflow: hidden;
+             white-space: nowrap;
+             text-overflow: ellipsis;
+         }
+         .NoResult{
+             padding: 325px 0;
+             line-height: 20px;
+             font-size: 14px;
+             color: #8A8B99;
+             text-align: center;
+          }
+        .dataSearch_chapter_searchName{color: #3A8BFF;}
+
+        .catalog_tishi240>.bntHoverTips{ margin-left:-30px;}
+        .catalog_tishi240>.bntHoverTips i{ left:30px;}
+        .catalog_tishi320>.bntHoverTips{ margin-left:-30px;}
+        .catalog_tishi320>.bntHoverTips i{ left:30px;}
+        /*无障碍元素隐藏*/
+        .element-invisible-hidden {
+            position: absolute !important;
+            clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+            clip: rect(1px, 1px, 1px, 1px);
+        }
+        .popDiv{top:50%;transform:translate(-50%,-50%)}
+        .catalog_tishi273>.bntHoverTips{width:241px;padding:0 16px;left:50%;margin-left:-120px;opacity:0;visibility:hidden;-webkit-transition:opacity .1s .1s,visibility .1s .1s;-moz-transition:opacity .1s .1s,visibility .1s .1s;-ms-transition:opacity .1s .1s,visibility .1s .1s;-o-transition:opacity .1s .1s,visibility .1s .1s;transition:opacity .1s .1s,visibility .1s .1s}
+        .catalog_tishi273:hover>.bntHoverTips{display:block;opacity:1;visibility:visible;-webkit-transition:opacity .3s 1s,visibility .3s .3s;-moz-transition:opacity .3s 1s,visibility .3s .3s;-ms-transition:opacity .3s 1s,visibility .3s .3s;-o-transition:opacity .3s 1s,visibility .3s .3s;transition:opacity .3s 1s,visibility .3s .3s}
+        .xs_table .catalog_task .icon-chuangguan.catalog_tishi273>.bntHoverTips,.xs_table .catalog_task .icon-dingshi>.bntHoverTips{height:54px;line-height:17px;top:-65px;text-align:left}
+        .xs_table .catalog_task .icon-chuangguan.catalog_tishi273 .bntHoverTips i,.xs_table .catalog_task .icon-dingshi .bntHoverTips i{top:54px;left:60px}
+        .xs_table .catalog_task .icon-chuangguan.catalog_tishi273 .bntHoverTips em,.xs_table .catalog_task .icon-dingshi .bntHoverTips em{display: inline-block;margin-top:10px;letter-spacing: 0.3px;}
+	</style>
+</head>
+<body>
+     <div class="fanyaChapterWhite">
+        <div class="chapter_head clearfix">
+            <h2 class="xs_head_name fl" tabindex="0">
+                <i class="catalog_points_yi fl"></i>已完成任务点: <span id="completedTasks" style="color:#00B368">0</span>/9
+                <div class="catalog_jindu">
+                    <div class="catalog_ressbar"><div id="progressBar" class="catalog_ressbar_width"></div></div>
+                </div>
+            </h2>
+            <div class="dataSearch fr" style="margin-left: 30px;">
+                <div class="fl DySeleft">
+                    <a class="dataSearch_dele" href="javascript:" style="display: none;"></a>
+                    <input type="text" id="searchChapterListByName" name="searchChapterListByName" value="" class="dataSearch_input fl" placeholder="搜索" style="width:122px;padding:0 62px 0 14px;"/>
+                    <input type="button" onclick="searchChapterListByName()" value="" class="dataSearch_bnt fl" style="top:18px" aria-label="搜索"/>
+                </div>
+            </div>
+        </div>
+        <div class="chapter_body xs_table">
+            <div class="chapter_th">
+                <span class="chapter_th_mulu">
+                    <div class="inputCheck fl">
+                        <input type="checkbox" name="checkbox" value="" />
+                    </div>
+                    <div id="chapterMsg" style="display: inline;">目录</div>
+                </span>
+                <span class="chapter_th_renwu">状态</span>
+            </div>
+            <input type="hidden" value="-1" id="countListSearchChapter"/>
+
+        <div class="chapter_td" id="directoryListContainer">
+                <!-- 目录内容将由 JavaScript 动态生成 -->
+
+        </div>
+    </div>
+</div>    </div>
+<!-- 教材详情 start -->
+<!-- 教材详情 end-->
+<script type="text/javascript"
+		src="https://fystat-ans.chaoxing.com/log/setlog?personid=205303522&courseId=228439178&classId=84119398&encode=0739b17fb2ec58bf5e4b07e31e009028"></script>
+<script src="../js/backtop.min.js" language="javascript" type="text/javascript"></script>
+
+<script type="text/javascript" src="//mooc-res1.chaoxing.com/mooc2-ans/js/common/jquery.min.js"></script>
+<script type="text/javascript" src="//mooc-res1.chaoxing.com/mooc2-ans/js/common/jquery.nicescroll.min.js"></script><script type="text/javascript" src="/mooc2-ans/js/ServerHost.js"></script>
+<script type="text/javascript" src="//mooc-res1.chaoxing.com/mooc2-ans/js/common/poptoast.js?v=2023-1208-1109"></script>
+<script type="text/javascript" src="//mooc-res1.chaoxing.com/mooc2-ans/js/common/poplayout.js?v=2023-1208-1109"></script>
+    <script type="text/javascript">
+
+    // 获取目录列表容器元素
+    const directoryListContainer = document.getElementById('directoryListContainer');
+
+    // 获取已完成任务点元素
+    const completedTasksElement = document.getElementById('completedTasks');
+
+    // 获取进度条元素
+    const progressBar = document.getElementById('progressBar');
+
+    // 监听页面加载事件，获取目录数据
+    window.addEventListener('load', function() {
+        fetch('/get_directory_data')
+            .then(response => response.json())
+            .then(data => {
+                // 清空现有目录内容
+                directoryListContainer.innerHTML = '';
+
+                // 初始化已完成任务点和进度条
+                let completedTasks = 0;
+                const totalTasks = 17;  // 假设总任务点数为 17
+                const progressPercentage = (completedTasks / totalTasks) * 100;
+                completedTasksElement.textContent = completedTasks;
+                progressBar.style.width = progressPercentage + '%';
+
+                // 根据后端返回的数据更新目录内容
+                data.forEach((chapter, chapterIndex) => {
+                    const chapterItem = document.createElement('div');
+                    chapterItem.classList.add('chapter_unit');
+                    const chapterHTML = `
+                        <div class="chapter_item">
+                            <div class="catalog_title chapter_Thats_bnt">
+                                <div class="inputCheck fl firstNode">
+                                    <input type="checkbox" name="checkbox" value=""/>
+                                </div>
+                                <div class="catalog_num fl">
+                                    <span><i><em style="font-style:normal;">${chapterIndex + 1}</em></i></span>
+                                </div>
+                                <div class="catalog_name newCatalog_name" tabindex="0">
+                                    <a class="clicktitle">
+                                        <span title="${chapter.title}">${chapter.title}</span>
+                                    </a>
+                                </div>
+                                <span class="catalog_upDown icon-down catalog_upDown_active"></span>
+                            </div>
+                        </div>
+                        <div class="catalog_level" style="display:block;">
+                            <ul>
+                                ${chapter.sub_items.map((item, subIndex) => `
+                                    <li>
+                                        <div class="chapter_item" id="cur${Math.floor(Math.random() * 100000)}" onclick="toOld('228439178', '654184679', '84119398')" onkeydown="if(event.keyCode == 13){toOld('228439178', '654184679', '84119398');}" href="javascript:;" title="${item}">
+                                            <div class="catalog_title" tabindex="0" aria-labelledby="tab_cur${Math.floor(Math.random() * 100000)}" role="link">
+                                                <div class="inputCheck fl"><input type="checkbox" name="checkbox" value="${Math.floor(Math.random() * 100000)}"/></div>
+                                                <div class="catalog_name newCatalog_name">
+                                                    <a class="clicktitle">
+                                                        <span class="catalog_sbar">${chapterIndex + 1}.${subIndex + 1}</span> ${item}
+                                                    </a>
+                                                </div>
+                                                <div class="catalog_task">
+                                                    <div class="catalog_state icon_yiwanc catalog_tishi56"><span class="bntHoverTips">已完成<i></i></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    `;
+                    chapterItem.innerHTML = chapterHTML;
+                    directoryListContainer.appendChild(chapterItem);
+                });
+            });
+    });
+</script>
+
+    </script>
+    <!--<script type="text/javascript">-->
+<!--	var bulletFormat = "";-->
+<!--	if (bulletFormat != "null" &amp;&amp; bulletFormat == "Dot") {-->
+<!--		$(".catalog_sbar").hide();-->
+<!--		$(".catalog_num span i em").hide();-->
+<!--	}-->
+<!--    $('#fanyaChapter').on('click','.chapter_Thats_bnt',function(ev){-->
+<!--	// $('.chapter_Thats_bnt').click(function(ev){-->
+<!--		if($(ev.target).hasClass('inputCheck')) return-->
+<!--		if($(ev.target).hasClass('popSetupBnt')) return-->
+<!--		var thatsThis = $(this).parent().next()-->
+<!--		if(thatsThis.is(':visible')){-->
+<!--			thatsThis.slideUp(300)-->
+<!--			$(this).find('.catalog_upDown').removeClass('catalog_upDown_active')-->
+<!--		}else{-->
+<!--			thatsThis.slideDown(300)-->
+<!--			$(this).find('.catalog_upDown').addClass('catalog_upDown_active')-->
+<!--		}-->
+<!--	})-->
+<!--	$(document).on('click','.back_to_top',function(){-->
+<!--		$('html,body').animate({scrollTop: '0px'}, 300);-->
+<!--	})-->
+<!--	function toOld (courseid, knowledgeId, clazzid) {-->
+<!--		var mooc1Domain = ServerHost.mooc1Domain;-->
+<!--		var enc = "587e61f65692632e1c7af12148855b90";-->
+<!--		var cpi = 205303522;-->
+<!--		var referUrl = mooc1Domain + "/mycourse/studentstudy?chapterId=" + knowledgeId + "&amp;courseId=" + courseid + "&amp;clazzid=" + clazzid +"&amp;cpi=" + cpi + "&amp;enc=" + enc + "&amp;mooc2=1";-->
+<!--		var transferUrl = mooc1Domain + "/mycourse/transfer?moocId=" + courseid + "&amp;clazzid=" + clazzid + "&amp;ut=s&amp;refer=" + encodeURIComponent(referUrl);-->
+<!--		top.location.href = transferUrl;-->
+<!--	}-->
+<!--    // 学生章节搜索-->
+<!--    function searchChapterListByName() {-->
+<!--        var courseId = $("#courseId").val();-->
+<!--        var clazzId = $("#clazzId").val();-->
+<!--        var cpi = $("#cpi").val();-->
+<!--        var searchChapterListByName = document.getElementById('searchChapterListByName').value.trim();-->
+<!--        var t = Date.now();-->
+<!--        var jumpUrl = "/mooc2-ans/mycourse/studentcourse?courseid=" + courseId + "&amp;clazzid="-->
+<!--            + clazzId + "&amp;cpi=" + cpi + "&amp;searchChapterListByName=" + searchChapterListByName + "&amp;searchKeyFlag=1" + "&amp;t=" + t + "&amp;ut=s";-->
+<!--        reloadPage(jumpUrl);-->
+<!--    }-->
+<!--    // 返回上一级全部目录-->
+<!--    function backToAllChapter() {-->
+<!--        var courseId = $("#courseId").val();-->
+<!--        var clazzId = $("#clazzId").val();-->
+<!--        var cpi = $("#cpi").val();-->
+<!--        $('#searchChapterListByName').val("")-->
+<!--        var t = Date.now();-->
+<!--        var jumpUrl = "/mooc2-ans/mycourse/studentcourse?courseid=" + courseId + "&amp;clazzid="-->
+<!--                + clazzId + "&amp;cpi=" + cpi  + "&amp;searchKeyFlag=1" + "&amp;t=" + t + "&amp;ut=s";-->
+<!--        reloadPage(jumpUrl);-->
+<!--    }-->
+<!--    //局部刷新页面-->
+<!--    function reloadPage(jumpUrl) {-->
+<!--        var courseDataContent = $("#fanyaChapter");-->
+<!--        var searchChapterListByName = document.getElementById('searchChapterListByName').value.trim();-->
+<!--        jQuery.ajax({-->
+<!--            type: "get",-->
+<!--            url: jumpUrl,-->
+<!--            dataType: 'html',-->
+<!--            async: false,-->
+<!--            success: function (data) {-->
+<!--                data = data.replace(/(^\s*)|(\s*$)/g, "");-->
+<!--                courseDataContent.empty();-->
+<!--                courseDataContent.append(data);-->
+<!--                var bulletFormat = "";-->
+<!--                if (bulletFormat != "null" &amp;&amp; bulletFormat == "Dot") {-->
+<!--                    $(".catalog_sbar").hide();-->
+<!--                    $(".catalog_num span i em").hide();-->
+<!--                }-->
+<!--                if (searchChapterListByName == "undefined" || searchChapterListByName === "") {-->
+<!--                    $("#chapterMsg").html($("#catalog").val())-->
+<!--                } else {-->
+<!--                    var countListSearchChapter = document.getElementById('countListSearchChapter').value;-->
+<!--                    // $("#catalogSelect").attr("href","javascript:;");-->
+<!--                    $("#chapterMsg").html('<div static="display: inline-block;"><li static="float: left;"><a class="breadcrumb_a" href="javascript:" onClick="backToAllChapter()">全部目录</a></li>' +-->
+<!--                        '<li static="float: left;">' + ' > 搜索”' + searchChapterListByName + '“的相关结果 共' + countListSearchChapter + '个' + '</li></div>')-->
+<!--                }-->
+<!--            }});-->
+<!--    }-->
+<!--    // 搜索框添加 X-->
+<!--    $('#fanyaChapter').on('input', '.dataSearch_input', function () {-->
+<!--        var searchValue = $(this).val().trim();-->
+<!--        if (searchValue == "undefined" || searchValue === "") {-->
+<!--            $(this).parent().find(".dataSearch_dele").hide()-->
+<!--        } else {-->
+<!--            $(this).parent().find(".dataSearch_dele").show()-->
+<!--        }-->
+<!--    })-->
+
+<!--    // $('.dataSearch_dele').click(function(){-->
+<!--    $('#fanyaChapter').on('click','.dataSearch_dele',function(){-->
+<!--        $('#searchChapterListByName').val("")-->
+<!--        // $(this).hide()-->
+<!--        searchChapterListByName();-->
+<!--    })-->
+
+<!--    //回车事件绑定-->
+<!--    // $('#searchChapterListByName').bind('keyup', function(event) {-->
+<!--    $('#fanyaChapter').bind('keyup', '#searchChapterListByName', function(event) {-->
+<!--        if (event.keyCode == "13") {-->
+<!--            //回车执行查询-->
+<!--            searchChapterListByName();-->
+<!--        }-->
+<!--    });-->
+<!--    // 教材详情-->
+<!--    $('.fanyaChapterWhite').on('click','.chapter_textbook',function(ev){-->
+<!--        if ($('.textbookShowHide').hasClass("detailSuccess")) {-->
+<!--            $('.textbookShowHide').fullFadeIn();-->
+<!--            $('.textbookShowHide').addClass('maskFadeOut');-->
+<!--            $('body').addClass('popOverflow');-->
+<!--        } else {-->
+<!--            var cpi = $("#cpi").val();-->
+<!--            var courseId = $("#courseId").val();-->
+<!--            $.ajax({-->
+<!--                type : "get",-->
+<!--                url : "/mooc2-ans/mycourse/get-textbook-details",-->
+<!--                dataType :'json',-->
+<!--                data : {-->
+<!--                    courseid: courseId,-->
+<!--                    ut: "s",-->
+<!--                    cpi: cpi-->
+<!--                },-->
+<!--                success: function(data){-->
+<!--                    if(data.result == 1) {-->
+<!--                        if ($('.textbookShowHide').length > 0) {-->
+<!--                            var textbookDetail = data.data;-->
+<!--                            if (textbookDetail &amp;&amp; !$.isEmptyObject(textbookDetail)) {-->
+<!--                                $(".pop_textbook_h2").text(textbookDetail.courseName);-->
+<!--                                $(".pop_textbook_pic img").attr("src", textbookDetail.coursePic);-->
+<!--                                $(".editorCharge").text(textbookDetail.chiefEditor);-->
+<!--                                $(".publisher").text(textbookDetail.productionUnits);-->
+<!--                                $(".producer").text(textbookDetail.affiliatedUnits);-->
+<!--                                $(".isbn").text(textbookDetail.courseIsbn);-->
+<!--                                $(".edition").text(textbookDetail.publishCount);-->
+<!--                                $(".price").text(textbookDetail.price || '0');-->
+<!--                                $('.textbookShowHide').fullFadeIn();-->
+<!--                                $('.textbookShowHide').addClass('maskFadeOut');-->
+<!--                                $('body').addClass('popOverflow');-->
+<!--                                $('.textbookShowHide').addClass("detailSuccess");-->
+<!--                            } else {-->
+<!--                                alert('暂无数据');-->
+<!--                            }-->
+<!--                        }-->
+<!--                    } else {-->
+<!--                        alert('暂无数据');-->
+<!--                    }-->
+<!--                }-->
+<!--            });-->
+<!--        }-->
+<!--    })-->
+<!--    //关闭弹窗-->
+<!--    $('.popMoveDele').click(function(){-->
+<!--        $('.popSetupShowHide').fullFadeOut();-->
+<!--        $('.maskDiv').removeClass('maskFadeOut')-->
+<!--        $('body').removeClass('popOverflow')-->
+<!--    })-->
+<!--</script>-->
+<!--<script>-->
+<!--    $(function(){-->
+<!--        $('#chapterFocus').focus();-->
+<!--        $("#chapterFocus").keydown(function(event) {-->
+<!--            // 监听侧边栏对应详情页第一个聚焦点-->
+<!--            var keyCode = event.keyCode || event.which;-->
+<!--            if (keyCode == 9 && event.shiftKey) {-->
+<!--                // 侧边栏发消息,聚焦点击过的菜单选项-->
+<!--                window.parent.postMessage(JSON.stringify({type: 'nav_stu_top_focus'}),"*");-->
+<!--            }-->
+<!--        });-->
+<!--    })-->
+<!--</script>-->
+</body>
+</html>

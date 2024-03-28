@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+        中华文化通识教程
+    </title>
+    <link href="/static/css/common.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/style.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/pop.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/coursenotices.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/learningCommitment.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/microCourseNav.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        a{text-decoration:none;;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow: hidden}
+        .fixed-right-btm {position: fixed;left: 200px;right:0px;top:80px;bottom: 0px;}
+        #kf {display:block;padding-right:0px;height:40px;width:40px;background: #fff url(/mooc2-ans/images/courselist/kfIcon.png) no-repeat 8px center;padding-left: 0px;border-radius: 4px;box-shadow: 0 1px 7px 0 rgba(198,204,217,0.58);}
+        .kfHover{position:absolute;right:50px;bottom:0px;width: 82px;height:40px;background: rgba(24,30,51,0.80);border-radius: 4px;margin-left: -28px;opacity: 0; visibility: hidden;-webkit-transition: opacity 0.3s 1s, visibility 0s 0.3s;transition: opacity 0.3s 1s, visibility 0s 0.3s;transition: opacity 0.3s 1s, visibility 0s 0.3s;text-align:center;line-height:40px;color:#fff;}
+        .kfDiv:hover .kfHover{ display:block; opacity:1; visibility:visible;
+            -webkit-transition:opacity 0.3s 1s, visibility 0.3s 1s;
+            transition:opacity 0.3s 1s, visibility 0.3s 1s;}
+        .kfHover i{ display:block; width:0px; height:0px; border:solid rgba(24,30,51,0.80) 4px; position:absolute; right:-8px; top:16px; bottom:auto; border-color:rgba(24,30,51,0.80) transparent transparent transparent;transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);}
+        .kfHover i.active{ display:block; width:0px; height:0px; border:solid rgba(24,30,51,0.80) 4px; position:absolute; left:50%; margin-left:-4px; bottom:40px; top:auto; border-color:transparent transparent rgba(24,30,51,0.80) transparent;}
+
+
+        .top-tips {
+            margin-top: -20px;
+            margin-left: 130px;
+            display: inline-block;
+            margin-bottom: 14px;
+            position: relative;
+            padding: 0 14px;
+            height: 34px;
+            background: #fdf6eb;
+            line-height: 34px;
+            border-radius: 21px;
+            font-size: 0;
+            z-index: 10;
+        }
+
+        .top-tips .warn-img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            background: url("/mooc2-ans/images/icon-40-fail.png") no-repeat center center;
+            background-size: contain;
+        }
+
+        .top-tips .warn-txt {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            font-size: 14px;
+            color: #a18a66;
+        }
+
+        .top-tips .top-close {
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            color: #3A8BFF;
+        }
+        .top-tips .warn-txt {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            font-size: 14px;
+            color: #a18a66;
+        }
+
+        .nav-content ul li a{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            line-height: 20px;
+        }
+
+        .nav_content{
+            max-width: 95px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: inline-block;
+        }
+
+        .Header2{width:100%;height:52px;background: #FFFFFF;box-shadow: 0 1px 12px 0 rgba(1,39,78,0.12);position: fixed;top:0;left:0;z-index:4;padding:0 30px;    box-sizing: border-box;}
+        .Logo2{height:40px;margin-top:6px;}
+        .Logo2 img{height:100%;float:left}
+        .Logo2 span {padding-left: 4px;color: #131B26;font-size: 18px;letter-spacing: 1px;float:left;line-height: 40px;}
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <script src='//3wfy-ans.chaoxing.com/passport/all-head-new.shtml?hideOldVersion=1' method="get"
+            charset="utf-8"></script>
+
+    <input type="hidden" id="loadCourseNotice" value="0"/>
+    <input type="hidden" id="notAgreeCommitment" value="false"/>
+    <!--    <input type="hidden" id="courseid"  value="228439178"/>-->
+    <!--    <input type="hidden" id="clazzid"   value="84119398"/>-->
+    <!--    <input type="hidden" id="cpi" value="205303522"/>-->
+    <input type="hidden" id="microTopicId" value="0"/>
+    <input type="hidden" id="chapterId" value="0"/>
+
+    <div class="nav_side">
+        <input type="hidden" id="isChaoxingClient" value="false"/>
+        <div class="sideCon" id="boxscrollleft">
+            <dl class="classDl">
+                <dt>
+                    <a href="javascript:void(0);" onclick="$('#tpsubmit').submit();">
+                        <img width="100%" height="100%"
+                             src="http://p.ananas.chaoxing.com/star3/138_78c/669ca80d6a0c5f74835bb936a41aabca.jpg"/>
+                        <span style="cursor: pointer;">课程门户<i class="left_join"></i></span>
+                    </a>
+
+                </dt>
+
+
+                <dd class="textHidden colorDeep" title="中华文化通识教程">
+                    中华文化通识教程
+                </dd>
+            </dl>
+            <div class="nav-content   stuNavigationList">
+                <input type="hidden" id="courseid" name="courseid" value="228439178"/>
+                <input type="hidden" id="courseBelongSchoolId" value="1025"/>
+                <input type="hidden" id="clazzid" name="clazzid" value="84119398"/>
+                <input type="hidden" id="cfid" name="cfid" value="1025"/>
+                <input type="hidden" id="bbsid" name="bbsid" value="7b398eba5918f7be44a0272fbac2547e"/>
+                <input type="hidden" id="cpi" name="cpi" value="205303522"/>
+
+                <input type="hidden" id="heardUt" name="heardUt" value="s"/>
+                <input type="hidden" id="fid" name="fid" value="1025"/>
+                <input type="hidden" id="openc" name="openc" value="529c1ddfd98a418654d8c71752f725e8"/>
+                <input type="hidden" id="enc" name="enc" value="59b7cd3f722a891c05b9ec6a7f546f58"/>
+                <input type="hidden" id="oldenc" name="oldenc" value="587e61f65692632e1c7af12148855b90"/>
+                <input type="hidden" id="userId" name="userId" value="198112923">
+                <input type="hidden" id="moocDomainName" name="moocDomainName" value="https://mooc1.chaoxing.com">
+                <input type="hidden" id="courseApp" name="courseApp" value="0">
+                <input type="hidden" id="workEnc" name="workEnc" value="952113d6b0253e0a7d7cd9c77f3b1945">
+                <input type="hidden" id="examEnc" name="examEnc" value="9379a35247b2c51acb03bb520f9181e1">
+                <input type="hidden" id="v" name="v" value="0">
+                <input type="hidden" id="t" name="t" value="1710757171940"/>
+                <input type="hidden" id="bbsUrlSwitch" name="bbsUrlSwitch" value="true"/>
+                <input type="hidden" id="learnSilverStartTime" name="learnSilverStartTime" value=""/>
+                <input type="hidden" id="learnSilverEndTime" name="learnSilverEndTime" value=""/>
+
+                <input type="hidden" id="courseEvaluateUrl" name="courseEvaluateUrl"
+                       value="https://mooc1.chaoxing.com/course-ans/courseportal/courseevaluatehead?courseId=228439178">
+
+                <ul>
+                    <li
+                            openType="0"
+                            dataname="hd"
+                            pageHeader="0"
+                            class="curNav" id="nav_405"
+                            data="405"
+                            shownewmark="0">
+                        <a href="stuActiveList.html" title="任务" target="ifs">
+                            <i class="hd"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">任务</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li
+                            openType="0"
+                            dataname="zj"
+                            pageHeader="1"
+                            id="nav_408"
+                            data="408"
+                            shownewmark="0">
+                        <a href="/studentcourse" title="章节" target="ifs">
+                            <i class="zj"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">章节</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li
+                            openType="0"
+                            dataname="tl"
+                            pageHeader="2"
+                            id="nav_409"
+                            data="409"
+                            shownewmark="0">
+                        <a href="javascript:void(0);" title="讨论"
+                           data-url="topicList.html">
+                            <i class="tl"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">讨论</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li
+                            openType="0"
+                            dataname="zy"
+                            pageHeader="8"
+                            id="nav_406"
+                            data="406"
+                            shownewmark="0">
+                        <a href="javascript:void(0);" title="作业"
+                           data-url="work-list.html">
+                            <i class="zy"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">作业</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li
+                            openType="0"
+                            dataname="ks"
+                            pageHeader="9"
+                            id="nav_407"
+                            data="407"
+                            shownewmark="0">
+                        <a href="javascript:void(0);" title="考试"
+                           data-url="exam-list.html">
+                            <i class="ks"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">考试</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li
+                            openType="0"
+                            dataname="zl"
+                            pageHeader="3"
+                            id="nav_410"
+                            data="410"
+                            shownewmark="0">
+                        <a href="javascript:void(0);" title="资料" data-url="stu-datalist.html">
+                            <i class="zl"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">资料</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li
+                            openType="0"
+                            dataname="ctj"
+                            pageHeader="4"
+                            id="nav_411"
+                            data="411"
+                            shownewmark="0">
+                        <a href="javascript:void(0);" title="错题集" data-url="wrongque.html">
+                            <i class="ctj"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">错题集</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li
+                            openType="0"
+                            dataname="cj"
+                            pageHeader="6"
+                            id="nav_412"
+                            data="412"
+                            shownewmark="0">
+                        <a href="javascript:void(0);" title="学习记录"
+                           data-url="study-data.html">
+                            <i class="cj"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">学习记录</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li
+                            openType="0"
+                            dataname="zsd"
+                            pageHeader="12"
+                            id="nav_13040"
+                            data="13040"
+                            shownewmark="0">
+                        <a href="javascript:void(0);" title="知识图谱"
+                           data-url="study-knowledge.html">
+                            <i class="zsd"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">知识图谱</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li
+                            openType="0"
+                            dataname="ctj"
+                            pageHeader="4"
+                            id="nav_13041"
+                            data="411"
+                            shownewmark="0">
+                        <a href="/recommend" title="推荐学习" target="ifs">
+                            <i class="ctj"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">推荐学习</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+
+                    <li
+                            openType="0"
+                            dataname="zl"
+                            pageHeader="3"
+                            id="nav_13042"
+                            data="410"
+                            shownewmark="0">
+                        <a href="javascript:void(0);" title="智能问答" data-url="stu-datalist.html">
+                            <i class="zl"></i>
+                            <span class="tag_new">
+                                     <span class="nav_content">智能问答</span>
+                                     <b class="nvaNewMark" style="display: none;">NEW</b>
+                                </span>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="fixed-right-btm" style="z-index:3;">
+         <iframe name="ifs" src="/studentcourse" width="100%" height="100%" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script type="text/javascript">
+    if("0" == "1") {
+        window.onload = function () {
+            // 无障碍点击菜单,读取已访问实现
+            $("#boxscrollleft .stuNavigationList ul li a").click(function() {
+                var labelName = $(this).attr("aria-label");
+                if (!labelName || labelName.indexOf("已访问") == -1){
+                    $(this).attr("aria-label", "已访问");
+                }
+            });
+
+            $("#boxscrollleft .stuNavigationList ul li a").keydown(function (event) {
+                if (event.keyCode == 9 &amp;amp;&amp;amp; !event.shiftKey) {
+                    if ($(this.parentElement).attr('dataname') === 'cj'){
+                        $("#boxscrollleft").focus();
+                    }
+                }
+            })
+
+
+            // 无障碍 聚焦点击过的菜单选项
+            window.addEventListener("message", function (event) {
+                let data = event.data;
+                if (!data) return;
+                var msgJson = JSON.parse(event.data);
+                if (msgJson.type === "nav_stu_top_focus") {
+                    $("#boxscrollleft .stuNavigationList ul li.curNav a").focus();
+                }
+            });
+        };
+    }
+
+</script>
+</body>
+</html>

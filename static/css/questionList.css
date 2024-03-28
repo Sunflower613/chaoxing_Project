@@ -1,0 +1,4961 @@
+@charset "UTF-8";
+html, body{
+    width:100%;
+    height:100%;
+}
+
+.question-list .question-title-wrapper{
+    width:100%;
+    height:40px;
+    background:#3A4357;
+    -webkit-box-shadow:0 2px 17px 0 rgba(211, 211, 211, 0.5);
+    box-shadow:0 2px 17px 0 rgba(211, 211, 211, 0.5);
+    position:relative;
+    min-width:1280px;
+    line-height:40px;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.question-list .question-title-wrapper .left-icon{
+    float:left;
+    margin-left:32px;
+    line-height:40px;
+    display:inline-block;
+}
+
+.question-list .question-title-wrapper .left-icon .back-icon{
+    width:18px;
+    height:18px;
+    margin-top:11px;
+    background:url("/mooc2-ans/images/common/back.png") no-repeat;
+    background-size:100% 100%;
+    float:left;
+    cursor:pointer;
+}
+
+.question-list .question-title-wrapper .left-icon .bank{
+    font-size:14px;
+    color:#999999;
+    padding-left:10px;
+    float:left;
+}
+
+.question-list .question-title-wrapper .name{
+    height:100%;
+    line-height:40px;
+    position:absolute;
+    margin:0 auto;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    font-size:14px;
+    color:#8A8B99;
+}
+
+.question-list.question-list-width .content-wrapper{
+    min-width:1220px;
+    background:#f2f4f7;
+    padding:70px 40px 30px;
+}
+
+.question-list.question-list-width .content-wrapper .content{
+    padding:0;
+}
+
+.question-list .content-wrapper{
+    min-width:1560px;
+    padding-top:70px;
+}
+
+.question-list .content-wrapper .content{
+    width:auto;
+    padding:0 40px 30px;
+    overflow:hidden;
+    border-radius:8px;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .left-part{
+    float:left;
+    width:calc(100% - 312px);
+    -webkit-box-shadow:0 1px 12px 0 #EDEEF0;
+    box-shadow:0 1px 12px 0 #EDEEF0;
+    border-radius:8px;
+    background:white;
+    padding-bottom:106px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .left-part .cover{
+    width:calc(100% - 46px);
+    margin-left:23px;
+    height:calc(100% - 60px);
+    margin-top:30px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row{
+    width:100%;
+    height:36px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .insert{
+    display:inline-block;
+    margin-left:30px;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .insert:hover{
+    background:#EAF0FF;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .insert:hover .insert-means{
+    display:block;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .insert .insert-means:hover{
+    display:block;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .insert .insert-means{
+    width:134px;
+    height:92px;
+    -webkit-transform:translate(-14px, 1px);
+    -ms-transform:translate(-14px, 1px);
+    transform:translate(-14px, 1px);
+    -webkit-box-shadow:0 2px 12px 0 rgba(190, 200, 206, 0.76);
+    box-shadow:0 2px 12px 0 rgba(190, 200, 206, 0.76);
+    border-radius:6px;
+    position:absolute;
+    background:white;
+    z-index:2;
+    display:none;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .insert .insert-means li{
+    width:100%;
+    height:40px;
+    margin-top:6px;
+    text-align:center;
+    line-height:46px;
+    font-size:14px;
+    color:#474C59;
+    -webkit-transform:translate(0, 0);
+    -ms-transform:translate(0, 0);
+    transform:translate(0, 0);
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .insert .insert-means li:hover{
+    color:#3A8BFF;
+    background:#F7FAFC;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .insert .insert-means .intel-insert{
+    margin-top:0;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .pag-lins{
+    width:1px;
+    height:30px;
+    background:#F2F2F2;
+    border-radius:15.5px;
+    display:inline-block;
+    margin-left:30px;
+    margin-top:3px;
+    float:left;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .new-build{
+    display:inline-block;
+    margin-left:30px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export{
+    width:86px;
+    margin-left:60px;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export:hover .export-wrapper{
+    display:block;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export .export-wrapper{
+    top:36px;
+    left:-13px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export .export-wrapper .export-list{
+    text-align:left;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .remove-to{
+    margin-left:30px;
+    width:86px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .delete-export{
+    margin-left:30px;
+    width:86px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .dataSearch{
+    display:inline-block;
+    float:right;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-all{
+    width:110px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    vertical-align:top;
+    float:right;
+    position:relative;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-all:hover .export-wrapper{
+    display:block;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-all .export-icon{
+    display:inline-block;
+    vertical-align:top;
+    width:16px;
+    height:16px;
+    margin-top:10px;
+    background:url("/mooc2-ans/images/questionbank/export.svg") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-all .expore-name{
+    font-size:14px;
+    color:#6B89B3;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-wrapper{
+    width:110px;
+    position:absolute;
+    top:31px;
+    left:-17px;
+    background:#FFFFFF;
+    -webkit-box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius:6px;
+    z-index:10;
+    display:none;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-wrapper .export-list{
+    width:110px;
+    height:40px;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-wrapper .export-list:nth-child(1){
+    margin-top:6px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-wrapper .export-list:nth-last-child(1){
+    margin-bottom:6px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-wrapper .export-list:hover{
+    background:#F7FAFC;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-wrapper .export-list:hover .names{
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .left-part .cover .operate-row .export-wrapper .export-list .names{
+    padding-left:20px;
+    font-size:14px;
+    color:#474C59;
+    letter-spacing:0;
+    line-height:40px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .brief{
+    width:100%;
+    height:17px;
+    margin-top:10px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .brief li{
+    font-size:12px;
+    color:#8A8B99;
+}
+
+.question-list .content-wrapper .content .left-part .cover .brief .all-question{
+    float:left;
+}
+
+.question-list .content-wrapper .content .left-part .cover .brief .sum{
+    float:right;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover{
+    width:100%;
+    margin-top:12px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title{
+    width:100%;
+    height:40px;
+    background:#F5F6F7;
+    border-radius:2px;
+    overflow:hidden;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .choose-all{
+    width:43%;
+    height:100%;
+    float:left;
+    line-height:40px;
+    padding-left:20px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .choose-all .choose-name{
+    display:inline-block;
+    font-size:14px;
+    color:#8A8B99;
+    padding-left:10px;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title{
+    font-size:0;
+    width:43%;
+    height:100%;
+    float:right;
+    min-width:340px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title span{
+    display:inline-block;
+    line-height:40px;
+    height:40px;
+    text-align:left;
+    font-size:14px;
+    color:#8A8B99;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title .category{
+    width:20%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title .hard{
+    width:17%;
+    cursor:pointer;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .hard .drop-down{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background:url(/mooc2-ans/images/questionbank/arrowDown.png) no-repeat;
+    background-size:100% 100%;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .hard .drop-down.active{
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title .auth{
+    width:25%;
+    position:relative;
+    cursor:pointer;
+
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .auth .drop-down{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background:url(/mooc2-ans/images/questionbank/arrowDown.png) no-repeat;
+    background-size:100% 100%;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .auth .drop-down.active{
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title .build-time{
+    width:35%;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .down-list{
+    position:absolute;
+    left:-23px;
+    top:30px;
+    z-index:2;
+    min-width:103px;
+    background:#ffffff;
+    border-radius:6px;
+    -webkit-box-shadow:0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+    box-shadow:0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+    padding:6px 0;
+    overflow:hidden;
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .down-list > ul{
+    max-height:240px;
+    overflow-y:auto;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .down-list li{
+    position:relative;
+    padding:10px 10px 10px 38px;
+    color:#474c59;
+    font-size:14px;
+    line-height:20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .down-list li .gou{
+    position:absolute;
+    left:14px;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    width:16px;
+    height:16px;
+    background:url(/mooc2-ans/images/icon_gou.png) no-repeat;
+    background-size:100% 100%;
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .down-list li:hover{
+    background:#f0f6ff;
+    color:#3a8bff;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .down-list li.active{
+    background:#f0f6ff;
+    color:#3a8bff;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover .title .question-title .down-list li.active .gou{
+    display:block;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title .build-time .sort-icon{
+    display:inline-block;
+    width:13px;
+    height:13px;
+    background:url("/mooc2-ans/images/questionbank/create-time.svg") no-repeat;
+    background-size:100% 100%;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title .build-time .sort-icon:hover{
+    background:url("/mooc2-ans/images/questionbank/icon-sort-hover.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .question-title .build-time .sort-icon.rotare180:hover{
+    background:url("/mooc2-ans/images/questionbank/icon-sort-hover.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .title .opacity{
+    width:13%;
+    height:100%;
+    float:left;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list{
+    width:100%;
+    height:54px;
+    -webkit-box-shadow:0 1px 0 0 #F2F2F2;
+    box-shadow:0 1px 0 0 #F2F2F2;
+    position:relative;
+    clear:both;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list:hover{
+    background:#F7FAFC;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list:hover .operate-lists{
+    display:block;
+    position:absolute;
+    right:43%;
+    background-color:rgba(247, 250, 252, 0.9);
+    z-index:2;
+    overflow:visible;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question{
+    width:43%;
+    height:100%;
+    float:left;
+    line-height:54px;
+    padding-left:20px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question .ipt-checkbox{
+    display:inline-block;
+    vertical-align:top;
+    margin-top:19px;
+    width:18px;
+    height:18px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question .choose-name{
+    padding-left:8px;
+    font-size:14px;
+    color:#131B26;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display:inline-block;
+    width:85%;
+    height:100%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question .new-fold{
+    display:inline-block;
+    vertical-align:top;
+    width:30px;
+    height:30px;
+    background:url("/mooc2-ans/images/questionbank/fold.png") no-repeat;
+    background-size:100% 100%;
+    margin-left:8px;
+    margin-top:12px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question .fold-name{
+    font-size:14px;
+    color:#131B26;
+    line-height:54px;
+    padding-left:14px;
+    display:none;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question .rename_cons{
+    display:inline-block;
+    width:300px;
+    margin-left:8px;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question .rename_cons .rename_input{
+    width:200px;
+    height:24px;
+    font-size:14px;
+    color:#333;
+    background:#FFFFFF;
+    border:1px solid #CCDEF3;
+    border-radius:4px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question .rename_cons .rename_yes{
+    width:24px;
+    height:24px;
+    background:url(/mooc2-ans/images/data/rename_ico.png) no-repeat;
+    overflow:hidden;
+    background-position:0 0;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .choose-all-question .rename_cons .rename_no{
+    width:24px;
+    height:24px;
+    background:url(/mooc2-ans/images/data/rename_ico.png) no-repeat;
+    overflow:hidden;
+    background-position:-30px 0;
+    margin-left:0;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .question-titles{
+    font-size:0;
+    width:43%;
+    height:100%;
+    line-height:54px;
+    float:right;
+    min-width:340px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .question-titles span{
+    display:block;
+    float:left;
+    line-height:40px;
+    height:40px;
+    text-align:left;
+    font-size:14px;
+    color:#474C59;
+    padding:0 5px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .question-titles .choose{
+    width:21%;
+    overflow:hidden;
+    white-space:nowrap;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .question-titles .hard{
+    width:17%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .question-titles .dose{
+    width:17%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .question-titles .auth-name{
+    width:20%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .question-titles .time{
+    width:25%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists{
+    height:100%;
+    overflow:hidden;
+    margin-right:28px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore{
+    width:28px;
+    height:100%;
+    line-height:54px;
+    float:right;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore .more-name{
+    font-size:14px;
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore .more-name:hover{
+    opacity:0.7;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore:hover .moreOperate{
+    display:block;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate{
+    width:90px;
+    height:92px;
+    -webkit-box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius:6px;
+    position:absolute;
+    right:-19px;
+    top:41px;
+    z-index:3;
+    background:white;
+    cursor:pointer;
+    display:none;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate li{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+    color:#474C59;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate li:nth-child(1){
+    margin-top:6px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate li:hover{
+    color:#3A8BFF;
+    background:#F0F6FF;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate li span{
+    padding-left:20px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate .delete-list{
+    margin-top:0;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .edit{
+    float:right;
+    font-size:14px;
+    color:#3A8BFF;
+    line-height:54px;
+    margin-right:24px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .edit:hover{
+    opacity:0.7;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .up-arrow{
+    width:12px;
+    height:14px;
+    background:url("/mooc2-ans/images/questionbank/arrow_up.png") no-repeat;
+    background-size:100% 100%;
+    margin:20px 26px 0 0;
+    cursor:pointer;
+    float:right;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-fold-lists .down-arrow{
+    width:12px;
+    height:14px;
+    background:url("/mooc2-ans/images/questionbank/arrow-down.png") no-repeat;
+    background-size:100% 100%;
+    margin:20px 26px 0 0;
+    cursor:pointer;
+    float:right;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists{
+    height:52px;
+    overflow:hidden;
+    margin-right:40px;
+    display:none;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore{
+    width:28px;
+    height:100%;
+    line-height:54px;
+    float:right;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore .more-name{
+    font-size:14px;
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore .more-name:hover{
+    opacity:0.7;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore:hover .moreOperate{
+    display:block;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore .moreOperate{
+    width:90px;
+    height:92px;
+    -webkit-box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius:6px;
+    position:absolute;
+    right:-19px;
+    top:41px;
+    z-index:3;
+    background:white;
+    cursor:pointer;
+    display:none;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore .moreOperate li{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+    color:#474C59;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore .moreOperate li:nth-child(1){
+    margin-top:6px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore .moreOperate li:hover{
+    color:#3A8BFF;
+    background:#F0F6FF;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore .moreOperate li span{
+    padding-left:20px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .getMore .moreOperate .delete-list{
+    margin-top:0;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .edit{
+    float:right;
+    font-size:14px;
+    color:#3A8BFF;
+    line-height:54px;
+    margin-right:15px;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .edit:hover{
+    opacity:0.7;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .up-arrow{
+    width:12px;
+    height:14px;
+    background:url("/mooc2-ans/images/questionbank/arrow_up.png") no-repeat;
+    background-size:100% 100%;
+    margin:20px 26px 0 0;
+    cursor:pointer;
+    float:right;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list .operate-lists .down-arrow{
+    width:12px;
+    height:14px;
+    background:url("/mooc2-ans/images/questionbank/arrow-down.png") no-repeat;
+    background-size:100% 100%;
+    margin:20px 26px 0 0;
+    cursor:pointer;
+    float:right;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list:nth-of-type(3){
+    margin-top:8px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list-new-build-fold{
+    display:none;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list-new-build-fold:hover .operate-fold-lists{
+    display:block;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list-new-build-fold .operate-fold-lists{
+    display:none;
+    position:absolute;
+    right:43%;
+    z-index:2;
+    overflow:visible;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list-new-build-fold .operate-fold-lists .edit{
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover .list-green-bg{
+    background:#F0F6FF;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .choose-all{
+    width:43%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .choose-all .ipt-checkbox{
+    width:18px;
+    height:18px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .question-title{
+    position:relative;
+    font-size:14px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .question-title .category{
+    width:18%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .question-title .hard{
+    width:15%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .question-title .auth{
+    width:15%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .question-title .build-time{
+    width:24%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .question-title .belong-course{
+    width:25%;
+    text-align:left;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .title .opacity{
+    width:30%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .list{
+    width:100%;
+    height:54px;
+    -webkit-box-shadow:0 1px 0 0 #F2F2F2;
+    box-shadow:0 1px 0 0 #F2F2F2;
+    position:relative;
+    clear:both;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .list .choose-all-question{
+    width:43%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .list .question-titles{
+    position:relative;
+    font-size:14px;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .list .question-titles .choose{
+    width:18%;
+    overflow:hidden;
+    white-space:nowrap;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .list .question-titles .hard{
+    width:15%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .list .question-titles .auth-name{
+    width:15%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .list .question-titles .time{
+    width:24%;
+}
+
+.question-list .content-wrapper .content .left-part .cover .list-cover.list-cover-more .list .question-titles .belong-course{
+    width:25%;
+    position:absolute;
+    margin-top:7px;
+    text-align:left;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.question-list .content-wrapper .content .left-part .callBack{
+    position:absolute;
+    bottom:30px;
+    left:21px;
+    height:22px;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .left-part .callBack .icon{
+    width:16px;
+    height:16px;
+    float:left;
+    margin-top:2px;
+    background:url("/mooc2-ans/images/delete.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .left-part .callBack .back{
+    font-size:14px;
+    color:#6B89B3;
+    float:left;
+    margin-left:7px;
+}
+
+.question-list .content-wrapper .content .left-part .callBack:hover .icon{
+    background:url("/mooc2-ans/images/questionbank/delete-hover.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .left-part .callBack:hover .back{
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .right-part{
+    float:right;
+    width:292px;
+    -webkit-box-shadow:0 1px 12px 0 #EDEEF0;
+    box-shadow:0 1px 12px 0 #EDEEF0;
+    border-radius:8px;
+    background:white;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    position:absolute;
+    top:0;
+    right:40px;
+    bottom:30px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-filter{
+    padding-top:30px;
+    margin-bottom:20px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    font-size:16px;
+    color:#131B26;
+    padding-left:20px;
+    font-weight:bold;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-title{
+    font-size:14px;
+    color:#474C59;
+    padding-left:20px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select{
+    position:relative;
+    margin-top:10px;
+    padding:0 20px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .select-content{
+    width:100%;
+    height:34px;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .select-content .choosed-content{
+    width:100%;
+    height:100%;
+    float:left;
+    line-height:34px;
+    cursor:pointer;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .select-content .choosed-content .choosed-sel{
+    border:1px solid #E1E1E5;
+    border-radius:4px;
+    display:inline-block;
+    outline:none;
+    width:100%;
+    height:100%;
+    font-size:14px;
+    color:#131B26;
+    letter-spacing:0.27px;
+    cursor:pointer;
+    padding-left:12px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-right:30px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .select-content .choosed-content .choosed-sel:hover{
+    border-color:#CCDEF3;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .select-content .choosed-content .choosed-sel.choosed-sel-focus{
+    border:1px solid #3A8BFF;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .select-content .choosed-content .choosed-sel.choosed-sel-focus + .arrow .icon{
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .select-content .arrow{
+    cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:12px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .select-content .arrow span{
+    color:#A3BAD9;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content{
+    width:100%;
+    -webkit-box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius:6px;
+    position:absolute;
+    top:38px;
+    left:1px;
+    background:white;
+    z-index:10;
+    display:none;
+    padding-bottom:6px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .dataSearch{
+    height:34px;
+    margin:12px auto;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .dataSearch .dataSearch_input{
+    height:34px;
+    background-color:#F5F7FA;
+    border:1px solid #F5F7FA;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .operate-choose-all{
+    font-size:12px;
+    color:#6B89B3;
+    line-height:40px;
+    cursor:pointer;
+    padding-left:14px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .operate-choose-all:hover{
+    opacity:.7;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .course-list{
+    max-height:230px;
+    overflow-y:auto;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .operate-option{
+    position:relative;
+    cursor:pointer;
+    padding:10px 10px 10px 45px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .operate-option .ipt-checkbox{
+    margin-right:10px;
+    position:absolute;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    left:20px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .operate-option .infos{
+    width:100%;
+    font-size:14px;
+    color:#131B26;
+    vertical-align:middle;
+    max-width:193px;
+    -o-ellipsis-lastline:ellipsis;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    line-height:20px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .operate-option:hover{
+    background:#F0F6FF;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .operate-select .list-content .operate-option:last-child{
+    margin-bottom:6px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box{
+    height:252px;
+    overflow:hidden;
+    padding:0 20px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .title{
+    font-size:14px;
+    color:#474C59;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .title .btn-manage{
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .title .btn-manage img{
+    width:14px;
+    height:14px;
+    margin-right:6px;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .ipt-checkbox{
+    margin-right:10px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .check-box{
+    margin-top:18px;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .check-box span{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .check-box .category-question{
+    font-size:14px;
+    color:#131B26;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .check-box .sum{
+    font-size:14px;
+    color:#8A8B99;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    max-width:200px;
+    cursor:default;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-check-box .alls{
+    margin:17px 0 2px 0;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .more{
+    font-size:14px;
+    color:#3A8BFF;
+    margin-top:20px;
+    padding-left:20px;
+    cursor:pointer;
+    display:none;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-difficult-box{
+    padding:0 20px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-difficult-box .difficult-first{
+    margin-top:7px;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-difficult-box .difficult{
+    font-size:14px;
+    color:#474C59;
+    margin-top:30px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-difficult-box .check-box{
+    margin-top:18px;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-difficult-box .check-box .easy{
+    font-size:14px;
+    color:#131B26;
+    vertical-align:middle;
+    cursor:default;
+}
+
+.question-list .content-wrapper .content .right-part .operate-wrapper .select-difficult-box .ipt-checkbox{
+    margin-right:10px;
+}
+
+.question-list .content-wrapper .content .clear-part{
+    -webkit-box-shadow:0 1px 12px 0 #EDEEF0;
+    box-shadow:0 1px 12px 0 #EDEEF0;
+    border-radius:8px;
+    background:white;
+    padding-bottom:106px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    position:relative;
+    padding:30px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover{
+    height:calc(100% - 90px);
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row{
+    width:100%;
+    min-height:36px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .insert{
+    display:inline-block;
+    margin-left:30px;
+    position:relative;
+}
+
+.question-list .hideButton{
+    display:none!important;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .insert:hover{
+    background:#EAF0FF;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .insert:hover .insert-means{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .insert .insert-means:hover{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .insert .insert-means{
+    width:134px;
+    height:92px;
+    -webkit-transform:translate(-14px, 1px);
+    -ms-transform:translate(-14px, 1px);
+    transform:translate(-14px, 1px);
+    -webkit-box-shadow:0 2px 12px 0 rgba(190, 200, 206, 0.76);
+    box-shadow:0 2px 12px 0 rgba(190, 200, 206, 0.76);
+    border-radius:6px;
+    position:absolute;
+    background:white;
+    z-index:2;
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .insert .insert-means li{
+    width:100%;
+    height:40px;
+    margin-top:6px;
+    text-align:center;
+    line-height:46px;
+    font-size:14px;
+    color:#474C59;
+    -webkit-transform:translate(0, 0);
+    -ms-transform:translate(0, 0);
+    transform:translate(0, 0);
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .insert .insert-means li:hover{
+    color:#3A8BFF;
+    background:#F7FAFC;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .insert .insert-means .intel-insert{
+    margin-top:0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .pag-lins{
+    width:1px;
+    height:30px;
+    background:#F2F2F2;
+    border-radius:15.5px;
+    display:inline-block;
+    margin-left:30px;
+    margin-top:3px;
+    float:left;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .new-build{
+    display:inline-block;
+    margin-left:30px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export{
+    width:86px;
+    margin-left:60px;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export:hover .export-wrapper{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export .export-wrapper{
+    top:36px;
+    left:-13px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export .export-wrapper .export-list{
+    text-align:left;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .remove-to{
+    margin-left:30px;
+    width:86px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .delete-export{
+    margin-left:30px;
+    width:86px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .dataSearch{
+    display:inline-block;
+    float:right;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all{
+    width:110px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    vertical-align:top;
+    float:right;
+    position:relative;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all .export-icon{
+    display:inline-block;
+    vertical-align:top;
+    width:16px;
+    height:16px;
+    margin-top:10px;
+    background:url("/mooc2-ans/images/questionbank/export_gray.png") no-repeat;
+    background-size:100%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all .export-set{
+    display:inline-block;
+    vertical-align:top;
+    width:14px;
+    height:14px;
+    margin-top:10px;
+    background:url("/mooc2-ans/images/questionbank/type_setting.png") no-repeat;
+    background-size:100%;
+    position:relative;
+    top:1px;
+}
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all .same-check{
+    display:inline-block;
+    vertical-align:top;
+    width:14px;
+    height:14px;
+    margin-top:10px;
+    background:url("/mooc2-ans/images/questionbank/search_same.png") no-repeat;
+    background-size:100%;
+    position:relative;
+    top:1px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all .export-safe{
+    display:inline-block;
+    vertical-align:top;
+    width:14px;
+    height:14px;
+    margin-top:10px;
+    background:url("/mooc2-ans/module/work/images/safe.png") no-repeat;
+    background-size:100%;
+    position:relative;
+    top:1px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all .expore-name{
+    font-size:14px;
+    color:#6B89B3;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all:hover .export-wrapper{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all:hover .expore-name{
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all:hover .export-icon{
+    background:url("/mooc2-ans/images/questionbank/export_blue.png") no-repeat;
+    background-size:100%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all:hover .export-set{
+    background:url("/mooc2-ans/images/questionbank/icon_set-hover.png") no-repeat;
+    background-size:100%;
+}
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all:hover .same-check{
+    background:url("/mooc2-ans/images/questionbank/search_same_hover.png") no-repeat;
+    background-size:100%;
+}
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all:hover .export-safe{
+    background:url("/mooc2-ans/images/questionbank/safe_setting.png") no-repeat;
+    background-size:100%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all.btn-manage {
+    width: auto;
+    margin-right: 30px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all.details-checked {
+    width: auto;
+    margin-right: 30px;
+    font-size: 0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all.details-checked .ipt-checkbox {
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-all.details-checked .text {
+    font-size: 14px;
+    color: #474c59;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-wrapper{
+    width:110px;
+    position:absolute;
+    top:31px;
+    left:-17px;
+    background:#FFFFFF;
+    -webkit-box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius:6px;
+    z-index:10;
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-wrapper .export-list{
+    width:110px;
+    height:40px;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-wrapper .export-list:nth-child(1){
+    margin-top:6px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-wrapper .export-list:nth-last-child(1){
+    margin-bottom:6px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-wrapper .export-list:hover{
+    background:#F7FAFC;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-wrapper .export-list:hover .names{
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .operate-row .export-wrapper .export-list .names{
+    padding-left:20px;
+    font-size:14px;
+    color:#474C59;
+    letter-spacing:0;
+    line-height:40px;
+}
+
+
+.question-list .content-wrapper .content .clear-part .cover .brief{
+    width:100%;
+    height:17px;
+    margin-top:10px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .brief li{
+    font-size:12px;
+    color:#8A8B99;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .brief .all-question{
+    float:left;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .brief .sum{
+    float:right;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover{
+    width:100%;
+    margin-top:10px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title{
+    width:100%;
+    height:40px;
+    background:#F2F4F7;
+    border-radius:2px;
+    font-size:0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .choose-all{
+    width:43%;
+    height:100%;
+    float:left;
+    line-height:40px;
+    padding-left:32px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .choose-all .choose-name{
+    display:inline-block;
+    font-size:14px;
+    color:#8A8B99;
+    padding-left:10px;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title{
+    font-size:0;
+    width:43%;
+    height:100%;
+    float:right;
+    min-width:340px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title span{
+    display:inline-block;
+    vertical-align: top;
+    line-height:40px;
+    height:40px;
+    text-align:left;
+    font-size:14px;
+    color:#8A8B99;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .belong-course{
+    display:none;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover-more .title .question-title .belong-course{
+    display:inline-block;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .category{
+    width:15%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .hard{
+    width:15%;
+    position:relative;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .hard .drop-down {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(/mooc2-ans/images/arrowDown.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .hard .drop-down.active {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .dose{
+    width:15%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .accuracy {
+    width: 15%;
+    cursor: pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .accuracy .sort-icon {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(/mooc2-ans/images/questionbank/icon-sort.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .accuracy .sort-icon:hover {
+    background: url("/mooc2-ans/images/questionbank/icon-sort-hover.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .accuracy .sort-icon.rotare180:hover {
+    background: url("/mooc2-ans/images/questionbank/icon-sort-hover.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .auth {
+    position: relative;
+    cursor: pointer;
+    width: 15%;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .auth .drop-down {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(/mooc2-ans/images/arrowDown.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .auth .drop-down.active {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .build-time{
+    width:25%;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .build-time .sort-icon{
+    display:inline-block;
+    width:13px;
+    height:13px;
+    background:url("/mooc2-ans/images/questionbank/create-time.svg") no-repeat;
+    background-size:100% 100%;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .build-time .sort-icon:hover{
+    background:url("/mooc2-ans/images/questionbank/icon-sort-hover.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .build-time .sort-icon.rotare180:hover{
+    background:url("/mooc2-ans/images/questionbank/icon-sort-hover.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .down-list {
+    position: absolute;
+    left: -23px;
+    top: 30px;
+    z-index: 2;
+    min-width: 103px;
+    background: #ffffff;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+    box-shadow: 0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+    padding: 6px 0;
+    overflow: hidden;
+    display: none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .down-list > ul {
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .down-list li {
+    position: relative;
+    padding: 10px 10px 10px 38px;
+    color: #474c59;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 85px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .down-list li .gou {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: url(/mooc2-ans/images/icon_gou.png) no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .down-list li:hover {
+    background: #f0f6ff;
+    color: #3a8bff;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .down-list li.active {
+    background: #f0f6ff;
+    color: #3a8bff;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title .down-list li.active .gou {
+    display: block;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .opacity{
+    width:13%;
+    height:100%;
+    float:left;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list{
+    width:100%;
+    -webkit-box-shadow:0 1px 0 0 #F2F2F2;
+    box-shadow:0 1px 0 0 #F2F2F2;
+    position:relative;
+    clear:both;
+    padding: 17px 0 17px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list.questions:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list:hover{
+    background:#F0F6FF;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list:hover .btn-sort{
+    display: block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .btn-sort{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width:32px;
+    height: 20px;
+    background: url(/mooc2-ans/images/questionbank/drag_ico.png) no-repeat center;
+    background-size: auto 100%;
+    cursor: move;
+}
+
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .btn-sort:hover{
+     background: url(/mooc2-ans/images/questionbank/drag_icoHover.png) no-repeat center;
+     background-size: auto 100%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list:hover .operate-lists{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question{
+    width:40%;
+    height:100%;
+    float:left;
+    padding-left:32px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .ipt-checkbox{
+    display:inline-block;
+    vertical-align:top;
+    margin-top:2px;
+    width:18px;
+    height:18px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .choose-name{
+    padding-left: 8px;
+    font-size: 14px;
+    color: #131B26;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 74px);
+    height: 21px;
+    cursor:pointer;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .choose-name p:first-child {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .choose-name.open p:first-child {
+    overflow: auto;
+    white-space: unset;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .new-fold{
+    display:inline-block;
+    vertical-align:top;
+    width:30px;
+    height:30px;
+    background:url("/mooc2-ans/images/questionbank/fold.png") no-repeat;
+    background-size:100% 100%;
+    margin-left:8px;
+    margin-top:2px;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .new-fold.lock-new-fold {
+    background: url("/mooc2-ans/images/questionbank/lock-wjj.png") no-repeat;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .fold-name{
+    font-size:14px;
+    color:#131B26;
+    line-height:36px;
+    padding-left:14px;
+    cursor:pointer;
+    display:none;
+    vertical-align: middle;
+    max-width: calc(100% - 170px);
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .fold-name.lineh20 {
+    line-height: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .fold-name > span {
+    display: block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .fold-name > span.tips {
+    margin-top: 2px;
+    color: #8A8B99;
+    font-size: 12px;
+    line-height: 17px;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .rename_cons{
+    display:inline-block;
+    width:300px;
+    margin-left:8px;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .rename_cons .rename_input{
+    width:200px;
+    height:24px;
+    font-size:14px;
+    color:#333;
+    background:#FFFFFF;
+    border:1px solid #CCDEF3;
+    border-radius:4px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .rename_cons .rename_yes{
+    width:24px;
+    height:24px;
+    background:url(/mooc2-ans/images/data/rename_ico.png) no-repeat;
+    overflow:hidden;
+    background-position:0 0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .rename_cons .rename_no{
+    width:24px;
+    height:24px;
+    background:url(/mooc2-ans/images/data/rename_ico.png) no-repeat;
+    overflow:hidden;
+    background-position:-30px 0;
+    margin-left:0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles{
+    font-size:14px;
+    width:43%;
+    height:100%;
+    float:right;
+    min-width:340px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles span{
+    display:block;
+    float:left;
+    text-align:left;
+    font-size:14px;
+    color:#474C59;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles .choose{
+    width: 15%;
+    overflow:hidden;
+    white-space:nowrap;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles .hard {
+    width: 15%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles .dose {
+    width: 15%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles .accuracy {
+    width: 15%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles .auth-name {
+    width: 15%;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles .time{
+    width:25%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .question-titles .course{
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists{
+    overflow:hidden;
+    margin-right:28px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore{
+  width: 28px;
+  height: 100%;
+    float:right;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore .more-name{
+    font-size:14px;
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore .more-name:hover{
+    opacity:0.7;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore:hover .moreOperate{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate{
+    width:119px;
+    -webkit-box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius:6px;
+    position:absolute;
+    z-index:3;
+    background:white;
+    cursor:pointer;
+    display:none;
+    padding-bottom: 6px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate li{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+    color:#474C59;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate li:nth-child(1){
+    margin-top:6px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate li:hover{
+    color:#3A8BFF;
+    background:#F0F6FF;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate li span{
+    padding-left:20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .getMore .moreOperate .delete-list{
+    margin-top:0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .edit{
+    float:right;
+    font-size:14px;
+    color:#3A8BFF;
+    margin-right:24px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .edit:hover{
+    opacity:0.7;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .up-arrow{
+    width:12px;
+    height:14px;
+    background:url("/mooc2-ans/images/questionbank/arrow_up.png") no-repeat;
+    background-size:100% 100%;
+    margin:3px 26px 0 0;
+    cursor:pointer;
+    float:right;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-fold-lists .down-arrow{
+    width:12px;
+    height:14px;
+    background:url("/mooc2-ans/images/questionbank/arrow-down.png") no-repeat;
+    background-size:100% 100%;
+    margin:3px 26px 0 0;
+    cursor:pointer;
+    float:right;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists{
+    width:16%;
+    float:left;
+    overflow:hidden;
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore{
+    margin-right:20px;
+    width:28px;
+    height:100%;
+    float:right;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore .more-name{
+    font-size:14px;
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore .more-name:hover{
+    opacity:0.7;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore:hover .moreOperate{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore .moreOperate{
+    width:118px;
+  padding-bottom: 6px;
+    -webkit-box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius:6px;
+    position:absolute;
+    top:39px;
+    z-index:3;
+    background:white;
+    cursor:pointer;
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore .moreOperate li{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    font-size:14px;
+    color:#474C59;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore .moreOperate li:nth-child(1){
+    margin-top:6px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore .moreOperate li:hover{
+    color:#3A8BFF;
+    background:#F0F6FF;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore .moreOperate li span{
+    padding-left:20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .getMore .moreOperate .delete-list{
+    margin-top:0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .edit{
+    float:right;
+    font-size:14px;
+    color:#3A8BFF;
+    margin-right:24px;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .edit:hover{
+    opacity:0.7;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .up-arrow{
+    width:12px;
+    height:14px;
+    background:url("/mooc2-ans/images/questionbank/arrow_up.png") no-repeat;
+    background-size:100% 100%;
+    margin:3px 26px 0 0;
+    cursor:pointer;
+    float:right;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .operate-lists .down-arrow{
+    width:12px;
+    height:14px;
+    background:url("/mooc2-ans/images/questionbank/arrow-down.png") no-repeat;
+    background-size:100% 100%;
+    margin:3px 26px 0 0;
+    cursor:pointer;
+    float:right;
+}
+
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details {
+    padding: 12px 0 3px;
+    padding-left: 76px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    color: #181e33;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .option li {
+    margin-bottom: 16px;
+    line-height: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .option li .number {
+    margin-bottom: 16px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .option li .number .type {
+    color: #8a8b99;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .option li .option-item {
+    margin-left: 32px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .option li .option-item p {
+    margin-bottom: 16px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .option li.choose {
+    margin-bottom: 30px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .option li.choose:last-child {
+    margin-bottom: 0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .option li.choose .question .question-box div .con {
+    margin-left: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question {
+    padding-top: 4px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .fontw {
+    font-weight: 600;
+    float: left;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .question-box {
+    margin-left: 44px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .question-box.marginLeft56 {
+    margin-left: 56px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .question-box .position {
+    color: #8a8b99;
+    float: left;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .question-box div {
+    margin-bottom: 4px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .question-box div .con {
+    margin-left: 44px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .question-box div .line {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    width: 28px;
+    height: 1px;
+    background: #181e33;
+    border-radius: 1px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .question-box .item {
+    margin-right: 24px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .connection .linemain {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .connection .linemain.left {
+    margin-right: 120px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .connection .linemain .name {
+    color: #8a8b99;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .connection .linemain .desc {
+    margin-top: 12px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .connection .linemain .desc span {
+    float: left;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details .question .connection .linemain .desc p {
+    margin-left: 17px;
+    width: 366px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details.cxt-details .question {
+    margin-bottom: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .questions-details.cxt-details .question:last-child {
+    margin-bottom: 0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list-new-build-fold{
+    display:none;
+    padding: 9px 0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list-new-build-fold .question-titles {
+    line-height: 36px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list-new-build-fold .choose-all-question .ipt-checkbox {
+    margin-top: 8px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list-new-build-fold:hover .operate-fold-lists{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list-new-build-fold .operate-fold-lists{
+    display:none;
+    position:absolute;
+    right:43%;
+    top:19px;
+    z-index:2;
+    overflow:visible;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list-new-build-fold .operate-fold-lists .edit{
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list-green-bg{
+    background:#F0F6FF;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .choose-all{
+    width: 35%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .choose-all .ipt-checkbox{
+    width:18px;
+    height:18px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title {
+    position: relative;
+    width: 52%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .category {
+    width: 11%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .hard {
+    position: relative;
+    width: 11%;
+    cursor: pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .hard .drop-down{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background:url(/mooc2-ans/images/questionbank/arrowDown.png) no-repeat;
+    background-size:100% 100%;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .hard .drop-down.active{
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .dose {
+    width: 13%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .auth {
+    position: relative;
+    width: 13%;
+    cursor: pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .auth .drop-down{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background:url(/mooc2-ans/images/questionbank/arrowDown.png) no-repeat;
+    background-size:100% 100%;
+    vertical-align:middle;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .auth .drop-down.active{
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .accuracy {
+    width: 13%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .build-time {
+    width: 16%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .belong-course{
+    width:23%;
+    text-align:left;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .down-list{
+    position:absolute;
+    left:-23px;
+    top:30px;
+    z-index:2;
+    min-width:103px;
+    background:#ffffff;
+    border-radius:6px;
+    -webkit-box-shadow:0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+    box-shadow:0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+    padding:6px 0;
+  overflow: hidden;
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .down-list > ul {
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .down-list li{
+    position:relative;
+  padding: 10px 10px 10px 38px;
+    color:#474c59;
+    font-size:14px;
+    line-height:20px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .down-list li .gou{
+    position:absolute;
+    left:14px;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    width:16px;
+    height:16px;
+    background:url(/mooc2-ans/images/icon_gou.png) no-repeat;
+    background-size:100% 100%;
+    display:none;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .down-list li:hover{
+    background:#f0f6ff;
+    color:#3a8bff;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .down-list li.active{
+    background:#f0f6ff;
+    color:#3a8bff;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .title .question-title .down-list li.active .gou{
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list{
+    width:100%;
+    -webkit-box-shadow:0 1px 0 0 #F2F2F2;
+    box-shadow:0 1px 0 0 #F2F2F2;
+    position:relative;
+    clear:both;
+    padding: 17px 0 17px;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list.list-new-build-fold {
+    padding: 12px 0;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .choose-all-question {
+    width: 32%;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles {
+    position: relative;
+    font-size: 14px;
+    width: 52%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles .choose {
+    width: 11%;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles .hard {
+    width: 11%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles .dose {
+    width: 13%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles .accuracy {
+    width: 13%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles .auth-name {
+    width: 13%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles .time {
+    width: 16%;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles .belong-course{
+    width:23%;
+    position:absolute;
+    margin-top:7px;
+    text-align:left;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list .question-titles .course{
+    width:23%;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display:block;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .order {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 30px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #8A8B99;
+}
+
+.question-list .content-wrapper .content .clear-part .callBack{
+    position:absolute;
+    bottom:45px;
+    left:21px;
+    height:22px;
+    cursor:pointer;
+}
+
+.question-list .content-wrapper .content .clear-part .callBack .icon{
+    width:16px;
+    height:16px;
+    float:left;
+    margin-top:2px;
+    background:url("/mooc2-ans/images/delete.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .clear-part .callBack .back{
+    font-size:14px;
+    color:#6B89B3;
+    float:left;
+    margin-left:7px;
+}
+
+.question-list .content-wrapper .content .clear-part .callBack:hover .icon{
+    background:url("/mooc2-ans/images/questionbank/delete-hover.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.question-list .content-wrapper .content .clear-part .callBack:hover .back{
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter{
+    margin-top:20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .layui-inline{
+    margin-bottom:20px;
+    float:left;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select{
+  width: 240px;
+    float:left;
+  margin-right: 30px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-label{
+    float:left;
+    font-size:14px;
+    line-height:34px;
+    margin-right:14px;
+    color:#131B26;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .select-content{
+    width:100%;
+    height:34px;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .select-content .choosed-content{
+    width:100%;
+    height:100%;
+    float:left;
+    line-height:34px;
+    cursor:pointer;
+    position:relative;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .select-content .choosed-content .choosed-sel{
+    border:1px solid #E1E1E5;
+    border-radius:4px;
+    display:inline-block;
+    outline:none;
+    width:100%;
+    height:100%;
+    font-size:14px;
+    color:#131B26;
+    letter-spacing:0.27px;
+    cursor:pointer;
+    padding-left:12px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-right:30px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .select-content .choosed-content .choosed-sel:hover{
+    border-color:#CCDEF3;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .select-content .choosed-content .choosed-sel.choosed-sel-focus{
+    border:1px solid #3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .select-content .choosed-content .choosed-sel.choosed-sel-focus + .arrow .icon{
+    color:#3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .select-content .arrow{
+    cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:12px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .select-content .arrow span{
+    color:#A3BAD9;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content{
+    width:100%;
+    -webkit-box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow:0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius:6px;
+    position:absolute;
+    top:38px;
+    left:1px;
+    background:white;
+    z-index:4;
+    display:none;
+    padding-bottom:6px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .dataSearch{
+    height:34px;
+    margin:12px auto;
+    width: calc(100% - 20px);
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .dataSearch .dataSearch_input{
+    height:34px;
+    background-color:#F5F7FA;
+    border:1px solid #F5F7FA;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .operate-choose-all{
+    font-size:12px;
+    color:#6B89B3;
+    line-height:40px;
+    cursor:pointer;
+    padding-left:14px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .operate-choose-all:hover{
+    opacity:.7;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .course-list{
+    max-height:230px;
+    overflow-y:auto;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .operate-option{
+    position:relative;
+    cursor:pointer;
+    padding:10px 10px 10px 45px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .operate-option .ipt-checkbox{
+    margin-right:10px;
+    position:absolute;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    left:20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .operate-option .infos{
+    width:100%;
+    font-size:14px;
+    color:#131B26;
+    vertical-align:middle;
+    max-width:193px;
+    -o-ellipsis-lastline:ellipsis;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    line-height:20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .operate-option .infos .color{
+    color: #8A8B99;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .operate-option:hover {
+    background: #F0F6FF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .list-content .operate-option:last-child {
+    margin-bottom: 6px;
+}
+
+.question-list .bottom-row {
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    opacity: 1;
+    background: #ffffff;
+    -webkit-box-shadow: 0px -1px 12px 0px rgba(1, 39, 78, 0.06);
+    box-shadow: 0px -1px 12px 0px rgba(1, 39, 78, 0.06);
+    padding: 16px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.question-list .bottom-row .btnBlue,
+.question-list .bottom-row .btn-delete {
+    width: 88px;
+    margin-left: 28px;
+}
+
+.question-list .bottom-row .btn-right {
+    border-left: 1px solid #F2F2F2;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+
+.question-list .bottom-row .btn-right .btnBlue {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.question-list .bottom-row .btn-right .btnBlue.btn_86 {
+    width: 86px;
+}
+
+.question-list .bottom-row .btn-right .btnBlue.btn_104 {
+    width: 104px;
+}
+
+.question-list .bottom-row .btn-delete {
+    border: 1px solid #F33131;
+    border-radius: 20px;
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: #F33131;
+}
+
+.question-list .bottom-row .export {
+    position: relative;
+}
+
+.question-list .bottom-row .export:hover .export-wrapper {
+    display: block;
+}
+
+.question-list .bottom-row .export-wrapper {
+    width: 110px;
+    position: absolute;
+    bottom: 35px;
+    left: -11px;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius: 6px;
+    z-index: 10;
+    display: none;
+}
+
+.question-list .bottom-row .export-wrapper .export-list {
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.question-list .bottom-row .export-wrapper .export-list:nth-child(1) {
+    margin-top: 6px;
+}
+
+.question-list .bottom-row .export-wrapper .export-list:nth-last-child(1) {
+    margin-bottom: 6px;
+}
+
+.question-list .bottom-row .export-wrapper .export-list:hover {
+    background: #F7FAFC;
+}
+
+.question-list .bottom-row .export-wrapper .export-list:hover .names {
+    color: #3A8BFF;
+}
+
+.question-list .bottom-row .export-wrapper .export-list .names {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #474C59;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.question-list .input-check-style {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: url("/mooc2-ans/images/dx_check.png") no-repeat;
+    background-size:100% 100%;
+    position:absolute;
+    left:0;
+    top:12px;
+}
+
+.question-list .input-check-style .box-checked{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background:url("/mooc2-ans/images/dx_checked.png") no-repeat;
+    background-size:100% 100%;
+}
+
+@media screen and (max-width:1366px){
+    .content-wrapper .content .clear-part .filter .width-min{
+        width:100%;
+    }
+    .content-wrapper .content .clear-part .filter .layui-inline.clear{
+        clear:both;
+    }
+}
+
+.popPosition{
+    position:absolute !important;
+    top:50% !important;
+    left:50% !important;
+    -webkit-transform:translate(-50%, -50%) !important;
+    -ms-transform:translate(-50%, -50%) !important;
+    transform:translate(-50%, -50%) !important;
+}
+
+.list-checked{
+    background:#F0F6FF;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.list-checked:before{
+    width:100%;
+    content:'';
+    display:block;
+    background:#D9E9FF;
+    position:absolute;
+    top:-1px;
+}
+
+.list-checked:after{
+    width:100%;
+    content:'';
+    display:block;
+    background:#D9E9FF !important;
+    bottom:0px;
+}
+
+.importing{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:8;
+    display:none;
+}
+
+.importing .import-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background:rgba(16, 26, 41, 0.76);
+}
+
+.importing .import-content{
+    width:440px;
+    height:208px;
+    background:white;
+    z-index:10;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    border-radius:7px;
+}
+
+.importing .import-content .header{
+    width:100%;
+    height:60px;
+    border-bottom:1px solid #F2F2F2;
+}
+
+.importing .import-content .header .head-name{
+    font-size:18px;
+    color:#131B26;
+    line-height:60px;
+    margin:18px 0 0 30px;
+}
+
+.importing .import-content .header .head-icons{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url("/mooc2-ans/images/popClose.png") no-repeat;
+    background-size:100% 100%;
+    float:right;
+    margin:18px 30px 0 0;
+    cursor:pointer;
+}
+
+.importing .import-content .imp-content{
+    width:440px;
+    height:148px;
+}
+
+.importing .import-content .imp-content .progress-wrapper{
+    width:380px;
+    height:16px;
+    margin-left:30px;
+    margin-top:40px;
+    background:#EBF0F5;
+    border-radius:8px;
+}
+
+.importing .import-content .imp-content .progress-wrapper .progress{
+    width: 200px;
+    height: 16px;
+    background-image: -webkit-linear-gradient(53deg, #5A33FF 0%, #6CC7FF 100%);
+    background-image: -o-linear-gradient(53deg, #5A33FF 0%, #6CC7FF 100%);
+    background-image: linear-gradient(37deg, #5A33FF 0%, #6CC7FF 100%);
+    -webkit-box-shadow: 0 2px 9px 0 rgba(103, 161, 255, 0.5);
+    box-shadow: 0 2px 9px 0 rgba(103, 161, 255, 0.5);
+    border-radius: 8px;
+}
+
+.importing .import-content .imp-content .sayings{
+    margin-top:24px;
+    text-align:center;
+    font-size:12px;
+    color:#8A8B99;
+}
+
+.importing .import-content .imp-content .sayings span{
+    color:#d81304;
+}
+
+.delete-operate, .lock-operate,.selfPermission{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:8;
+    display:none;
+}
+
+.delete-operate .import-bg, .lock-operate .import-bg,.selfPermission .import-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background:rgba(16, 26, 41, 0.76);
+}
+
+.delete-operate .import-content, .lock-operate .import-content,.selfPermission .import-content{
+    width:440px;
+    min-height:208px;
+    max-height:360px;
+    background:#fff;
+    z-index:10;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    border-radius:7px;
+}
+
+.delete-operate .import-content .header, .lock-operate .import-content .header,.selfPermission .import-content .header{
+    width:100%;
+    height:60px;
+    border-bottom:1px solid #F2F2F2;
+}
+
+.delete-operate .import-content .header .head-name, .lock-operate .import-content .header .head-name,.selfPermission .import-content .header .head-name{
+    font-size:18px;
+    color:#131B26;
+    line-height:60px;
+    margin:18px 0 0 30px;
+}
+
+.delete-operate .import-content .header .head-icons, .lock-operate .import-content .header .head-icons,.selfPermission .import-content .header .head-icons{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url("/mooc2-ans/images/popClose.png") no-repeat;
+    background-size:100% 100%;
+    float:right;
+    margin:18px 30px 0 0;
+    cursor: pointer;
+}
+
+.delete-operate .import-content .del-content{
+    width:440px;
+    height:48px;
+    font-size:16px;
+    color:#646873;
+    line-height:22px;
+    padding-left:30px;
+    padding-top:26px;
+}
+ .lock-operate .import-content .del-content, .selfPermission .import-content .del-content {
+     min-height: 70px;
+     max-height: 230px;
+     overflow: hidden;
+ }
+
+.delete-operate .import-content .del-content .del-content-name, .lock-operate .import-content .del-content .del-content-name,.selfPermission .import-content .del-content .del-content-name{
+    font-size:16px;
+    color:#474C59;
+    line-height:22px;
+    padding:26px 30px 30px 30px;
+    display:block;
+}
+
+.delete-operate .import-content .del-foot, .lock-operate .import-content .del-foot,.selfPermission .import-content .del-foot{
+    width:100%;
+    height:70px;
+}
+
+.delete-operate .import-content .del-foot a, .lock-operate .import-content .del-foot a,.selfPermission .import-content .del-foot a{
+    display:inline-block;
+    margin-top:17px;
+    margin-right:30px;
+}
+
+.hide-state{
+    display:none;
+}
+
+.choose-sums{
+    color:red;
+}
+
+.rotare180{
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+.right-scroll{
+    overflow-y:auto;
+    padding-top:22px;
+    margin-top:8px;
+}
+
+.footer-fixed{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:0 40px;
+    background:white;
+    -webkit-box-shadow:0px -1px 12px 0px rgba(1, 39, 78, 0.06);
+    box-shadow:0px -1px 12px 0px rgba(1, 39, 78, 0.06);
+    min-height:70px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.footer-fixed > div{
+    display:inline-block;
+}
+
+.footer-fixed .l-tip{
+    font-size:14px;
+    color:#474C59;
+    width:100px;
+    text-align:left;
+}
+
+.footer-fixed .info{
+    font-size:12px;
+    color:#8A8B99;
+    line-height:18px;
+    width:calc(100% - 80px - 150px - 100px);
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    vertical-align:middle;
+    padding:10px 50px 10px 0;
+}
+
+.footer-fixed .btns{
+    padding:17px 0;
+}
+
+.mg-right30{
+    margin-right:30px;
+}
+
+.pageDiv{
+    position:absolute;
+    bottom:40px;
+    left:0;
+    right:0;
+    margin-top:40px;
+}
+
+.subNav{
+    z-index:6;
+}
+
+.no-questions{
+    position:absolute;
+    left:50%;
+    top:50%;
+    font-size:14px;
+    color:#8A8B99;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    display:none;
+}
+
+.has-choosed{
+    color:#3A8BFF;
+}
+
+.clearaft:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.jb_btn_242{
+    width:242px;
+    height:36px;
+    background:url(/mooc2-ans/images/confirm_btm.png) no-repeat 0 0;
+    position:absolute;
+    bottom:23px;
+    left:24px;
+}
+
+.jb_btn_242:hover{
+    background-position:0 -46px;
+}
+
+.jb_btn_242:active{
+    background-position:left -92px;
+}
+
+/* 题型管理 弹窗  */
+.popTypeManage .popManage_module{
+    margin-top:-2px;
+    height:310px;
+    padding:0 4px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    /*  班级列表*/
+}
+
+.popTypeManage .popManage_module .type-lists{
+    padding:0 2px;
+    /*  重命名*/
+}
+
+.popTypeManage .popManage_module .type-lists.list-head{
+    width:100%;
+    height:40px;
+    background:#f5f6f7;
+    border-radius:2px;
+    line-height:40px;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list{
+    position:relative;
+    height:54px;
+    border-radius:2px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    cursor:pointer;
+    font-size:0;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .table-li{
+    position:relative;
+    display:inline-block;
+    font-size:12px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    float:left;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .table-li.list-name{
+    width:50%;
+    padding-left:28px;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .table-li.list-type{
+    width:30%;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .table-li.list-operate{
+    width:20%;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .table-li .select-wrap-content{
+    color:#3A8BFF;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .table-li .select-wrap-content:hover{
+    opacity:0.7;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .class-name{
+    display:inline-block;
+    vertical-align:middle;
+    width:154px;
+    overflow:hidden;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    max-height:48px;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .class-name .class-mark{
+    background-color:#EDF1F5;
+    border-radius:4px;
+    margin-right:8px;
+    padding:0 6px;
+    line-height:20px;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .class-name .overHidden2{
+    display:inline;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .class-name .key-word{
+    color:#3A8BFF;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .hide-btns{
+    opacity:0;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .hide-btns i{
+    font-size:14px;
+    color:#CEDEF5;
+    display:inline-block;
+    cursor:pointer;
+    margin-right:14px;
+}
+
+.popTypeManage .popManage_module .type-lists .type-list .hide-btns i:hover{
+    cursor:move;
+}
+
+.popTypeManage .popManage_module .type-lists .status2{
+    position:relative;
+    display:none;
+    width:100%;
+    font-size:0;
+}
+
+.popTypeManage .popManage_module .type-lists .fix{
+    border-radius:4px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-bottom:0;
+}
+
+.popTypeManage .popManage_module .type-lists .inp-box{
+    display:inline-block;
+    margin-bottom:0;
+}
+
+.popTypeManage .popManage_module .type-lists input{
+    display:inline-block;
+    width:192px;
+    height:34px;
+    outline:none;
+    padding:0 8px;
+    font-size:14px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    color:#394e68;
+    border-radius:4px;
+    border:1px solid #CBDCF2;
+}
+
+.popTypeManage .popManage_module .type-lists input::-moz-selection{
+    background:rgba(34, 127, 255, 0.4);
+}
+
+.popTypeManage .popManage_module .type-lists input::selection{
+    background:rgba(34, 127, 255, 0.4);
+}
+
+.popTypeManage .popManage_module .type-lists input:focus{
+    border:1px solid #FFFFFF;
+    -webkit-box-shadow:0 0 7px 1px #75BAFF;
+    box-shadow:0 0 7px 1px #75BAFF;
+}
+
+.popTypeManage .popManage_module .type-lists input.error{
+    border:1px solid #FFCAC7;
+    -webkit-box-shadow:0 0 4px 0 rgba(255, 85, 51, 0.5);
+    box-shadow:0 0 4px 0 rgba(255, 85, 51, 0.5);
+}
+
+.popTypeManage .popManage_module .type-lists .btns{
+    width:auto;
+    display:inline-block;
+    vertical-align:middle;
+    font-size:0;
+}
+
+.popTypeManage .popManage_module .type-lists .btns span{
+    margin-top:0;
+}
+
+.popTypeManage .popManage_module .type-lists .btns span:hover{
+    color:#3a8bff;
+}
+
+.popTypeManage .popManage_module .type-lists .btns .rename_yes{
+    margin-right:0;
+}
+
+.popTypeManage .popManage_module .type-table-body .type-list{
+    height:44px;
+    line-height:43px;
+}
+
+.popTypeManage .popManage_module .type-table-body .type-list:hover{
+    background:#F4F8FE;
+}
+
+.popTypeManage .popManage_module .type-table-body .type-list:hover .hide-btns{
+    opacity:1;
+}
+
+.popTypeManage .popManage_module .type-table-body .type-list .resetName{
+    margin-right:30px;
+}
+
+.popTypeManage .popManage_module .type-table-body .type-list .list-operate span{
+    color:#3A8BFF;
+}
+
+.popTypeManage .popManage_module .type-table-body .type-list .list-operate span:hover{
+    opacity:0.7;
+}
+.popTypeManage .popManage_module.reviseType .type-table-body .type-list:hover {
+    background: #F4F8FE;
+    color: #3A8BFF;
+}
+.popTypeManage .popManage_new{
+    height:20px;
+    line-height:20px;
+    margin:8px 0 0 30px;
+}
+
+.popTypeManage .popManage_new img{
+    margin-right:6px;
+    vertical-align:middle;
+}
+
+.popTypeManage .dataBody_drag{
+    width:8px;
+    height:20px;
+    background:url(/mooc2-ans/images/questionbank/drag_ico.png) no-repeat center/8px 20px;
+    cursor:move;
+    position:absolute;
+    left:10px;
+    top:50%;
+    margin-top:-10px;
+    z-index:9;
+}
+
+.popTypeManage .dataBody_drag:hover{
+    background:url(/mooc2-ans/images/questionbank/drag_icoHover.png) no-repeat center/8px 20px;
+}
+
+.popTypeManage .select-wrap-content .icon-arrow-down{
+    display:inline-block;
+    -webkit-transform:scale(0.8);
+    -ms-transform:scale(0.8);
+    transform:scale(0.8);
+    -webkit-transition:-webkit-transform 0.2s ease-in;
+    transition:-webkit-transform 0.2s ease-in;
+    -o-transition:transform 0.2s ease-in;
+    transition:transform 0.2s ease-in;
+    transition:transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.popTypeManage .select-wrap-content.active .icon-arrow-down{
+    -webkit-transform:scale(0.8) rotate(180deg);
+    -ms-transform:scale(0.8) rotate(180deg);
+    transform:scale(0.8) rotate(180deg);
+}
+
+.popTypeManage .select-lists{
+    position:absolute;
+    left:-20px;
+    display:none;
+    z-index:10;
+    padding:6px 0;
+    background:#FFFFFF;
+    border-radius:6px;
+    -webkit-box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.1);
+    box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.1);
+    overflow:hidden;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.popTypeManage .select-lists .select-item{
+    padding:10px 20px;
+    font-size:14px;
+    color:#474C59;
+    line-height:20px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    cursor:pointer;
+    word-break:break-all;
+}
+
+.popTypeManage .select-lists .select-item:hover{
+    background:#f7fafc;
+}
+
+.popTypeManage .select-lists .select-item.active{
+    color:#3A8BFF;
+}
+
+.popTypeManage #addNewType{
+    display:none;
+}
+
+#dragBubble:after{
+    left:50%;
+}
+.breadcrumb>li>a{
+    cursor:pointer;
+}
+
+
+.update-operate{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:11;
+    display:none;
+}
+
+.update-operate .import-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background:rgba(16, 26, 41, 0.76);
+}
+
+.update-operate .import-content{
+    width:440px;
+    min-height:208px;
+    max-height:360px;
+    background:#fff;
+    z-index:10;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    border-radius:7px;
+}
+
+.update-operate .import-content .header{
+    width:100%;
+    height:60px;
+    border-bottom:1px solid #F2F2F2;
+}
+
+.update-operate .import-content .header .head-name{
+    font-size:18px;
+    color:#131B26;
+    line-height:60px;
+    margin:18px 0 0 30px;
+}
+
+.update-operate .import-content .header .head-icons{
+    cursor: pointer;
+    display:inline-block;
+    width:18px;
+    height:18px;
+    background:url("/mooc2-ans/images/popClose.png") no-repeat;
+    background-size:100% 100%;
+    float:right;
+    margin:18px 30px 0 0;
+}
+
+.update-operate .import-content .del-content{
+    width:440px;
+    height:48px;
+    font-size:16px;
+    color:#646873;
+    line-height:22px;
+    padding-left:30px;
+    padding-top:26px;
+}
+
+.update-operate .import-content .del-content .del-content-name{
+    font-size:16px;
+    color:#474C59;
+    line-height:22px;
+    padding:26px 30px 30px 30px;
+    display:block;
+}
+
+.update-operate .import-content .del-foot{
+    width:100%;
+    height:70px;
+}
+
+.update-operate .import-content .del-foot a{
+    display:inline-block;
+    margin-top:17px;
+    margin-right:30px;
+}
+
+/* 导出内容弹窗 */
+.popSelectContent .pop-select-content {
+    padding: 30px;
+    border-bottom: 1px solid rgba(240, 240, 240, 0.5);
+}
+
+.popSelectContent .pop-select-content .select-list {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.popSelectContent .pop-select-content .select-list:last-child {
+    margin-bottom: 0;
+}
+
+.popSelectContent .pop-select-content .select-list .ipt-checkbox {
+    margin-right: 10px;
+}
+
+.inlineMiddle {
+    display: inline-block;
+    vertical-align: middle;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .title .question-title  .sort-icon.checked{
+    background:url("/mooc2-ans/images/questionbank/icon-sort-hover.png") no-repeat;
+    background-size:100% 100%;
+}
+
+
+/*修改难易度弹框*/
+.popModifyDifficulty .popDiv {
+    top: 50% !important;
+    left: 50% !important;
+}
+.popModifyDifficulty .modify-content {
+    padding: 10px 2px 30px;
+}
+.popModifyDifficulty .modify-content .item {
+    padding-left: 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #131B26;
+}
+.popModifyDifficulty .modify-content .item .ipt-radio {
+    margin-right: 10px;
+}
+.popModifyDifficulty .popBottom {
+    -webkit-box-shadow: inset 0px 1px 0px #F2F2F2;
+    box-shadow: inset 0px 1px 0px #F2F2F2;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-right {
+    border-left: 1px solid #F2F2F2;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-right .btnBlue {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-right .btnBlue.btn_86 {
+    width: 86px;
+}
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-right .btnBlue.btn_104 {
+    width: 104px;
+}
+
+
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btnBlue, .question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-delete {
+    width: 88px;
+    margin-left: 28px;
+}
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-right {
+    border-left: 1px solid #F2F2F2;
+    margin-left: 30px;
+    padding-left: 30px;
+}
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-right .btnBlue {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-right .btnBlue.btn_86 {
+    width: 86px;
+}
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-right .btnBlue.btn_104 {
+    width: 104px;
+}
+.question-list .content-wrapper .content .clear-part .cover .bottom-row .btn-delete {
+    border: 1px solid #F33131;
+    border-radius: 20px;
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: #F33131;
+}
+
+
+/*修改关联点弹框*/
+.popGlzsd {
+    /**/
+}
+.popGlzsd .het6512 {
+    height: 512px;
+}
+.popGlzsd .leftCon {
+    width: 580px;
+    border-right: 1px solid #f2f2f2;
+}
+.popGlzsd .rightCon {
+    padding: 0 24px;
+    width: 210px;
+}
+.popGlzsd .knowMain_padd {
+    height: 427px;
+    padding: 0 14px;
+}
+.popGlzsd .bnt_group {
+    height: 24px;
+    padding: 16px 16px 0;
+}
+.popGlzsd .bnt_group a {
+    padding: 0 15px;
+    font-size: 14px;
+}
+.popGlzsd .bnt_group a.addLvevl {
+    color: #3A8BFF;
+}
+.popGlzsd .bntView {
+    margin-left: 30px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #6B89B3;
+}
+.popGlzsd .bntKnow {
+    line-height: 36px;
+    font-size: 14px;
+    color: #6B89B3;
+}
+.popGlzsd .bntView:hover, .popGlzsd .bntKnow:hover {
+    color: #3a8bff;
+}
+.popGlzsd .bntView:before, .popGlzsd .bntKnow:before {
+    content: '';
+    margin: -2px 6px 0 0;
+    width: 16px;
+    height: 16px;
+    background: url(/mooc2-ans/images/knowledgepoints/ico-know.png) no-repeat;
+    background-size: 16px auto;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+.popGlzsd .bntView:before {
+    background-position: 0 0;
+    background-size: 16px auto;
+}
+.popGlzsd .bntView:hover:before {
+    background-position: 0 -20px;
+    background-size: 16px auto;
+}
+.popGlzsd .bntKnow:before {
+    background-position: 0 -40px;
+    background-size: 16px auto;
+}
+.popGlzsd .bntKnow:hover:before {
+    background-position: 0 -60px;
+    background-size: 16px auto;
+}
+.popGlzsd .divKnow {
+    height: 36px;
+    position: relative;
+    margin-left: 30px;
+}
+.popGlzsd .divKnow_con {
+    min-width: 134px;
+    background: #FFF;
+    border-radius: 6px;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    z-index: 9;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    white-space: nowrap;
+}
+.popGlzsd .divKnow_con {
+    padding: 6px 0;
+}
+.popGlzsd .divKnow_con li {
+    display: block;
+    line-height: 44px;
+    font-size: 14px;
+    color: #646873;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.popGlzsd .divKnow_con li:hover {
+    background: #F5F8FB;
+    color: #3A8BFF;
+}
+.popGlzsd .divKnow .divKnow_con {
+    display: none;
+}
+.popGlzsd .divKnow:hover .divKnow_con {
+    display: block;
+}
+.popGlzsd .treeBox {
+    margin-top: 10px;
+}
+.popGlzsd .treeBox li {
+    width: 100%;
+    position: relative;
+}
+.popGlzsd .treeBox li .tree_entry {
+    min-height: 36px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.popGlzsd .treeBox li .tree_entry:hover {
+    background-color: #F0F6FF;
+}
+.popGlzsd .treeBox li .tree_main {
+    width: 620px;
+    padding: 8px 0;
+    position: relative;
+    display: inline-block;
+}
+.popGlzsd .treeBox li .tree_icon {
+    width: 12px;
+    height: 12px;
+    background: url(/mooc2-ans/images/knowledgepoints/ico-tree-arrow.png) no-repeat;
+    background-size: 12px 12px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -6px;
+}
+.popGlzsd .treeBox li .tree_icon {
+    -webkit-transform: rotate(0deg);
+    -webkit-transition: all .2s linear;
+}
+.popGlzsd .treeBox li .tree_down {
+    -webkit-transform: rotate(90deg);
+}
+.popGlzsd .treeBox li .tree_file {
+    width: 12px;
+    height: 12px;
+    background: url(/mooc2-ans/images/knowledgepoints/ico-tree-file.png) no-repeat;
+    background-size: 12px 12px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -6px;
+}
+.popGlzsd .treeBox li .tree_text {
+    padding-left: 28px;
+    max-height: 40px;
+    font-size: 14px;
+    color: #131b26;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.popGlzsd .treeBox li .tree_relat {
+    padding-left: 28px;
+    margin-top: 4px;
+    font-size: 14px;
+    color: #8A8B99;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.popGlzsd .treeBox li .tree_form {
+    padding: 2px 0 2px 28px;
+}
+.popGlzsd .treeBox li .tree_input {
+    width: 216px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 9px;
+    font-size: 14px;
+    color: #131B26;
+    border: solid #3a8bff 1px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    vertical-align: top;
+}
+.popGlzsd .treeBox li .tree_yes, .popGlzsd .treeBox li .tree_not {
+    margin: 4px 0 0 10px;
+    width: 24px;
+    height: 24px;
+    background: url(/mooc2-ans/images/data/rename_ico.png) no-repeat;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+.popGlzsd .treeBox li .tree_yes:hover {
+    background-position: 0 -30px;
+}
+.popGlzsd .treeBox li .tree_not {
+    background-position: -30px 0;
+}
+.popGlzsd .treeBox li .tree_not:hover {
+    background-position: -30px -30px;
+}
+.popGlzsd .treeBox li .tree_active, .popGlzsd .treeBox li .tree_active:hover {
+    background: #eaf2ff;
+}
+.popGlzsd .treeBox li .tree_entry .tree_group {
+    display: none;
+}
+.popGlzsd .treeBox li .tree_entry:hover .tree_group {
+    display: block !important;
+}
+.popGlzsd .treeBox li .editShowHide .tree_group {
+    display: none;
+}
+.popGlzsd .treeBox li .editShowHide:hover .tree_group {
+    display: none !important;
+}
+.popGlzsd .treeBox li .colorBlue {
+    margin-right: 24px;
+    color: #3A8BFF;
+}
+.popGlzsd .treeBox li .tree_more {
+    display: inline-block;
+    position: relative;
+}
+.popGlzsd .treeBox li .tree_con {
+    width: 76px;
+    padding: 6px 0;
+    font-size: 14px;
+    background: #FFF;
+    border-radius: 6px;
+    position: absolute;
+    left: -20px;
+    top: 100%;
+    z-index: 11;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+}
+.popGlzsd .treeBox li .tree_con a {
+    display: block;
+    line-height: 40px;
+    color: #474C59;
+    padding-left: 20px;
+}
+.popGlzsd .treeBox li .tree_con a:hover {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+.popGlzsd .treeBox li .tree_main {
+    width: 90%;
+}
+.popGlzsd .treeBox li .tree_pack {
+    padding-left: 30px;
+    display: none;
+}
+.popGlzsd .treeBox li .tree_pack li:before {
+    content: '';
+    width: 0;
+    border-left: dashed #DBDBDB 1px;
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    left: -14px;
+}
+.popGlzsd .treeBox li .tree_pack li .tree_entry:after {
+    content: '';
+    width: 16px;
+    height: 0;
+    border-top: dashed #DBDBDB 1px;
+    position: absolute;
+    top: 50%;
+    left: -8px;
+}
+.popGlzsd .treeBox li .tree_pack li li:last-child:before {
+    bottom: 18px;
+}
+.popGlzsd .treeBox li:last-child .tree_pack > li:last-child:before {
+    bottom: 18px;
+}
+.popGlzsd .treeBox li .tree_pack li li.lineOne:last-child:before {
+    height: 24px;
+}
+.popGlzsd .treeBox li:last-child .tree_pack > li.lineOne:last-child:before {
+    height: 24px;
+}
+.popGlzsd .treeBox li .tree_pack li li.lineTwo:last-child:before {
+    height: 34px;
+}
+.popGlzsd .treeBox li:last-child .tree_pack > li.lineTwo:last-child:before {
+    height: 34px;
+}
+.popGlzsd .treeBox li .tree_pack li li.lineThree:last-child:before {
+    height: 46px;
+}
+.popGlzsd .treeBox li:last-child .tree_pack > li.lineThree:last-child:before {
+    height: 46px;
+}
+.popGlzsd .treeBox li.lineOne.tree_dotted > .tree_entry:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: dashed #DBDBDB 1px;
+    position: absolute;
+    top: 30px;
+    left: 16px;
+}
+.popGlzsd .treeBox li.lineTwo.tree_dotted > .tree_entry:before {
+    content: '';
+    width: 0;
+    height: 24px;
+    border-left: dashed #DBDBDB 1px;
+    position: absolute;
+    top: 40px;
+    left: 16px;
+}
+.popGlzsd .treeBox li.lineThree.tree_dotted > .tree_entry:before {
+    content: '';
+    width: 0;
+    height: 24px;
+    border-left: dashed #DBDBDB 1px;
+    position: absolute;
+    top: 52px;
+    left: 16px;
+}
+.popGlzsd .treeBox li.lineOne.tree_duan > .tree_entry:before {
+    height: 0;
+}
+.popGlzsd .treeBox li.lineTwo.tree_duan > .tree_entry:before {
+    height: 0;
+}
+.popGlzsd .treeBox li.lineThree.tree_duan > .tree_entry:before {
+    height: 0;
+}
+.popGlzsd .tree_group {
+    display: -webkit-box;
+    height: 100%;
+    line-height: 100%;
+    font-size: 14px;
+    position: absolute;
+    right: 34px;
+    top: 0;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(240, 246, 255, 0.15)), color-stop(8%, #f0f6ff));
+    background: linear-gradient(90deg, rgba(240, 246, 255, 0.15), #f0f6ff 8%);
+}
+.popGlzsd .tree_group a {
+    padding: 0 12px;
+    float: left;
+    height: 100%;
+    line-height: 100%;
+    color: #6B89B3;
+    font-size: 14px;
+    display: flex;align-items:center;justify-content: center;
+}
+.popGlzsd .class_check {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(/mooc2-ans/images/questionbank/dxcheck.png) no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(/mooc2-ans/images/questionbank/dxcheck.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.popGlzsd .class_checked {
+    background: url(/mooc2-ans/images/questionbank/dxchecked.png) no-repeat;
+    background-size: 100%;
+}
+.popGlzsd .class_checked_disable {
+    background: url(/mooc2-ans/images/questionbank/dxchecked.png) no-repeat;
+    background-size: 100%;
+    opacity: 0.3;
+}
+.popGlzsd .checkPcon {
+    padding: 20px 0;
+    color: #A8A8B3;
+    font-size: 12px;
+}
+.popGlzsd .checkPcon span {
+    padding: 0 4px;
+}
+.popGlzsd .selectDiv span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: relative;
+    border: 2px dashed #D5E2F1;
+    margin: 0 12px 12px 0;
+    float: left;
+}
+.popGlzsd .selectDiv span b {
+    display: block;
+    max-width: 170px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+.popGlzsd .closeImg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/mooc2-ans/images/knowledgepoints/ico-popLedge.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: -8px;
+    top: -6px;
+    display: none;
+}
+.popGlzsd .selectDiv span:hover .closeImg {
+    display: block;
+}
+.popGlzsd .selectDiv {
+    padding-top: 10px;
+}
+.popGlzsd .bntChild {
+    border-color: #d4e6ff;
+    color: #b0d1ff;
+}
+.popGlzsd .addChild {
+    border-color: #94c1ff;
+    color: #3A8BFF;
+}
+.lock-operate .import-content .del-foot,.selfPermission .import-content .del-foot {
+    border-top: 1px solid #F2F2F2;
+}
+
+.lock-operate .head-icons，.selfPermission .head-icons {
+    cursor: pointer;
+}
+
+.lock-success-tip {
+    display: none;
+    position: fixed;
+    top: 180px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 0 24px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 8px;
+    background: rgba(79, 87, 98, 0.98);
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.lock-success-tip span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lock-success-tip .success-img {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    background: url("/mooc2-ans/images/questionbank/icon-40-succee.png") no-repeat center center;
+    background-size: contain;
+}
+
+.lock-tip {
+    position: relative;
+    padding: 0 20px;
+    height: 48px;
+    background: #FFF7ED;
+    border-radius: 4px;
+    line-height: 48px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #F28C24;
+}
+
+.lock-tip span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lock-tip .lock-warn {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    background: url("/mooc2-ans/images/questionbank/icon-yellow-warn.png") no-repeat center center;
+}
+
+.lock-tip .close-lock-tip {
+    cursor: pointer;
+    position: absolute;
+    top: 17px;
+    right: 18px;
+    width: 12px;
+    height: 12px;
+    background: url("/mooc2-ans/images/questionbank/icon-lock-close.png") no-repeat center center;
+}
+.left50{
+    left :50%!important;
+}
+.top50 {
+    top: 50%!important;
+}
+.question-list .content-wrapper .content .clear-part .cover .list-cover.list-cover-more .list.list-new-build-fold .operate-fold-lists {
+    right: 52%;
+}
+
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .question-num {
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0px 8px;
+    border: 1px solid #d9d9d9;
+    font-size: 12px;
+    color: #8a8b99;
+    border-radius: 4px;
+    display: none;
+}
+
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .list-top{
+    display: none;
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 18px;
+    border: 1px solid #D5E2F1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #F2F4F7;
+    line-height: 16px;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #6B89B3;
+}
+
+.tempDivContainer .tree_edit, .tempDivContainer .tree_dele {
+    display: none
+}
+
+.questions img {
+    max-width: 300px;
+    cursor: pointer;
+}
+
+
+
+.margint30 {
+    margin-top: 30px;
+}
+
+.margint20 {
+    margin-top: 20px;
+}
+
+/* 权限设置弹窗 */
+.poplimits .popDiv {
+    max-height: 618px;
+}
+
+.poplimits .popDiv .pop-content {
+    max-height: 488px;
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #131B26;
+    font-size: 14px;
+    overflow-y: auto;
+    margin-top: 50px;
+}
+
+.poplimits .popDiv .pop-content .fs16 {
+    line-height: 22px;
+}
+
+.poplimits .popDiv .pop-content .radio-item {
+    margin-top: 20px;
+}
+
+.poplimits .popDiv .pop-content .radio-item .ipt-radio {
+    margin-right: 10px;
+}
+
+.poplimits .popDiv .pop-content .marginL28 {
+    margin-left: 28px;
+}
+
+.poplimits .popDiv .pop-content .tips {
+    margin-top: 6px;
+    color: #8A8B99;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.poplimits .popDiv .pop-content .check-item {
+    line-height: 20px;
+}
+
+.poplimits .popDiv .pop-content .check-item .ipt-checkbox {
+    margin-right: 10px;
+}
+
+.poplimits .popDiv .pop-content .check-item .ipt-txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.poplimits .popDiv .pop-content .check-box {
+    background: #F7F8FA;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 20px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.poplimits .popDiv .pop-content .check-box .ipt-checkbox {
+    margin-right: 6px;
+}
+
+.poplimits .popDiv .pop-content .check-box .check-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 30px;
+    line-height: 20px;
+}
+
+.poplimits .popDiv .pop-content .check-box .check-item .ipt-txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.popTips .popDiv .pop-content {
+    padding: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #131B26;
+}
+.font500 {
+    font-weight: 500;
+}
+
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .fold-name.lineh20 {
+    line-height: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box {
+    width: 320px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .dataSearch {
+    padding: 11px 14px;
+    width: calc(100% - 28px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option {
+    padding: 0;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option:hover {
+    background-color: transparent;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list {
+    position: relative;
+    padding: 10px 0;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list:hover {
+    background-color: #F0F6FF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list .icon-triangle-up {
+    position: absolute;
+    left: 14px;
+    top: calc(50% - 6px);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #ACB4BF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list .icon-circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ACB4BF;
+    left: 14px;
+    top: calc(50% - 2px);
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line {
+    position: absolute;
+    top: 0;
+    border-left: 1px dashed  #DBDBDB;
+    height: 100%;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-2 {
+    left: 19px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-3 {
+    left: 45px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-4 {
+    left: 66px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .list-line-ver {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 20px;
+    border-top: 1px dashed #DBDBDB;
+    height: 1px;
+    width: 12px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .list-line-ver {
+    left: 45px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .tree-list-4-box .list-line-ver {
+    left: 66px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .tree-list-4-box .tree-list-5-box .list-line-ver {
+    left: 88px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .ipt-checkbox {
+    left: auto;
+    right: 0;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .infos {
+    position: relative;
+    width: calc(100% - 80px);
+    max-width: unset;
+    margin-left: 32px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-2 {
+    padding-left: 19px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-2 .icon-triangle-up {
+    left: 32px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-3 {
+    padding-left: 45px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-3 .icon-triangle-up {
+    left: 56px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-4 {
+    padding-left: 66px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-4 .icon-triangle-up {
+    left: 77px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-5 {
+    padding-left: 86px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .operate-option .tree-list-5 .icon-circle {
+    left: 101px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody {
+    margin-top: 10px;
+    background: #ffffff;
+    font-size: 14px;
+    width:100%!important;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr {
+    position: relative;
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #474C59;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .parent:hover {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent {
+    position: relative;
+    padding-left: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent:hover {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent.active {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent.active .icon-triangle-up {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .infos {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .icon-triangle-up {
+    position: absolute;
+    left: 3px;
+    top: calc(50% - 18px);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #ACB4BF;
+    padding: 10px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .ipt-checkbox {
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .icon-circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ACB4BF;
+    left: 18px;
+    top: calc(50% - 2px);
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .parent {
+    position: relative;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .parent::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -1px;
+    width: 12px;
+    border-bottom: 1px dashed #DADFE6;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .parent.active .icon-triangle-up {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child {
+    display: none;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr::before {
+    content: '';
+    width: 0;
+    border-left: dashed #DADFE6 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    left: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent {
+    padding-left: 50px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent .list-icon {
+    left: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent::before {
+    left: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr:last-child::before {
+    height: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr::before {
+    left: 36px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent {
+    padding-left: 70px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent .list-icon {
+    left: 40px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent::before {
+    left: 36px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr::before {
+    left: 55px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent {
+    padding-left: 86px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent .list-icon {
+    left: 60px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent::before {
+    left: 57px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr::before {
+    left: 76px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent {
+    padding-left: 110px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent .list-icon {
+    left: 80px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent::before {
+    left: 78px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr_child .tr::before {
+    left: 100px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr_child .tr .parent {
+    padding-left: 134px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr_child .tr .parent .list-icon {
+    left: 100px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr_child .tr .parent::before {
+    left: 100px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr_child .tr_child .tr::before {
+    left: 126px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr_child .tr_child .tr .parent {
+    padding-left: 158px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr_child .tr_child .tr .parent .list-icon {
+    left: 130px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr_child .tr_child .tr .parent::before {
+    left: 126px;
+}
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr:last-child::before {
+    height: 20px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr.height40::before {
+    height: 29px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent .icon-circle {
+    top: calc(50% - 12px);
+    margin: 10px;
+}
+
+.question-list .content-wrapper .content .clear-part .filter .operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr.height40::before {
+    height: 29px;
+}
+
+#page {
+    text-align: center;
+    height: 26px;
+    display: -webkit-box ;
+    display: -webkit-flex ;
+    display: -moz-box ;
+    display: -ms-flexbox ;
+    display: flex ;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#page .pageShowNum {
+    font-size: 14px;
+    color: #474C59;
+    margin-right: 20px;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#page .pageShowNum .select-box {
+    position: relative;
+    width: 60px;
+    margin: 0 10px;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid #e9e9e9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#page .pageShowNum .select-box .active-txt {
+    color: #131B26;
+    font-size: 14px;
+    cursor: pointer;
+    width: 60px;
+    line-height: 24px;
+    display: inline-block;
+}
+
+#page .pageShowNum .select-box dl {
+    bottom: 30px;
+    padding: 6px 0;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgba(175, 187, 204, 0.75);
+    border-radius: 6px;
+    width: 60px;
+    display: none;
+}
+
+#page .pageShowNum .select-box dl dd {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    color: #474C59;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#page .pageShowNum .select-box dl dd.active {
+    background: #F0F6FF;
+    color: #3B90FF;
+}
+
+/*2022.7.5安全设置弹窗*/
+.setsafe{padding:30px;}
+.safeCon{margin-bottom:12px;overflow:hidden}
+.safeCon span{color: #131B26;line-height:22px;display:inline-block;float:left}
+.safeCon span a{display:inline-block;ine-height:22px;float:left}
+.safeCon .mui-switch{float:left;margin:0 20px;}
+.safeCon a{color: #3A8BFF;}
+.icon-safe{background: url(/mooc2-ans/module/work/images/safe.png);background-size:100% 100%;width: 16px;height: 16px;margin:9px 6px 9px 0;}
+.popCon{width:100%;height:230px;margin:0 auto;}
+.pInfo{width:100%;text-align:center;font-size:12px;color:#A8A8B3;padding:14px 0 20px 0;}
+.wid286{width:286px;margin:0 auto}
+.inpuCon{margin-bottom:14px;}
+.wid70{display:inline-block;width:70px;height:30px;line-height:30px;font-size:14px;color:#646873;float:left}
+.inp216{width:190px;height:28px;border:1px solid #E1E1E5;line-height:28px;padding:0 12px;font-size:12px;color:#333}
+.inp216:hover{border:1px solid #ccdef3;}
+.het200{height:200px;}
+.marTop30{margin-top:30px;}
+.forgetInp{position:relative}
+.forgetpassword{position:absolute;top:0;right:6px;line-height:28px;color:#09f;font-size:12px;}
+.forgetpassword:hover{opacity:0.7}
+.pad70{padding-right:70px;width:132px;}
+.icon_i{display:inline-block;width:24px;height:24px;vertical-align:middle;margin:-2px 8px 0 0;}
+.marleft220{left:50%;top:50%;}
+.maskDiv{width:100%;height:100%;position:fixed;top:0;left:0;background:rgba(16, 26, 41, 0.76);z-index:10;}
+.safeqbank{width:100%;height:100%;position:fixed;top:0;left:0;background:rgba(16, 26, 41, 0.76);z-index:10;}
+.erroInfonew{font-size:12px;color:#F53C23;margin-top:-10px;margin-bottom:10px;padding-left:70px;}
+.jm_range{margin-top:6px;overflow:hidden}
+.righCon p{color:#181E33;font-size:14px;line-height:30px;}
+.fx_check{display:inline-block;width:18px;height:19px;background:url(/mooc2-ans/images/dx_check.png) no-repeat;background-size:100% 100%;float:left;margin:6px 10px 0 0;}
+.fx_checked{background:url(/mooc2-ans/images/dx_checked.png) no-repeat;background-size:100% 100%;}
+/*验证安全密码弹窗*/
+.het200{height:200px;}
+.het318{height:318px;margin-top:-159px}
+.het196{height:196px;}
+.marTop30{margin-top:30px;}
+.forgetInp{position:relative}
+.forgetpassword{position:absolute;top:0;right:6px;line-height:28px;color:#09f;font-size:12px;}
+.forgetpassword:hover{opacity:0.7}
+.pad70{padding-right:70px;width:132px;}
+
+.het210{height:210px;margin-top:-105px}
+.pInfo2{padding:32px 0 7px 0}
+.colorBd{color:#BDBDBD}
+.inp216:disabled:hover{border:1px solid #E1E1E5;}
+.bomDiv a.nomargin{margin-left:0;}
+
+/*2023.3.6导出成绩，导出设置弹窗*/
+.line28{line-height:20px;}
+.exportgrade{padding:30px 30px 10px;font-size:14px;color:#181E33}
+.exportgrade .grade_check{margin-top:3px}
+.exportgrade .exportinfo{display:block;  color: #8A8B99;font-size: 12px;}
+.exportgrade .outCon{padding:30px 30px 0;}
+.exportgrade .out{margin-bottom:16px;}
+.exportgrade .out .class_check{float:left;margin-top:0;}
+.exportgrade .line28{line-height:20px;}
+
+/*.Achieve_screen{padding-left:20px;margin-top:20px;}*/
+.Achieve_screen{margin-right: 40px}
+.cj_span{display:inline-block;padding-right:20px;}
+.Achieve_screen input{border: 1px solid #D4D6D9;box-sizing: border-box;border-radius: 4px;width: 80px;height: 34px;padding-left:14px;line-height:346px;display:inline-block}
+.Achieve_screen .cut{position:relative;display:inline-block;width:20px;margin:0 10px;}
+.Achieve_screen .cut:after{content:'';width:20px;height:1px; background:#D4D6D9;position:absolute;left:0;top:0;}
+.sx_Btn{margin-left:30px;}
+.Achieve_screen .cj_span span{padding-left: 5px}
+.question-list .content-wrapper .content .clear-part .cover .list-cover .list .choose-all-question .list-top{
+    display: none;
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 18px;
+    border: 1px solid #D5E2F1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #F2F4F7;
+    line-height: 16px;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #6B89B3;
+}
+
+.hideState{
+    display:none!important;
+}
+.syncBx{float:left;padding-left: 30px;line-height: 36px;color: #474C59;font-size: 13px;height: 36px;display: flex;align-items: center;}
+.syncBx .sync_check{width:18px;height:18px;background:url(/mooc2-ans/images/work/dxcheck.png) no-repeat;background-size:100%;float: left;margin-right: 10px;}
+.syncBx .sync_checked{background:url(/mooc2-ans/images/work/dxchecked.png) no-repeat;background-size:100%;}
+.syncBx .sync_checked_disable{background:url(/mooc2-ans/images/work/dxchecked.png) no-repeat;background-size:100%;opacity:0.3}
+.dir-btn{display: inline;cursor: pointer}
+
+/*2023-11-22 知识点批量关联*/
+.retainOldTopicRelation .tips{position:relative;margin-left:5px}
+.retainOldTopicRelation .tipsIc{display:inline-block;width:16px;height:16px;background:url(/mooc2-ans/images/questionbank/tips.png) no-repeat;background-size:100%;vertical-align: middle;}
+.retainOldTopicRelation .tipsIc:hover{background:url(/mooc2-ans/images/questionbank/tips_hover.png) no-repeat;background-size:100%;}
+.retainOldTopicRelation .tipsCon{position:absolute;left:-40px;bottom:26px;
+    min-width:200px;
+    padding:8px 15px;
+    line-height:20px;
+    background: rgba(24,30,51,0.80);
+    border-radius: 4px;opacity: 0; visibility: hidden;
+    -webkit-transition: opacity 0.1s 1s, visibility 0s 0.3s;transition: opacity 0.1s 1s, visibility 0s 0.3s;
+    text-align:left;color:#fff;font-size:12px;}
+.retainOldTopicRelation .tipsCon i{ display:block; width:0px; height:0px; border:solid rgba(24,30,51,0.80) 4px;
+    position:absolute; left:43px; bottom:-8px; top:auto;
+    border-color:rgba(24,30,51,0.80) transparent transparent transparent;}
+.retainOldTopicRelation .tipsCon i.active{ display:block; width:0px; height:0px; border:solid rgba(24,30,51,0.80) 4px; position:absolute; left:50%; margin-left:-4px; bottom:40px; top:auto; border-color:transparent transparent rgba(24,30,51,0.80) transparent;}
+.retainOldTopicRelation .tips:hover .tipsCon{ display:block; opacity:1; visibility:visible; -webkit-transition:opacity 0.3s 0.1s, visibility 0.3s 0.1s; transition:opacity 0.3s 0.1s, visibility 0.3s 0.1s;}

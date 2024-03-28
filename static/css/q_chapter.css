@@ -1,0 +1,2533 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*data*/
+.fanyaChapter {
+    padding: 30px;
+    min-height: 600px;
+    min-width: 1040px;
+}
+
+.fanyaChapterWhite {
+    background: #FFFFFF;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 2px 17px 0 rgba(239, 239, 239, 0.50);
+    box-shadow: 0 2px 17px 0 rgba(239, 239, 239, 0.50);
+}
+
+.chapter_head {
+    padding: 20px 30px;
+    border-bottom: solid #F2F2F2 1px;
+}
+
+.chapter_PlusIcon {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px 2px 0;
+}
+
+.chapter_batch {
+    line-height: 36px;
+}
+
+.allCheapter {
+    line-height: 36px;
+}
+
+.allCheapter_line {
+    width: 1px;
+    height: 12px;
+    background: #F2F2F2;
+    margin: 12px 10px 0;
+}
+
+.allCheapter_disabled {
+    line-height: 36px;
+}
+
+.jb_btn_60 {
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -235px/150px auto;
+}
+
+.jb_btn_60:hover {
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -265px/150px auto;
+}
+
+.jb_btn_60:active {
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -295px/150px auto;
+}
+
+.jb_btn_128 {
+    width: 128px;
+    height: 36px;
+    line-height: 36px;
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -0px/150px auto;
+}
+
+.jb_btn_128:hover {
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -40px/150px auto;
+}
+
+.jb_btn_128:active {
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -80px/150px auto;
+}
+
+.btn_120 {
+    width: 120px;
+}
+
+.OpenState {
+    margin-left: 60px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+.chapter_body {
+    margin-top: 10px; /*min-height:1000px;*/
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.banji_select_bg {
+    width: 230px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 30px;
+    right: 30px;
+    z-index: 0;
+}
+
+.banji_select_height {
+    height: 35px;
+    position: relative;
+}
+
+.banji_select_box {
+    width: 170px;
+    height: 34px;
+    padding: 0 30px;
+    border-bottom: solid #f4f4f4 1px;
+    position: absolute;
+    right: 30px;
+    z-index: 1;
+}
+
+.banji_select_name {
+    display: block;
+    line-height: 34px;
+    color: #3A8BFF;
+    padding-right: 18px;
+    text-align: right;
+    position: relative;
+}
+
+.banji_select_name:before {
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.banji_select_aceive:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.banji_select_name_text {
+    display: block;
+    font-family: Microsoft YaHei;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.banji_select_con {
+    width: 240px;
+    padding-bottom: 6px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -120px;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+}
+
+.banji_search_display {
+    padding: 11px 0 5px;
+}
+
+.banji_search {
+    width: 212px;
+    height: 36px;
+    background: #F5F7FA;
+    border-radius: 36px;
+    margin: 0 auto;
+}
+
+.banji_search_input {
+    width: 154px;
+    height: 20px;
+    line-height: 20px;
+    padding: 8px 14px;
+    font-size: 14px;
+    color: #181E33;
+    border: 0 none;
+    background: none;
+    caret-color: #3A8BFF;
+}
+
+.banji_search_bnt {
+    width: 16px;
+    height: 16px;
+    margin: 10px 14px 0 0;
+    font-size: 16px;
+}
+
+.banji_search_bnt:hover {
+    opacity: .7;
+}
+
+.banji_list {
+    margin: 6px 2px 0;
+    max-height: 256px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banji_list ul {
+}
+
+.banji_list li {
+    padding: 10px 18px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #181E33;
+    cursor: pointer;
+}
+
+.banji_list li > div {
+    max-height: 40px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.banji_list li > div em {
+    color: #3A8BFF;
+}
+
+.banji_list li:hover {
+    background: #F7FAFC;
+}
+
+.banji_list li.active {
+    color: #3A8BFF;
+}
+
+.banji_list li em {
+    color: #3A8BFF;
+    font-style: normal;
+}
+
+.NoSearchResults {
+    padding: 80px 0 164px;
+    line-height: 18px;
+    color: #A8A8B3;
+    text-align: center;
+}
+
+.chapter_th {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #A8A8B3;
+    position: relative;
+    margin: 10px 30px 0 20px;
+}
+
+.chapter_th_mulu {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.chapter_th_renwu {
+    position: absolute;
+    top: 0;
+    right: 364px;
+}
+
+.chapter_th_zhuangtai {
+    position: absolute;
+    top: 0;
+    right: 144px;
+}
+
+.chapter_th_zhuangtai.en {
+    right: 164px;
+}
+
+.chapter_th_jindu {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.chapter_th .inputCheck {
+    margin: 1px 10px 0 0;
+    display: none;
+}
+
+.catalog_posit .inputCheck {
+    display: block;
+}
+
+.chapter_td {
+    margin: 10px 30px 0 20px;
+    position: relative;
+}
+
+.chapter_verticalLine {
+    width: 1px;
+    border-left: 1px dashed #F2F2F2;
+    position: absolute;
+    left: 46px;
+    top: 20px;
+    bottom: 24px
+}
+
+.chapter_unit {
+    padding: 6px 0;
+}
+
+.chapter_Thats_bnt {
+    cursor: pointer;
+}
+
+.chapter_item {
+    padding-right: 250px;
+    position: relative;
+}
+
+.catalog_title {
+    height: 40px;
+    padding: 0 374px 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.catalog_title:hover {
+    background: #F7FAFC;
+    border-radius: 6px;
+}
+
+.chapter_td .inputCheck {
+    margin: 11px 10px 0 0;
+    display: none;
+}
+
+.catalog_posit .inputCheck {
+    display: block;
+}
+
+.inputCheck {
+    width: 18px;
+    height: 18px;
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -195px/150px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.inputChecked {
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -215px/150px auto;
+}
+
+.inputCheck input {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    left: 30px;
+}
+
+.catalog_num {
+    height: 20px;
+    padding-left: 14px;
+    background: #D0D5DB;
+    border-radius: 10px;
+    margin: 10px 20px 0 0;
+}
+
+.catalog_num > span {
+    min-width: 16px;
+    height: 16px;
+    padding: 4px;
+    margin: -2px -4px 0 0;
+    background: #D0D5DB;
+    display: block;
+    border-radius: 20px;
+}
+
+.catalog_num > span > i {
+    min-width: 12px;
+    height: 16px;
+    padding: 0 2px;
+    line-height: 16px;
+    background: #FFF;
+    font-size: 12px;
+    font-family: Arial;
+    color: #A8A8B3;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+}
+
+.catalog_name {
+    line-height: 40px;
+    font-size: 14px;
+    color: #181E33;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.catalog_name a {
+    color: #181E33;
+}
+
+.catalog_name a:hover {
+    color: #3A4B87;
+}
+
+.catalog_sbar {
+    max-width: 80px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.catalog_edit {
+    position: absolute;
+    right: 264px;
+    top: 50%;
+    margin-top: -14px;
+}
+
+.catalog_setup {
+    line-height: 20px;
+    position: absolute;
+    right: 206px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.catalog_setup:hover {
+    opacity: .7;
+}
+
+.catalog_task {
+    width: 114px;
+    height: 20px;
+    position: absolute;
+    right: 42px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.catalog_points_yi, .catalog_points_er, .catalog_points_sa {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+    font-family: arial;
+    display: block;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(255, 182, 28, 0.57);
+    box-shadow: 0 2px 6px 0 rgba(255, 182, 28, 0.57);
+}
+
+.catalog_points_yi {
+    width: 20px;
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -120px/150px auto;
+}
+
+.catalog_points_er {
+    width: 28px;
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -145px/150px auto;
+}
+
+.catalog_points_sa {
+    width: 33px;
+    background: url(/mooc2-ans/images/courselist/chapter_icons.png) no-repeat 0 -170px/150px auto;
+}
+
+.catalog_upDown {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+.catalog_upDown:before {
+    display: block;
+    font-size: 12px;
+    color: #cad5e6;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.catalog_upDown_active:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.catalog_upDown:hover {
+    opacity: .7;
+}
+
+.catalog_level {
+    padding-left: 38px;
+    padding-top: 6px;
+    display: none;
+}
+
+.catalog_level ul {
+    padding-left: 16px;
+}
+
+.catalog_level li {
+    margin-top: 6px;
+}
+
+.catalog_level li .catalog_name {
+    font-weight: normal;
+}
+
+/*批量编辑左间距*/
+.catalog_posit .catalog_level {
+    padding-left: 66px;
+}
+
+.catalog_posit .chapter_verticalLine {
+    left: 74px;
+}
+
+/*hover显示*/
+.catalog_title .catalog_edit, .catalog_title .catalog_setup {
+    display: none;
+}
+
+.catalog_title:hover .catalog_edit, .catalog_title:hover .catalog_setup {
+    display: block;
+}
+
+/*列表横线*/
+.catalog_level li .chapter_item:before {
+    width: 20px;
+    left: -8px;
+    content: '';
+    display: block;
+    height: 1px;
+    border-top: 1px dashed #F2F2F2;
+    position: absolute;
+    top: 50%;
+    z-index: 8;
+}
+
+.catalog_level li li .chapter_item:before {
+    width: 36px;
+    left: -24px;
+}
+
+.catalog_level li li li .chapter_item:before {
+    width: 52px;
+    left: -40px;
+}
+
+.catalog_level li li li li .chapter_item:before {
+    width: 68px;
+    left: -56px;
+}
+
+.catalog_level li li li li li .chapter_item:before {
+    width: 84px;
+    left: -72px;
+}
+
+/*hover提示*/
+.catalog_jindu {
+    width: 40px;
+    height: 16px;
+    position: absolute;
+    right: 46px;
+    top: 50%;
+    margin-top: -8px;
+}
+.catalog_jindu .progress_text{
+    position: absolute;
+    display: inline-block;
+    width: 62px;
+    height: 16px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+    font-family: PingFang SC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+.catalog_ressbar {
+    width: 40px;
+    height: 16px;
+    background: #DFEEFF;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.catalog_ressbar.progress {
+    background: #7BB7FF;
+}
+
+.catalog_ressbar_width {
+    width: 50%;
+    height: 16px;
+    background: #3A8BFF;
+    border-radius: 16px;
+}
+.catalog_ressbar_width.barBorder{
+    height: 14px;
+    border: 1px solid #3084EA;
+}
+
+.catalog_state {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    position: absolute;
+    right: 182px;
+    top: 50%;
+    margin-top: -9px;
+    cursor: pointer;
+}
+
+.catalog_state:before {
+    color: #a3bad9;
+}
+
+.catalog_state .state_text {
+    line-height: 18px;
+    color: #6b89b3;
+    font-size: 14px;
+    white-space: nowrap;
+    position: absolute;
+    left: 25px;
+    top: 0;
+}
+
+.bntHoverTips {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-family: Microsoft YaHei;
+    font-size: 12px;
+    color: #FFF;
+    background: rgba(24, 30, 51, 0.80);
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    top: -51px;
+    z-index: 99;
+}
+
+.bntHoverTips i {
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: solid rgba(24, 30, 51, 0.80) 4px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 40px;
+    top: auto;
+    border-color: rgba(24, 30, 51, 0.80) transparent transparent transparent;
+}
+
+.catalog_tishi56 > .bntHoverTips {
+    width: 56px;
+    left: 50%;
+    margin-left: -28px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.catalog_tishi56:hover > .bntHoverTips {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.catalog_tishi80 > .bntHoverTips {
+    width: 80px;
+    left: 50%;
+    margin-left: -40px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.catalog_tishi80:hover > .bntHoverTips {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+.catalog_tishi99 > .bntHoverTips {
+    width: 99px;
+    left: 50%;
+    margin-left: -49px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.catalog_tishi99:hover > .bntHoverTips {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.catalog_tishi120 > .bntHoverTips {
+    width: 120px;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.catalog_tishi120:hover > .bntHoverTips {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.catalog_tishi240 > .bntHoverTips {
+    width: 240px;
+    left: 50%;
+    margin-left: -120px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.catalog_tishi240:hover > .bntHoverTips {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 1s, visibility 0.3s 0.3s;
+    -moz-transition: opacity 0.3s 1s, visibility 0.3s 0.3s;
+    -ms-transition: opacity 0.3s 1s, visibility 0.3s 0.3s;
+    -o-transition: opacity 0.3s 1s, visibility 0.3s 0.3s;
+    transition: opacity 0.3s 1s, visibility 0.3s 0.3s;
+}
+
+
+.catalog_tishi320>.bntHoverTips{
+    width:340px; left:50%; margin-left:-160px; opacity:0; visibility:hidden;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+
+.catalog_title:hover .bntHoverTips{
+    display:block; opacity:1; visibility:visible;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -moz-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -ms-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    -o-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+/*pop*/
+.popOverflow {
+    overflow: hidden;
+}
+
+.maskDiv, .maskDiv1 {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+.maskDiv.maskFadeOut, .maskDiv1.maskFadeOut {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.maskDiv, .maskDiv2 {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+.maskDiv.maskFadeOut, .maskDiv2.maskFadeOut {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+/*章节管理*/
+.popSetupKaifang {
+    line-height: 22px;
+    padding-top: 20px;
+    color: #333;
+}
+
+.popSetupBanji {
+    line-height: 22px;
+    padding-bottom: 20px;
+    color: #333;
+}
+
+.popSetupFile {
+    padding: 0 28px;
+    margin: 0 2px;
+    height: 348px;
+}
+
+.popSetupFile_row {
+    padding: 20px 0 0 28px;
+    position: relative;
+}
+
+.popSetupFile_row .popSetupFile_radio {
+    position: absolute;
+    left: 0;
+    top: 22px;
+}
+
+.popSetupFile_radio {
+    width: 18px;
+    height: 18px;
+    display: block;
+    overflow: hidden;
+    background: url(/mooc2-ans/images/check.png) no-repeat;
+}
+
+.popSetupFile_radioed {
+    background: url(/mooc2-ans/images/checked.png) no-repeat;
+}
+
+.popSetupFile_radio input {
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px
+}
+
+.popSetupFile_open {
+    padding: 20px 20px 0;
+    margin: 16px 0;
+    background: #F5F7FA;
+    border-radius: 4px;
+    min-height: 117px;
+}
+
+.popSetupFile_open .popSetup_check {
+    margin: 2px 10px 0 0;
+}
+
+.popSetupFile_open_all {
+    height: 20px;
+    font-weight: bold;
+}
+
+.popSetupFile_open_Mult {
+    margin-top: 22px;
+}
+
+.popSetupFile_open_Mult li {
+    margin: 0 30px 12px 0;
+    float: left;
+}
+
+.popSetup {
+    padding: 26px 30px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.popSetup .popSetup_check {
+    margin: 3px 10px 0 0;
+}
+
+.popSetup_check {
+    width: 18px;
+    height: 18px;
+    display: block;
+    overflow: hidden;
+    background: url(/mooc2-ans/images/dx_check.png) no-repeat;
+}
+
+.popSetup_check input {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+/*2019-08-29*/
+.popSetup_open {
+    height: 34px;
+    margin-top: 10px;
+}
+
+.popSetup_open_time {
+    width: 200px;
+    height: 34px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.popSetup_open_input {
+    width: 170px;
+    padding: 6px 14px;
+    height: 20px;
+    line-height: 20px;
+    border: solid #E1E1E5 1px;
+    font-size: 14px;
+    color: #181E33;
+    background: none;
+    border-radius: 4px;
+}
+
+.popSetup_open_icon {
+    width: 18px;
+    height: 18px;
+    background: url(/mooc2-ans/images/courselist/opan_time.png) no-repeat;
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 8px;
+}
+
+.popSetup_open_line {
+    width: 38px;
+    line-height: 34px;
+    color: #E5E5E5;
+    text-align: center;
+}
+
+.popSetup_open_input:focus {
+    outline: none;
+    border: 1px solid #CCDEF3;
+    box-shadow: 0 0 4px 0 #75BAFF;
+}
+
+.bottomDiv {
+    padding: 6px 0 10px 0;
+}
+
+.chapter_setup {
+    position: absolute;
+    left: 54px;
+}
+
+.chapter_setup_name {
+    font-size: 12px;
+    color: #3A8BFF;
+    cursor: pointer;
+}
+
+.chapter_setup_name:hover {
+    text-decoration: underline;
+}
+
+.chapter_setup_con {
+    background: #FFF;
+}
+
+.chapter_setup_padd {
+    height: 20px;
+    padding: 0 24px 20px 40px;
+    font-size: 14px;
+    color: #181E33;
+}
+
+.recycleBin {
+    font-size: 14px;
+    color: #91A0B5;
+    height: 40px;
+    margin-right: 30px;
+}
+
+.recycleBin:hover {
+    opacity: 0.7
+}
+
+.recycleBin .icon-delete {
+    background: url(/mooc2-ans/images/courselist/icon_recycle.png) no-repeat left center;
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.mui-switch {
+    width: 38px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    background: #D0D5DB;
+    border-radius: 14px;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none;
+    margin-left: 20px;
+}
+
+.mui-switch:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    background: #fff;;
+}
+
+.mui-switch.checked {
+    border-color: #3A8BFF;;
+    box-shadow: #09f 0 0 0 .16rem inset;
+    background-color: #09f;
+}
+
+.mui-switch.checked:before {
+    left: 20px;
+}
+
+.mui-switch.mui-switch-animbg {
+    transition: background-color ease 0.4s;
+}
+
+.mui-switch.mui-switch-animbg:before {
+    transition: left 0.3s;
+}
+
+.mui-switch.mui-switch-animbg.checked {
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    background-color: #3A8BFF;;
+    transition: border-color 0.4s, background-color ease 0.4s;
+}
+
+.mui-switch.mui-switch-animbg.checked:before {
+    transition: left 0.3s;
+}
+
+.mui-switch > input {
+    opacity: 0;
+}
+
+.catalog_posit .chapter_setup {
+    left: 82px;
+}
+
+.editTips {
+    font-size: 14px;
+    color: #999;
+    line-height: 36px;
+}
+
+.loadMore {
+    padding: 295px 0 0 0;
+    text-align: center;
+}
+
+.loadMore .loadText, .loadMore .loadingText, .loadMore .loadEndText {
+    display: none;
+    position: relative;
+    font-size: 14px;
+    color: #c7c8d4;
+    text-align: center;
+}
+
+.loadMore .loadText {
+    display: inline-block;
+    padding-right: 18px;
+    cursor: pointer;
+}
+
+.loadMore .loadText:after {
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: 0;
+    width: 13px;
+    height: 13px;
+    background: url(/mooc2-ans/images/loadMoreArrow.png) center center/13px auto no-repeat;
+}
+
+.loadMore .loadText:hover {
+    color: #ACBFD9;
+}
+
+.loadMore .loadingText {
+    padding-left: 26px;
+}
+
+.loadMore .loadingText:before {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: url(/mooc2-ans/images/loadMoreLoading.png) center center/18px auto no-repeat;
+    -webkit-transform: rotate(0deg) translateZ(0);
+    -webkit-transition-duration: 0ms;
+    -webkit-animation-name: loading;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+.loadMore.loading .loadingText {
+    display: inline-block;
+}
+
+.loadMore.loading .loadText, .loadMore.loading .loadEndText {
+    display: none;
+}
+
+.loadMore.loadEnd .loadEndText {
+    display: inline-block;
+}
+
+.loadMore.loadEnd .loadText, .loadMore.loadEnd .loadingText {
+    display: none;
+}
+
+@-webkit-keyframes loading {
+    from {
+        -webkit-transform: rotate(0deg) translateZ(0);
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0);
+    }
+}
+
+/*学生端 2019-10-21*/
+.xs_head_name {
+    line-height: 20px;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #646873;
+}
+
+.xs_head_name .catalog_points_yi {
+    margin-right: 10px;
+}
+
+.xs_head_tishi {
+    line-height: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #737B86;
+    background: #F2F5F7;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.xs_head_tishi .catalog_points_er {
+    width: 16px;
+    height: 16px;
+    margin: 2px 10px 2px 0;
+    background: url(/mooc2-ans/images/courselist/catalog_er.png) no-repeat center/16px;
+}
+
+.xs_table .chapter_th_renwu {
+    width: 42px;
+    right: 264px;
+}
+
+.xs_table .chapter_item {
+    padding-right: 0;
+}
+
+.xs_table .catalog_title {
+    padding-right: 524px;
+}
+
+.xs_table .catalog_task {
+    width: 264px;
+}
+
+.xs_table .catalog_task .icon_yiwanc {
+    right: auto;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(/mooc2-ans/images/courselist/chapter_wancheng.png) no-repeat center/20px;
+}
+
+.xs_table .catalog_task .catalog_jindu {
+    right: auto;
+    left: 0;
+    width: auto;
+    height: 20px;
+    margin-top: -10px;
+    cursor: default !important;
+}
+
+.xs_table .catalog_task .icon-dingshi，.catalog_task .icon-bukaifang, .xs_table .catalog_task .icon-chuangguan {
+    right: auto;
+    left: 0;
+    cursor: default !important;
+}
+
+.xs_table .NoClick .catalog_name, .xs_table .NoClick a {
+    color: #A8A8B3;
+    pointer-events: none;
+    cursor: default !important;
+}
+
+.xs_table .NoClick:hover {
+    background: none;
+}
+
+.xs_table .chapter_th {
+    margin-top: 20px;
+}
+
+/*Loading*/
+.Loading {
+    line-height: 18px;
+    font-size: 14px;
+    color: #A8A8B3;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.Loading img {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px 2px 0;
+    vertical-align: middle;
+}
+
+.DownloadaHover {
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+    width: 82px;
+    height: 40px;
+    background: rgba(24, 30, 51, 0.80);
+    border-radius: 4px;
+    margin-left: -28px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 1s, visibility 0s 0.3s;
+    transition: opacity 0.3s 1s, visibility 0s 0.3s;
+    transition: opacity 0.3s 1s, visibility 0s 0.3s;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+
+.DownloadaHover i {
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: solid rgba(24, 30, 51, 0.80) 4px;
+    position: absolute;
+    right: -8px;
+    top: 16px;
+    bottom: auto;
+    border-color: rgba(24, 30, 51, 0.80) transparent transparent transparent;
+    transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.bntHoverTips i.active {
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: solid rgba(24, 30, 51, 0.80) 4px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    bottom: 40px;
+    top: auto;
+    border-color: transparent transparent rgba(24, 30, 51, 0.80) transparent;
+}
+
+.DownloadaDiv:hover .DownloadaHover {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+    transition: opacity 0.1s 0.1s, visibility 0.1s 0.1s;
+}
+
+.statusTips {
+    padding-left: 10px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;
+    display: none;
+}
+
+.noOpen {
+    color: #646873
+}
+
+.opening {
+    color: #4FCF5A
+}
+
+.opened {
+    color: #F7704E
+}
+
+.chapter_head {
+    min-height: 36px;
+}
+
+.chapter_export {
+    line-height: 36px;
+    margin-right: 50px;
+}
+
+.chapter_export:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 6px 3px 0;
+    background: url(/mooc2-ans/images/courselist/chapter_export.png) no-repeat;
+    vertical-align: middle;
+}
+
+.chapter_export_div {
+    margin-right: 30px;
+    position: relative;
+}
+
+.chapter_export_icon {
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.chapter_export_icon:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 6px 3px 0;
+    background: url(/mooc2-ans/images/courselist/chapter_export.png) no-repeat;
+    vertical-align: middle;
+}
+
+.chapter_print_div {
+    margin-right: 30px;
+    position: relative;
+}
+.chapter_print_div:hover .chapter_print_name{
+    color:#3A8BFF;
+}
+.chapter_print_icon {
+    line-height: 36px;
+    cursor: pointer;
+}
+.chapter_print_name {
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #6B89B3;
+}
+.chapter_print_icon:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 2px 3px 0;
+    background: url(/mooc2-ans/images/courselist/chapter_print_befor.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.chapter_print_div:hover .chapter_print_icon:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 2px 3px 0;
+    background: url(/mooc2-ans/images/courselist/chapter_print_hover.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.chapter_import {
+    margin-right: 30px;
+    position: relative;
+}
+
+.chapter_import_name {
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.chapter_import_name:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 6px 3px 0;
+    background: url(/mooc2-ans/images/courselist/chapter_import.png) no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+.chapter_import_con {
+    width: 118px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    top: 32px;
+    z-index: 9999;
+    box-shadow: 0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+}
+
+.chapter_import_con.en {
+    width: 160px;
+    left: 50%;
+    margin-left: -80px;
+    text-align: center;
+}
+
+.chapter_import_con ul {
+    padding: 6px 0;
+}
+
+.chapter_import_con li {
+    line-height: 40px;
+    font-size: 14px;
+    color: #646873;
+    cursor: pointer;
+}
+
+.chapter_import_con li.active {
+    color: #3A8BFF;
+}
+
+.chapter_import_con li:hover {
+    background: #F7FAFC;
+    color: #3A8BFF;
+}
+
+.chapter_import_con li a {
+    padding: 0 20px;
+    color: #646873;
+    display: block;
+}
+
+.chapter_import_con li.active a {
+    color: #3A8BFF;
+}
+
+.chapter_import_con li a:hover {
+    background: #F7FAFC;
+    color: #3A8BFF;
+}
+
+.catalog_title .clicktitle {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.w100 {
+    display: inline-block;
+    width: 100%;
+}
+
+.chapter_item {
+    padding-right: 320px;
+}
+
+.catalog_title {
+    height: auto;
+    min-height: 24px;
+    padding-right: 0;
+}
+
+.chapter_unit > .chapter_item > .catalog_title > .catalog_name {
+    padding: 13px 20px 13px 0;
+}
+
+.catalog_level .catalog_title .catalog_name {
+    padding: 13px 20px 13px 0;
+    width: auto;
+    cursor: pointer;
+}
+
+.chapter_td .inputCheck {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.chapter_td .catalog_num {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.catalog_posit .catalog_num {
+    left: 48px;
+}
+
+.chapter_td .catalog_title {
+    padding-left: 74px;
+}
+
+.catalog_posit .catalog_title {
+    padding-left: 102px;
+}
+
+.catalog_posit .catalog_level li .catalog_title {
+    padding-left: 102px;
+}
+
+.catalog_posit .catalog_level li li .catalog_title {
+    padding-left: 118px;
+}
+
+.catalog_posit .catalog_level li li li .catalog_title {
+    padding-left: 134px;
+}
+
+.catalog_posit .catalog_level li li li li .catalog_title {
+    padding-left: 150px;
+}
+
+.catalog_posit .catalog_level li li li li li .catalog_title {
+    padding-left: 166px;
+}
+
+.catalog_name, .catalog_name a {
+    color: #131b26;
+}
+
+.catalog_name {
+    max-height: 48px;
+    width: 500px;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.chapter_item {
+    padding-right: 320px;
+}
+
+.catalog_level li .catalog_title {
+    min-height: 22px;
+}
+
+.catalog_level li .chapter_item .catalog_title {
+    background: none;
+}
+
+.catalog_level li .catalog_name {
+    width: 496px;
+    max-height: 44px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.catalog_level li li .catalog_name {
+    width: 480px;
+}
+
+.catalog_level li li li .catalog_name {
+    width: 464px;
+}
+
+.catalog_level li li li li .catalog_name {
+    width: 448px;
+}
+
+.catalog_level li li li li li .catalog_name {
+    width: 432px;
+}
+
+.catalog_level li .catalog_title {
+    padding-left: 74px;
+}
+
+.catalog_level li li .catalog_title {
+    padding-left: 90px;
+}
+
+.catalog_level li li li .catalog_title {
+    padding-left: 106px;
+}
+
+.catalog_level li li li li .catalog_title {
+    padding-left: 122px;
+}
+
+.catalog_level li li li li li .catalog_title {
+    padding-left: 138px;
+}
+
+.catalog_level {
+    padding-left: 0;
+}
+
+.catalog_level ul {
+    padding-left: 0;
+}
+
+.catalog_posit .catalog_level {
+    padding-left: 0;
+}
+
+.chapter_td .inputCheck {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -9px;
+}
+
+.chapter_td .catalog_num {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.catalog_posit .catalog_num {
+    left: 48px;
+}
+
+.chapter_td .catalog_title {
+    padding-left: 74px;
+}
+
+.catalog_posit .catalog_title {
+    padding-left: 102px;
+}
+
+.catalog_posit .catalog_level li .catalog_title {
+    padding-left: 102px;
+}
+
+.catalog_posit .catalog_level li li .catalog_title {
+    padding-left: 118px;
+}
+
+.catalog_posit .catalog_level li li li .catalog_title {
+    padding-left: 134px;
+}
+
+.catalog_posit .catalog_level li li li li .catalog_title {
+    padding-left: 150px;
+}
+
+.catalog_posit .catalog_level li li li li li .catalog_title {
+    padding-left: 166px;
+}
+
+.catalog_level li li .catalog_name {
+    width: 480px;
+}
+
+.catalog_level li .chapter_item:before {
+    width: 20px;
+    left: 46px;
+    content: '';
+    display: block;
+    height: 1px;
+    border-top: 1px dashed #DADFE6;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.catalog_level li li .chapter_item:before {
+    width: 36px;
+    left: 46px;
+}
+
+.catalog_level li li li .chapter_item:before {
+    width: 52px;
+    left: 46px;
+}
+
+.catalog_level li li li li .chapter_item:before {
+    width: 68px;
+    left: 46px;
+}
+
+.catalog_level li li li li li .chapter_item:before {
+    width: 84px;
+    left: 46px;
+}
+
+.catalog_posit .catalog_level li .chapter_item:before {
+    width: 20px;
+    left: 74px;
+    content: '';
+    display: block;
+    height: 1px;
+    border-top: 1px dashed #DADFE6;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+.catalog_posit .catalog_level li li .chapter_item:before {
+    width: 36px;
+    left: 74px;
+}
+
+.catalog_posit .catalog_level li li li .chapter_item:before {
+    width: 52px;
+    left: 74px;
+}
+
+.catalog_posit .catalog_level li li li li .chapter_item:before {
+    width: 68px;
+    left: 74px;
+}
+
+.catalog_posit .catalog_level li li li li li .chapter_item:before {
+    width: 84px;
+    left: 74px;
+}
+
+.catalog_edit {
+    left: 626px;
+    right: auto
+}
+
+.catalog_setup {
+    left: 710px;
+    right: auto;
+}
+
+.catalog_task {
+    width: auto;
+    height: 24px;
+    position: absolute;
+    left: 34px;
+    right: auto;
+    top: 50%;
+    margin-top: -12px;
+    z-index: 2;
+}
+
+.catalog_task .catalog_points_yi, .catalog_task .catalog_points_er, .catalog_task .catalog_points_sa {
+    min-width: 12px;
+    width: auto;
+    padding: 0 6px;
+    height: 24px;
+    line-height: 24px;
+    background: #ffb04e;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: none;
+}
+
+.catalog_posit .catalog_task {
+    left: 62px;
+}
+
+.xs_table .catalog_task {
+    width: 24px;
+}
+
+.xs_table .catalog_task .catalog_jindu {
+    height: 24px;
+}
+
+.xs_table .catalog_task .icon_yiwanc {
+    width: 24px;
+    height: 24px;
+    background: url(/mooc2-ans/images/courselist/icon_yiwanc.png) no-repeat center center/24px 24px;
+}
+
+.xs_table .catalog_task .icon-bukaifang, .xs_table .catalog_task .icon-dingshi, .xs_table .catalog_task .icon-chuangguan {
+    width: 24px;
+    height: 24px;
+    background: url(/mooc2-ans/images/courselist/icon-bukaifang.png) no-repeat center center/24px 24px;
+    left: 0;
+    right: auto;
+}
+
+.xs_table .catalog_task .icon-bukaifang:before {
+    display: none;
+}
+
+.xs_table .catalog_task .icon-bukaifang:before, .xs_table .catalog_task .icon-dingshi:before, .xs_table .catalog_task .icon-chuangguan:before {
+    content: ""
+}
+
+.xs_table .catalog_task .icon-bukaifang .bntHoverTips, .xs_table .catalog_task .icon-dingshi .bntHoverTips, .xs_table .catalog_task .icon-chuangguan .bntHoverTips {
+    left: -53px;
+    margin-left: 0;
+}
+
+.xs_table .catalog_task .icon-bukaifang .bntHoverTips i, .xs_table .catalog_task .icon-dingshi .bntHoverTips i, .xs_table .catalog_task .icon-chuangguan .bntHoverTips i {
+    left: 58px;
+    margin-left: 0;
+}
+
+.catalog_upDown:before {
+    color: #a3bad9;
+}
+
+.chapter_th_renwu {
+    display: none;
+}
+
+.xs_head_name .catalog_jindu {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    left: 0;
+    right: 0;
+    margin: 0 0 0 18px;
+}
+
+.fanyaChapter {
+    min-width: 1200px;
+}
+
+.maskDiv {
+    z-index: 999;
+}
+
+.xs_head_name .catalog_points_yi {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #ffb04e;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: none;
+}
+
+.banji_select_box {
+    z-index: 9;
+}
+
+.catalog_level li .catalog_name:hover, .catalog_level li .catalog_name:hover a {
+    color: #3A8BFF;
+}
+
+.catalog_title, .catalog_title:hover {
+    background: #F5F7FA;
+}
+
+.teacherCourseList .catalog_level li .chapter_item:after {
+    content: '';
+    display: block;
+    width: 270px;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.teacherCourseList .catalog_level li .chapter_item:hover:after {
+    background: #F0F6FF;
+    border-radius: 6px;
+}
+
+.catalog_level li .chapter_item:hover .catalog_title {
+    background: #F0F6FF;
+}
+
+.catalog_level li .chapter_item:before, .chapter_verticalLine {
+    border-color: #DADFE6;
+}
+
+.banji_select_bg {
+    width: 300px;
+    border-color: #F2F2F2;
+    background: none;
+}
+
+.banji_select_box {
+    width: 240px;
+}
+
+.chapter_th_jindu {
+    right: 70px;
+}
+
+.chapter_th_zhuangtai {
+    right: 208px;
+}
+
+.catalog_ressbar {
+    width: 62px;
+}
+
+.catalog_state {
+    right: 246px;
+    color: #6b89b3;
+    z-index: 2;
+}
+
+.catalog_state:before {
+    color: #a3bad9;
+}
+
+.catalog_jindu {
+    width: 62px;
+    right: 59px;
+    z-index: 2;
+}
+
+
+/*<!--2021-11-08 start-->*/
+.popSetupFile_row {
+    line-height: 20px;
+}
+
+.popSetupFile_row:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.popSetupFile_row .colorDeep {
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popSetupFile_row .colorShallow {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popSetup_open {
+    height: auto;
+}
+
+.popSetup_review {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 16px;
+}
+
+.popSetup_review .popSetup_check {
+    margin: 1px 10px 0 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popSetup_review .popSetup_check input {
+    width: 18px;
+    height: 18px;
+}
+
+.chapter_item .icon-review:before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(/mooc2-ans/images/courselist/catalog_review.png) no-repeat;
+    background-size: 18px 18px;
+}
+
+.xs_table .catalog_task .icon-review {
+    width: 24px;
+    height: 24px;
+    background: url(/mooc2-ans/images/courselist/icon-review.png) no-repeat center center/24px 24px;
+    left: 0;
+    right: auto;
+}
+
+.xs_table .catalog_task .icon-review:before {
+    display: none;
+}
+
+/*<!--2021-11-08 end-->*/
+
+/*<!--2022-12-08 start-->*/
+.warning-tips {
+    max-width: 440px;
+    margin: -3px 20px 0 0;
+    padding: 4px 10px;
+    background: #F2F4F7;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 0;
+}
+.warning-tips>img {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 8px 0 0;
+    width: 14px;
+    height: 14px;
+}
+.warning-tips>p {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 22px);
+    font-size: 12px;
+    line-height: 17px;
+    color: #474C59;
+}
+.warning-app-tips {
+    padding: .5rem .9375rem;
+    background: #FDF6EB;
+    font-size: .8125rem;
+    line-height: .9375rem;
+    color: #A18A66;
+}
+/*<!--2022-12-08 end-->*/
+
+
+.chapter_head:after{ content:''; display:block; clear:both; font-size:0; height:0; line-height:0; overflow:hidden;}
+
+.ddCheck{ width:18px; height:18px; overflow:hidden; position:relative; display:inline-block; vertical-align:middle;}
+.ddCheck input{ width:18px; height:18px; filter:alpha(opacity=0); opacity:0; cursor:pointer; display:block; position:absolute; left:0; top:0; z-index:2;}
+.ddCheck input+i{ width:18px; height:18px; background:url(/mooc2-ans/images/knowledgepoints/ico-check.png) no-repeat; overflow:hidden; position:absolute; left:0; top:0; z-index:1;}
+.ddCheck input:checked+i{ background-position:0 -20px;}
+.ddCheck input:disabled+i{ background-position:0 -40px;}
+.ddCheck_blue input:disabled+i{ background-position:0 -60px;}
+
+.ppRadio{ width:18px; height:18px; overflow:hidden; position:relative; display:inline-block; vertical-align:middle;}
+.ppRadio input{ width:18px; height:18px; filter:alpha(opacity=0); opacity:0; cursor:pointer; display:block; position:absolute; left:0; top:0; z-index:2;}
+.ppRadio input+i{ width:18px; height:18px; background:url(../images/chapter/ico-radio.png) no-repeat; overflow:hidden; position:absolute; left:0; top:0; z-index:1;}
+.ppRadio input:checked+i{ background-position:0 -20px;}
+.ppRadio input:disabled+i{ background-position:0 -40px;}
+
+.popKczj{}
+.popKczjNotes{ height:40px; line-height:40px; padding:0 28px;}
+.breadcrumb{ display:table;}
+.breadcrumb>li{ color:#a8a8b3; float:left;}
+.breadcrumb>li.active{ color:#A8A8B3;}
+.breadcrumb>li>a{ font-size:12px; color:#3A8BFF; display:block; max-width:100px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.breadcrumb>li>a:hover{ text-decoration:underline;}
+.breadcrumb>li+li { background:url(/mooc2-ans/images/courselist/breadcrumb.png) no-repeat 4px center; padding-left:14px;}
+
+.popKczj_head{ margin:0 30px; height:40px; background:#F5F6F7; border-radius:2px;}
+.popKczj_head_ul{ height:40px; line-height:40px; font-size:12px; color:#A8A8B3;}
+.popKczj_head_ul li{ padding:0 0 0 20px; display:table;}
+.popKczj_head_ul li .ddCheck{ margin:-3px 10px 0 0;}
+
+.popKczj_body{ margin-top:10px; height:392px; overflow:hidden;}
+.popKczj_body_ul{ margin:0 30px;}
+.popKczj_body_ul li .li_tree_entry{ position:relative; height:50px; line-height:50px; font-size:14px; color:#181E33; font-weight:600;}
+.popKczj_body_ul li li .li_tree_entry{ height:46px; line-height:46px; font-weight:400;}
+.popKczj_body_ul li .li_tree_main{ position:relative; height:50px;}
+.popKczj_body_ul li li .li_tree_main{ height:46px;}
+.popKczj_body_ul li .li_tree_text{ margin-left:28px; height:50px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.popKczj_body_ul li li .li_tree_text{ height:46px;}
+.popKczj_body_ul li .ddCheck{ position:absolute; left:0; top:50%; margin-top:-9px;}
+.popKczj_body_ul li .li_tree_entry:hover{ background:#F0F6FF;}
+.popKczj_body_ul li .li_tree_active,.li_tree_active:hover{ background:#F0F6FF;}
+.popKczj_body_ul li .li_tree_active:before{ width:100%; height:1px; content:''; display:block; background:#D9E9FF; position:absolute; top:-1px; left:0; right:0;}
+.popKczj_body_ul li .li_tree_active:after{ width:100%; height:1px; content:''; display:block; background:#D9E9FF; position:absolute; bottom:0px; left:0; right:0;}
+
+.popKczj_body_ul li .li_tree_entry{ padding-left:20px;}
+.popKczj_body_ul li li .li_tree_entry{ padding-left:48px;}
+.popKczj_body_ul li li li .li_tree_entry{ padding-left:76px;}
+.popKczj_body_ul li li li li .li_tree_entry{ padding-left:104px;}
+.popKczj_body_ul li li li li li .li_tree_entry{ padding-left:132px;}
+.popKczj_body_ul li li li li li li .li_tree_entry{ padding-left:150px;}
+
+.popMykcNotes{ height:36px; line-height:36px; padding:12px 30px;}
+.dataSearch{ width:200px; height:36px; border-radius:40px;position:relative;}
+.dataSearch_input{ width:122px; height:34px;font-size:14px; color:#131B26;  border:1px solid #D5D7D9;background:none;position:absolute;left:0;top:0;z-index:2;padding:0 62px 0 14px; border-radius:40px;font-family:microsoft Yahei;}
+.dataSearch_input:hover,.dataSearch:hover .dataSearch_input{border:1px solid #3a8bff;}
+.dataSearch_input:focus{outline:none;border:1px solid #3a8bff;}
+.dataSearch_bnt{ width:16px; height:16px;background:url(../images/chapter/ico-search.png) no-repeat 0 0; background-size:16px auto; border:0 none; cursor:pointer;position:absolute;right:14px;top:50%;margin-top:-8px;z-index:3;outline:none; overflow:hidden;}
+.dataSearch_input:hover+.dataSearch_bnt,.dataSearch_input:focus+.dataSearch_bnt,.dataSearch:hover .dataSearch_bnt{background-position:0 -20px; background-size:16px auto;}
+.dataSearch_dele{ width:14px; height:14px; background:url(../images/chapter/search_dele.png) no-repeat center/14px; display:block; position:absolute; right:40px; top:50%; margin-top:-7px; display:none; z-index:3;}
+@supports (caret-color:#3a8bff) {
+	.dataSearch_input{
+		color:#131B26;
+		caret-color:#3a8bff;
+	}
+}
+.dataSearch_con{ width:200px; background:#FFF; border-radius:6px; overflow:hidden; position:absolute; top:40px; left:50%; margin-left:-100px; z-index:9; -webkit-box-shadow:0 2px 12px 0 rgba(175,187,204,0.75); box-shadow:0 2px 12px 0 rgba(175,187,204,0.75);}
+.dataSearch_list{ padding:6px 0;}
+.dataSearch_list ul{ max-height:200px;}
+.dataSearch_list li{ line-height:40px; padding:0 20px; font-size:14px; color:#646873; cursor:pointer; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.dataSearch_list li:hover{ background:#F5F8FB; color:#3A8BFF;}
+.dataSearch_empty{ height:30px; line-height:30px; padding:0 20px; font-size:12px; background:#F5F6F7; text-align:right;}
+.dataSearch_empty a{ color:#3A8BFF;}
+.videoMore_return{ position:relative; margin:8px 20px 0 0; line-height:20px; font-size:14px; color:#91A0B5; display:inline-block;}
+.videoMore_return:before{ content:''; width:18px; height:18px; margin:0 6px 3px 0; background:url(/mooc2-ans/images/courselist/return_ico.png) no-repeat; display:inline-block; vertical-align:middle;}
+.videoMore_return:after{ position:absolute; right:-10px; top:0; content:''; display:block; width:1px; height:20px; background:#F9F9F9;}
+.videoMore_return:hover,.videoMore_add:hover{ opacity:.7;}
+
+.popMykc_zanwu{ padding-top: 192px; line-height:20px; font-size:14px; color:#8A8B99; text-align:center;}
+
+.popLoading{ padding-top:192px; line-height:20px; font-size:14px; color: #A8A8B3; text-align:center;}
+.popLoading img{ width:18px; height:18px; margin:0 10px 2px 0; vertical-align:middle;}
+
+.popMykc{}
+.popMykc_body{ height:410px; overflow:hidden;}
+.popMykc_ul{}
+.popMykc_ul li{ position:relative; padding:16px 30px; height:60px; border-radius:6px;}
+.popMykc_ul li:hover{ background:#F0F6FF;}
+.popMykc_ul li:before{ position:absolute; right:20px; top:50%; margin-top:-7px; content:''; display:block; width:14px; height:14px;}
+.popMykc_ul li .popMykc_content{ display:block; height:60px;}
+.popMykc_ul li img{ width:60px; height:60px; display:block; float:left; border-radius:8px; box-shadow:0px -1px 4px rgba(209, 209, 209, 0.20355);}
+.popMykc_ul li dl{ margin:0 48px 0 76px;}
+.popMykc_ul li dt{ display:table; width:100%; height:60px;}
+.popMykc_ul li .dl_middle{ display:table-cell; vertical-align:middle;}
+.popMykc_ul li .dl_text{ line-height:22px; font-size:16px; color:#181E33; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.popMykc_ul li em{ color:#3A8BFF;}
+
+.popTable{ height:468px; padding:0 2px;}
+.popTableNotes{ height:40px; line-height:40px; padding:0 28px;}
+.popTableHead{ height:40px; background:#F5F6F7; border-radius:2px;}
+.popTableBody{ height:386px; margin-top:2px;}
+
+.popTable_th{ height:40px; color:#A8A8B3; position:relative;}
+.popTable_th li{ height:40px; line-height:40px; float:left;}
+
+.popTable_td{ min-height:54px; position:relative;}
+.popTable_td:after{ content:''; display:block; clear:both; font-size:0; height:0; line-height:0; overflow:hidden;}
+.popTable_td:hover{ background:#F7FAFC;}
+.popTable_td li{ min-height:54px; line-height:54px; float:left;}
+
+.popYunpan_th_name{ width:434px; padding-left:60px;}
+.popYunpan_th_size{ width:170px;}
+.popYunpan_th_state{ width:170px;}
+
+.popYunpan_td_name{ width:494px;}
+.popYunpan_td_size{ width:170px;}
+.popYunpan_td_state{ width:170px;}
+.sort_up,.sort_down{ width:13px; height:13px; margin:0 0 3px 3px; *margin:0 0 0 3px; display:inline-block; overflow:hidden; vertical-align:middle; cursor:pointer;}
+.sort_up{ background:url(../images/data/sort_ico_up.png) no-repeat center/11px 13px;}
+.sort_down{ background:url(../images/data/sort_ico_down.png) no-repeat center/11px 13px;}
+.sort_up:hover,.sort_down:hover{ opacity:.7;}
+
+.popYunpan_th_check,.popYunpan_td_check{ width:18px; height:18px !important; min-height:18px !important; line-height:18px !important; display:block; position:absolute; left:28px; top:50%; margin-top:-9px;}
+
+.popYunpan_td_pic{ width:30px; height:30px !important; position:absolute; left:60px; top:50%; margin-top:-15px;}
+.popYunpan_td_pic img{ width:30px; height:30px; border-radius:3px; display:block;}
+.popYunpan_text{ width:300px; min-height:40px; line-height:20px; padding:8px 0 8px 104px; font-size:14px; color:#181E33; display:table; }
+.popYunpan_clamp{ display:table-cell; vertical-align:middle;}
+.popYunpan_line{ color:#181E33; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.popYunpan_hover:hover{ color:#3A4B87;}
+.popYunpan_active,.popYunpan_active:hover{ background:#f0f6ff;}
+.popYunpan_active:before{ width:100%; height:1px; content:''; display:block; background:#d6e8ff; position:absolute; top:-1px;}
+.popYunpan_active:after{ width:100%; height:1px; content:''; display:block; background:#d6e8ff; position:absolute; bottom:0px;}
+
+.popYunpan_dl{ display:table-cell; vertical-align:middle;}
+.popYunpan_dl dt{ line-height:20px; font-size:14px; color:#181E33; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.popYunpan_dl dd{ line-height:18px; font-size:12px; color:#A8A8B3;}
+
+.colorIn_zuohze{ color:#646873;}
+
+
+.popSetupFile_open .popSetup_check_V2 {
+    margin: 2px 10px 0 0;
+}
+
+.popSetup .popSetup_check_V2 {
+    margin: 3px 10px 0 0;
+}
+
+
+.popSetup_check_V2 {
+    width: 18px;
+    height: 18px;
+    display: block;
+    overflow: hidden;
+    background: url(/mooc2-ans/images/dx_check.png) no-repeat;
+}
+
+.popSetup_check_V2 input {
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+
+.popSetup_review .popSetup_check_V2 {
+    margin: 1px 10px 0 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popSetup_review .popSetup_check_V2 input {
+    width: 18px;
+    height: 18px;
+}
+
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+    visibility:hidden;
+    font-size:0;
+}
+.clearfix{
+    *zoom:1;
+}
+
+.mrPopSetupFile_row_inline .popSetupFile_row2{
+    float: left;
+    margin-right: 30px;
+}
+
+.mrPopSetupFile_open li {
+    margin: 0;
+    margin-bottom: 12px;
+    float: left;
+    width: 25%;
+    padding: 0 30px 12px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.mrPopSetupFile_open label{
+    float: left;
+    display: block;
+    width: 76px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mrPopSetupFile_open .popSetup_check_V2{
+    display: block;
+    float: left;
+    vertical-align: top;
+}
+.mr-bubble-wrap {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.mr-bubble-wrap .icon {
+    color: #ACB4BF;
+    margin-left: 10px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+.bg-alert-gray {
+    width: 16px;
+    height: 16px;
+    background: url(/mooc2-ans/images/tcmanage/manage/sprites.png) -122px -124px;
+}
+.mr-bubble-wrap .icon:hover {
+    background: url(/mooc2-ans/images/tcmanage/manage/sprites.png) -86px -124px;
+}
+.icon-bg {
+    display: inline-block;
+    vertical-align: middle;
+}
+.mr-bubble-wrap .bubble {
+    position: absolute;
+    display: none;
+    padding: 12px 16px;
+    background: rgba(24, 30, 51, 0.8);
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #FFF;
+    letter-spacing: 0;
+    z-index: 11;
+    min-width: 10px;
+    max-width: 270px;
+    bottom: 25px;
+    left: -22px;
+}
+.mr-bubble-wrap .bubble:after {
+    position: absolute;
+    content: "";
+    border-color: rgba(24, 30, 51, 0.8) transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 37px;
+    bottom: -5px;
+    margin-left: -4px;
+    margin-top: -2px;
+    width: 0;
+}
+.mr-bubble-wrap .icon:hover + .bubble {
+    display: inline-block;
+}
+.popSetupKaifang {
+    line-height: 22px;
+    padding-top: 20px;
+    color: #131B26;
+    font-weight: 500;
+}
+.mrSetupH3{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+.mrPopSetupFile_open{
+    display: none;
+}
+.mr-mask{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 2001;
+    /* 固定色/白色-80% */
+    background: rgba(255, 255, 255, 0.8);
+    /*background: rgba(33, 444, 255, 0.8);*/
+
+}
+.mr-mask .mr-hint{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+.popSetupFile_row2 {
+    padding: 20px 0 0 28px;
+    position: relative;
+}
+
+.popSetupFile_row2 .popSetupFile_radio {
+    position: absolute;
+    left: 0;
+    top: 22px;
+}
+
+.popSetupFile_row2 {
+    line-height: 20px;
+}
+
+.popSetupFile_row2:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.popSetupFile_row2 .colorDeep {
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popSetupFile_row2 .colorShallow {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.popSetupKaifang{ line-height:22px; padding-top:20px; color:#333;}
+.popSetupBanji{ line-height:22px; padding-bottom:20px; color:#333;}
+.popSetupFile{ padding:0 28px; margin:0 2px; height:348px;}
+.popSetupFile_row2{ padding:20px 0 0 28px; position:relative;}
+.popSetupFile_row2 .popSetupFile_radio_2{ position:absolute; left:0; top:22px;}
+.popSetupFile_radio_2{ width:18px; height:18px; display:block; overflow:hidden; background:url(/mooc2-ans/images/check.png) no-repeat;}
+.popSetupFile_radioed2{ background:url(/mooc2-ans/images/checked.png) no-repeat;}
+.popSetupFile_radio_2 input{filter:alpha(opacity=0); opacity:0; position:absolute; left:20px;}
+.popSetupFile_open{ padding:20px 20px 0; margin:16px 0; background:#F5F7FA; border-radius:4px; min-height:75px;}
+.popSetupFile_open .popSetup_check_V2{ margin:2px 10px 0 0;}
+.popSetupFile_open_all{ height:20px; font-weight:bold;}
+.popSetupFile_open_Mult{ margin-top:22px;}
+.popSetupFile_open_Mult li{ margin:0 30px 12px 0; float:left;}
+
+.popSetup_checked {
+    background: url(/mooc2-ans/images/dx_checked.png) no-repeat;
+}
+.bgInput{
+    background: url(/mooc2-ans/images/tcmanage/dx_check_disable.png);
+}
+.catalog_title .newCatalog_name .clicktitle{white-space: normal;overflow: hidden; text-overflow: ellipsis;display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.chapter_unit > .chapter_item > .catalog_title > .newCatalog_name,.fanyaChapterWhite .chapter_unit .catalog_title{width:auto; padding-right:60px;}
+.btnBgBox{position:absolute;background: linear-gradient(to right,rgba(240, 246, 255, 0.9), rgba(240, 246, 255, 1));;right:0;top:0;height:100%;width:730px;display:none;}
+.teacherCourseList .catalog_title:hover .btnBgBox{display:block}
+.btnBgBox .catalog_edit{left:20px}
+.btnBgBox .catalog_setup{left:92px}
+@media screen and (max-width: 1440px) {
+    .btnBgBox {width:270px}
+}
+@media screen and (max-width: 1366px) {
+    .btnBgBox {width:196px}
+}
+@media screen and (max-width: 1200px) {
+    .btnBgBox {width:140px}
+}
+
+.chapter_task{line-height:36px}
+.chaper_bubble{position:relative;height:36px;margin-left:10px;margin-right:15px}
+.chaper_bubble i{display:inline-block;width:16px;height:16px;background:#ACB4BF;margin:1px;line-height:16px;vertical-align:middle;border-radius:100%;text-align:center;color:#fff;font-size:12px;cursor:pointer}
+.chaper_bubble:hover i{background:#3A8BFF}
+.chapter_task .chaper_bubble i{margin-top:9px}
+.bubbleBx{display:none;width:240px;height:48px;background:rgba(24, 30, 51, 0.8);position:absolute;bottom:36px;left:-26px;font-size:12px;line-height:17px;color:#fff;border-radius:4px;padding:6px 8px;box-sizing:border-box}
+.bubbleBx:after{content:'';position:absolute;border:solid 6px transparent;border-top:solid 6px rgba(24, 30, 51, 0.8);left:28px;bottom:-12px}
+.chaper_bubble:hover .bubbleBx{display:block;}
+.chaper_switch{width:28px;height:16px;border-radius:36px;position:relative;background:#D0D5DB;margin-top:9px;cursor:pointer}
+.chaper_switch:before{content:'';width:12px;height:12px;background:#fff;border-radius:100%;position:absolute;left:2px;top:2px}
+.reminBtn{margin-left:14px;cursor:pointer;display:none}
+.on{background:#3A8BFF}
+.on:before{left:auto;right:2px}
+
+.taskDetailBx{height:350px;overflow:auto}
+.taskItem{margin:20px 0 10px 0;padding:0 30px}
+.taskItem h3{font-size:16px;line-height:22px;font-weight:bold}
+.taskItem_line{margin-top:16px;line-height:34px;font-size:14px;color:#474C59}
+.timeinput{border:solid 1px #D4D6D9;border-radius:4px;width:80px;height:34px;line-height:34px;font-size:14px;text-align:center;margin:0 10px}
+.taskItem_line .chaper_switch{margin-left:10px;width:36px;height:20px;margin-top:7px}
+.taskItem_line .chaper_switch:before{width:16px;height:16px}
+.repeat-task{background:#F5F7FA;padding:16px 20px;margin-top:-10px}
+.repeat-task .chaper_bubble{margin-top:8px;height:auto}
+.repeat-task .chaper_bubble .bubbleBx{bottom:26px}
+.marTop30{margin-top:30px}
+.taskFOnt{width:45px;line-height:34px;color:#474C59;font-size:14px}
+.taskRightBx{width:calc(100% - 45px)}
+.inputStyle{width:100%;padding:0 14px;line-height:32px;}
+.textStyle{padding:14px;height:120px;box-sizing:border-box;width:100%;font-size:14px;line-height:20px;font-family:microSoft YaHei;border:solid 1px #D4D6D9}
+.borderStyle{border:solid 1px #D4D6D9;color:#131B26;border-radius:4px;box-sizing:border-box}
+.borderStyle:hover,.borderStyle:focus{border-color:#3A8BFF}
+.errorTips .borderStyle{border-color:#F36161}
+.errorFont{color:#F36161;font-size:12px;padding:0 14px;line-height:17px;margin-top:4px}
+
+.chapter_textbook{ line-height:36px; margin-right:30px; color:#6B89B3;}
+.chapter_textbook:before{ content:''; display:inline-block; width:14px; height:14px; margin:0 6px 3px 0; background:url(/mooc2-ans/images/ico-bnt-textbook.png) no-repeat; vertical-align:middle;}
+.pop_textbook{ padding:30px; min-height:360px;}
+.pop_textbook_left{ width:140px;}
+.pop_textbook_pic{ width:140px;}
+.pop_textbook_pic img{ width:140px; height:186px; border-radius:6px; display:block;}
+.pop_textbook_right{ width:420px;}
+.pop_textbook_h2{ line-height:30px; font-size:16px; color:#131B26; font-weight:600;}
+.pop_textbook_dl{ margin-top:14px; padding:14px 20px; background:#F7F8FA; line-height:28px; font-size:14px; border-radius:4px;}
+.pop_textbook_dl dt{ margin-bottom:4px; color:#474C59; font-weight:600;}
+.pop_textbook_dl dd{ color:#8A8B99;}
+.titbold{ font-weight:600;}

@@ -1,0 +1,825 @@
+.popDiv .popHead .popClose {
+  position: relative;
+}
+
+.popDiv .popHead .popClose img {
+  position: absolute;
+}
+
+.popDiv .popHead .icon-daya {
+  display: inline-block;
+  width: 97px;
+  height: 22px;
+  background: url("/mooc2-ans/images/work/icon-logo-daya-big.png") no-repeat;
+  background-size: 100%;
+  position: relative;
+  top: 4px;
+}
+
+.popDiv .checking-content-dialog .tab {
+  background: #f2f4f7;
+  height: 40px;
+  padding: 10px 40px 0;
+}
+
+.popDiv .checking-content-dialog .tab ul li {
+  height: 40px;
+  float: left;
+  font-size: 16px;
+  color: #8a8b99;
+  line-height: 40px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.popDiv .checking-content-dialog .tab ul li.active {
+  color: #3a8bff;
+  background: #ffffff;
+  border-radius: 8px 8px 0 0;
+}
+
+.popDiv .checking-content-dialog .tab ul li.special .icon {
+  display: inline-block;
+  width: 80px;
+  height: 18px;
+  background: url("/mooc2-ans/images/work/icon-logo-daya.png") no-repeat;
+  background-size: 100%;
+  position: relative;
+  top: 5px;
+}
+
+.popDiv .checking-content-dialog .step {
+  text-align: center;
+  height: 490px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 65px;
+  position: relative;
+}
+
+.popDiv .checking-content-dialog .step .color1 {
+  color: #3B8CFF;
+  cursor: pointer;
+}
+
+.popDiv .checking-content-dialog .step .filter {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popDiv .checking-content-dialog .step .filter label {
+  font-size: 14px;
+  text-align: left;
+  color: #131b26;
+  line-height: 34px;
+  margin-top: 30px;
+}
+
+.popDiv .checking-content-dialog .step .filter .number {
+  width: 80px;
+  height: 34px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  line-height: 34px;
+  border: 1px solid #d4d6d9;
+  border-radius: 5px;
+  margin: 0 10px;
+  margin-top: 30px;
+}
+
+.popDiv .checking-content-dialog .step .filter .number:focus {
+  border-color: #3a8bff;
+}
+
+.popDiv .checking-content-dialog .step .filter .select-wrap {
+  margin: 30px 30px 0 10px;
+}
+
+.popDiv .checking-content-dialog .step .filter .select-wrap .select-inp {
+  border: 1px solid #d4d6d9;
+}
+
+.popDiv .checking-content-dialog .step .filter .select-wrap .select-inp:hover {
+  border-color: #3a8bff;
+}
+
+.popDiv .checking-content-dialog .step .filter span {
+  line-height: 34px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #131b26;
+  margin-right: 30px;
+}
+
+.popDiv .checking-content-dialog .step .filter .btn-div {
+  margin-top: 30px;
+}
+
+.popDiv .checking-content-dialog .step .filter .btn-div button {
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.popDiv .checking-content-dialog .step .line1 {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.popDiv .checking-content-dialog .step .checking-list {
+  margin-top: 12px;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .crumbs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  padding: 12px 30px;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .crumbs a {
+  color: #3b8cff;
+  cursor: pointer;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .crumbs span {
+  font-size: 14px;
+  color: #8a8b99;
+  margin-right: 6px;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .crumbs .arrow-right {
+  display: inline-block;
+  width: 6px;
+  height: 20px;
+  background: url("/mooc2-ans/images/arrow12X20.png") center center no-repeat;
+  background-size: 100%;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .crumbs a {
+  font-size: 14px;
+  color: #3a8bff;
+  margin-right: 6px;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .crumbs .marginAuto {
+  margin-left: auto;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-head th {
+  background: #f5f6f7;
+  height: 40px;
+  font-size: 12px;
+  color: #a8a8b3;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-head .sort {
+  font-size: 14px;
+  color: #cad5e6;
+  vertical-align: middle;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-head .sort:hover {
+  color: #3a8bff;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body {
+  margin-top: 10px;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body tr:not(.current):hover td {
+  background: #f7fafc;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body tr:not(.current):nth-of-type(2) td .bubble {
+  bottom: auto;
+  top: 21px;
+  z-index: 2;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body tr:not(.current):nth-of-type(2) td .bubble:after {
+  top: -3px;
+  -webkit-transform: translateX(-50%) rotate(180deg);
+  -ms-transform: translateX(-50%) rotate(180deg);
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body th {
+  height: 0;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body td {
+  height: 40px;
+  padding-left: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 14px;
+  color: #474c59;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body td a {
+  color: #3A8BFF;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body .current {
+  position: relative;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body .current td {
+  position: relative;
+  background: #f0f6ff;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body .current td:before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: #d6e8ff;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body .current td:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: #d6e8ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body .null-data td {
+  font-size: 14px;
+  color: #a8a8b3;
+  text-align: center;
+  padding: 150px 0 0;
+  background: #ffffff !important;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body .null-data:hover td {
+  background: #ffffff !important;
+}
+
+.popDiv .checking-content-dialog .step .checking-list .ui-table-body .nogroup {
+  color: #f7704e;
+}
+
+.popDiv .checking-content-dialog .step .bottom-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 14px 30px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.popDiv .checking-content-dialog .step .bottom-div span {
+  font-size: 14px;
+  color: #8a8b99;
+  height: 36px;
+  line-height: 36px;
+}
+
+.popDiv .checking-content-dialog .step .bottom-div button {
+  margin-left: auto;
+}
+
+.popDiv .checking-content-dialog .step .bottom-div-fixed {
+  position: fixed;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 30px;
+}
+
+.popDiv .checking-content-dialog .step .subject-change {
+  padding: 25px 30px 0;
+  margin-bottom: -5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popDiv .checking-content-dialog .step .subject-change p {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #181E33;
+}
+
+.popDiv .checking-content-dialog .step .subject-change p span {
+  color: #8A8B99;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num {
+  position: relative;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num span {
+  font-size: 14px;
+  color: #3b8cff;
+  font-weight: 400;
+  display: inline-block;
+  width: 58px;
+  line-height: 30px;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num span em {
+  font-style: normal;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num span i {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("/mooc2-ans/images/work/icon-arrow-blue.png") no-repeat;
+  background-size: 100%;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num span:hover {
+  background: #f5f7fa;
+  border-radius: 4px;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num .num-list {
+  position: absolute;
+  display: none;
+  top: 36px;
+  width: 90px;
+  max-height: 308px;
+  padding: 6px 0;
+  background: #ffffff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+          box-shadow: 0px 2px 12px 0px rgba(175, 187, 204, 0.75);
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num .num-list ul li {
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 20px;
+  color: #474c59;
+  cursor: pointer;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num .num-list ul li:hover {
+  background: #f0f6ff;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num .num-list ul li.active {
+  color: #3a8bff;
+}
+
+.popDiv .checking-content-dialog .step .subject-change .num.active span i {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.popDiv .checking-content-dialog .step .answers-scroll {
+  max-height: 96px;
+}
+
+.popDiv .checking-content-dialog .step3 {
+  text-align: left;
+}
+
+.popDiv .checking-content-dialog .tips {
+  font-size: 14px;
+  text-align: center;
+  color: #8a8b99;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.popDiv .checking-content-dialog .tips1 {
+  text-align: left;
+  font-size: 14px;
+  color: #8a8b99;
+  line-height: 20px;
+  padding: 0 70px;
+  margin-top: 20px;
+}
+
+.popDiv .checking-content-dialog .tips1 .pStyle {
+  margin: 10px 0;
+}
+
+.popDiv .checking-content-dialog .tips1 .error {
+  color: #f33131;
+}
+
+.popDiv .checking-content-dialog .subject-name {
+  text-align: left;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 20px;
+  padding: 30px 30px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.popDiv .checking-content-dialog .subject-name.noborder {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.popDiv .checking-content-dialog .subject-name p {
+  color: #131b26;
+  font-size: 14px;
+}
+
+.popDiv .checking-content-dialog .subject-name p span {
+  color: #8A8B99;
+}
+
+.popDiv .checking-content-dialog .padding30 {
+  padding: 0 30px;
+}
+
+.popDiv .checking-content-dialog .marginTop50 {
+  margin-top: 50px;
+}
+
+.popDiv .checking-content-dialog .marginTop60 {
+  margin-top: 60px;
+}
+
+.popDiv .checking-content-dialog .marginTop30 {
+  margin-top: 30px;
+}
+
+.popDiv .checking-content-dialog .marginTop124 {
+  margin-top: 124px;
+}
+
+.popDiv .checking-content-dialog .marginBottom60 {
+  margin-bottom: 60px;
+}
+
+.popDiv .checking-content-dialog .marginBottom30 {
+  margin-bottom: 30px;
+}
+
+.popDiv .checking-content-dialog .btn-new-css-short {
+  cursor: pointer;
+  height: 36px;
+  border: none;
+  background: -webkit-linear-gradient(310deg, #6cc7ff 0%, #5a33ff 100%);
+  background: -o-linear-gradient(310deg, #6cc7ff 0%, #5a33ff 100%);
+  background: linear-gradient(140deg, #6cc7ff 0%, #5a33ff 100%);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(39, 125, 255, 0.3);
+          box-shadow: 0px 3px 12px 0px rgba(39, 125, 255, 0.3);
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 18px;
+  outline: none;
+}
+
+.popDiv .checking-content-dialog .btn-new-css-long {
+  cursor: pointer;
+  height: 44px;
+  border: none;
+  background: -webkit-linear-gradient(310deg, #6cc7ff 0%, #5a33ff 100%);
+  background: -o-linear-gradient(310deg, #6cc7ff 0%, #5a33ff 100%);
+  background: linear-gradient(140deg, #6cc7ff 0%, #5a33ff 100%);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 3px 12px 0px rgba(39, 125, 255, 0.3);
+          box-shadow: 0px 3px 12px 0px rgba(39, 125, 255, 0.3);
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 56px;
+  outline: none;
+}
+
+.popDiv .checking-content-dialog .btn-new-css-long.disabled {
+  background: -webkit-linear-gradient(310deg, #ace7ff 0%, #ab99ff 100%);
+  background: -o-linear-gradient(310deg, #ace7ff 0%, #ab99ff 100%);
+  background: linear-gradient(140deg, #ace7ff 0%, #ab99ff 100%);
+  border-radius: 22px;
+  -webkit-box-shadow: 0px 4px 11px 0px rgba(86, 82, 255, 0.18);
+          box-shadow: 0px 4px 11px 0px rgba(86, 82, 255, 0.18);
+}
+
+.popDiv .checking-content-dialog .positionRelative {
+  position: relative;
+}
+
+.popDiv .checking-content-detail .subject-name {
+  height: 80px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 20px;
+  padding: 30px 30px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.popDiv .checking-content-detail .subject-name p {
+  color: #131b26;
+  font-size: 14px;
+}
+
+.popDiv .checking-content-detail .subject-name p span {
+  color: #8A8B99;
+}
+
+.popDiv .checking-content-detail .student-answers {
+  position: relative;
+  height: 460px;
+}
+
+.popDiv .checking-content-detail .student-answers .similarity-tips {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+  left: 50%;
+  top: -1px;
+  margin-left: -40px;
+  z-index: 200;
+}
+
+.popDiv .checking-content-detail .student-answers .similarity-tips h2 {
+  font-size: 28px;
+  font-family: D-DIN;
+  font-weight: 700;
+  color: #f33131;
+  line-height: 32px;
+  margin-top: 13px;
+}
+
+.popDiv .checking-content-detail .student-answers .similarity-tips p {
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f33131;
+  line-height: 20px;
+}
+
+.popDiv .checking-content-detail .student-answers .width2 {
+  width: 50%;
+  height: 460px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.popDiv .checking-content-detail .student-answers .width2.left-width {
+  padding: 30px 50px 30px 30px;
+}
+
+.popDiv .checking-content-detail .student-answers .width2.right-width {
+  padding: 30px 30px 30px 50px;
+}
+
+.popDiv .checking-content-detail .student-answers .width2.left-border {
+  border-left: 1px solid #f2f2f2;
+}
+
+.popDiv .checking-content-detail .student-answers .width2 .student-name {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #131b26;
+  line-height: 25px;
+  margin: 15px 0 4px 0;
+}
+
+.popDiv .checking-content-detail .student-answers .width2 .student-num {
+  color: #8a8b99;
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popDiv .checking-content-detail .student-answers .width2 .answers-detail {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  color: #131b26;
+  line-height: 24px;
+}
+
+.popDiv .checking-content-detail .student-answers .width2 .answers-detail span {
+  color: #F33131;
+}
+
+.popDiv .checking-content-detail .student-answers .width2 .answers-scroll {
+  height: 400px;
+}
+
+.popDiv .join-course-tips .content-div {
+  padding: 22px 32px 30px;
+  font-size: 0;
+}
+
+.popDiv .join-course-tips .content-div .avatar {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.popDiv .join-course-tips .content-div .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.popDiv .join-course-tips .content-div .text-box {
+  margin-left: 107px;
+  padding: 14px 0;
+  min-height: 80px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.popDiv .join-course-tips .content-div .text-box .course-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #131b26;
+  line-height: 22px;
+}
+
+.popDiv .join-course-tips .content-div .text-box .name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8a8b99;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+.popDiv .join-course-tips .bottom-div {
+  width: 100%;
+  padding: 17px 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.popDiv .join-course-tips .bottom-div .btn_118 {
+  display: inherit;
+  cursor: pointer;
+  width: 118px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border: none;
+  background: -webkit-linear-gradient(310deg, #6cc7ff 0%, #5a33ff 100%);
+  background: -o-linear-gradient(310deg, #6cc7ff 0%, #5a33ff 100%);
+  background: linear-gradient(140deg, #6cc7ff 0%, #5a33ff 100%);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 11px 0px rgba(86, 82, 255, 0.3);
+          box-shadow: 0px 4px 11px 0px rgba(86, 82, 255, 0.3);
+  font-size: 14px;
+  color: #ffffff;
+  outline: none;
+  margin-left: auto;
+}
+
+.popDiv .join-course-tips .bottom-div .btn_118:hover {
+  background: -webkit-linear-gradient(310deg, #89d9ff 0%, #6c4aff 100%);
+  background: -o-linear-gradient(310deg, #89d9ff 0%, #6c4aff 100%);
+  background: linear-gradient(140deg, #89d9ff 0%, #6c4aff 100%);
+}
+
+.popDiv .join-course-tips .bottom-div .btn_118:active {
+  background: -webkit-linear-gradient(132deg, #69cafa 0%, #7b66f1 100%);
+  background: -o-linear-gradient(132deg, #69cafa 0%, #7b66f1 100%);
+  background: linear-gradient(318deg, #69cafa 0%, #7b66f1 100%);
+}
+
+.popDiv .course-content-dialog .reminder {
+  background: #FFF7EB;
+  padding: 15px 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #F28C24;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.popDiv .course-content-dialog .course-details {
+  max-height: 428px;
+  padding: 24px 30px 30px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.popDiv .course-content-dialog .course-details li {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.popDiv .course-content-dialog .course-details li:first-child {
+  margin-top: 0;
+}
+
+.popDiv .course-content-dialog .course-details li .label {
+  float: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #131B26;
+  margin-right: 20px;
+}
+
+.popDiv .course-content-dialog .course-details li .right-box {
+  float: left;
+  padding: 2px 0;
+  width: 480px;
+  font-size: 14px;
+}
+
+.popDiv .course-content-dialog .course-details li .right-box .text-box {
+  margin-top: 20px;
+}
+
+.popDiv .course-content-dialog .course-details li .right-box .text-box:first-child {
+  margin-top: 0;
+}
+
+.popDiv .course-content-dialog .course-details li .right-box .text1 {
+  color: #131B26;
+}
+
+.popDiv .course-content-dialog .course-details li .right-box .text2 {
+  color: #8A8B99;
+  margin-top: 4px;
+}
+
+.popDiv .course-content-dialog .bottom-div {
+  position: absolute;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 17px 30px;
+  -webkit-box-shadow: 0px -1px 0px rgba(240, 240, 240, 0.5);
+          box-shadow: 0px -1px 0px rgba(240, 240, 240, 0.5);
+  text-align: center;
+}
+
+.popDiv .course-content-dialog .bottom-div .start-study {
+  cursor: pointer;
+  display: inline-block;
+  background: -webkit-linear-gradient(310.02deg, #6CC7FF -38.96%, #5A33FF 175.13%);
+  background: -o-linear-gradient(310.02deg, #6CC7FF -38.96%, #5A33FF 175.13%);
+  background: linear-gradient(139.98deg, #6CC7FF -38.96%, #5A33FF 175.13%);
+  -webkit-box-shadow: 0px 3px 12px rgba(39, 125, 255, 0.3);
+          box-shadow: 0px 3px 12px rgba(39, 125, 255, 0.3);
+  border-radius: 20px;
+  padding: 8px 18px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.course-pop {
+  width: 640px;
+}
+简 悦

@@ -1,0 +1,1276 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>推荐</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/css/pop.css"/>
+	<link href="/static/css/iconstyle.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/rqstyle.css">
+    <link href="/static/css/wrongQuestion.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/viewer.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/kctl.css"/>
+    <link type="text/css" rel="stylesheet" href="/static/css/questionList.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/task_pop.css">
+<script type="text/javascript">
+    I18N_Config = {
+        'excelExport': 'Excel模板下载',
+        'dragFile':'将excel、ti文件拖拽到此区域',
+        'templateImport':'模板导入',
+        'allQue':'全部题目',
+        'chapterTotal':'共',
+        'SJT':'题',
+        'fileAndQue':'文件夹/题目',
+        'createdTime':'创建时间',
+        'rename':'重命名',
+        'move':'移动到',
+        'Tips':'提示',
+        'Tip':'提示',
+        'batchRecover':'批量还原题库？',
+        'cancle':'取消',
+        'delete':'删除',
+        'recover':'恢复',
+        'batchDelete':'批量删除题目？',
+        'confirmDelete':'确认删除？',
+        'inputContent':'请输入试题的题干',
+        'enterTheQuestion':'输入题干',
+        'createTime': '创建时间',
+        'or': '或',
+        'more': '更多',
+        'edit': '编辑',
+        'newQuestionType': '新建题型',
+        'restore': '恢复',
+        'recoverQuestion': '还原题库？',
+        'deleteLittleQue': '您确定删除该小题吗？',
+        'enterQueContent': '请输入本题的题干',
+        'unCheckAll': '取消全选',
+        'selectAll3': '全选',
+        'enteroption': '请输入选项的内容',
+        'choiceNotSame': '选项不能重复',
+        'choiceNoAnswer': '请设置正确答案',
+        'courseTip4':'删除后学生将无法学习课程，确认删除？',
+        'exit':'退出',
+        'CourseTip6':'退出后，将无法查看和使用自己在本课私有文件夹下的所有资料。确认退出教学团队？',
+        'contentNotSame':'题干内容不能相同',
+        'allQuestionTypes':'全部题型',
+        'allCourseLabel':'全部标签',
+        'allCourse':'全部课程',
+        'checkAllTopic':'全选知识点',
+        'QuitTip':'退出',
+        'haveCheck': '已选',
+        'Refresh': '刷新',
+        'drogsort': '拖动可排序',
+        'RefreshSuccess': '刷新成功',
+        'tiao': '条',
+        'smartTip1': '条数据，成功导入',
+        'smartTip2': '失败导入',
+        'smartTip3': '条，第',
+        'smartTip4': '条未导入，请检查这些试题的格式是否正确',
+        'smartTip5': '选项重复题目',
+        'smartTip6': '条选项重复，我们将过滤选项重复题目',
+        'smartTip7': '重复题目',
+        'smartTip8': '条内容重复，我们将过滤重复题目，请悉知',
+        'individual': '个',
+        'allData':'全部文件',
+        'total':'共',
+        'single':'个',
+        'correctRate':'正确率',
+        'correct':'正确',
+        'doWrong':'错误',
+        'subScorePercent':'主观题平均分',
+        'scorePercent':'得分率',
+        'halfCorrect':'半对',
+        'rightScorePercent':'正确率/得分率',
+        'statisticalDetails':'统计详情',
+        'people':'人',
+        'score':'分',
+        'percent':'百分比',
+        'topicwork':'题目',
+        'questionContent':'题目',
+        'Nofilesyet':'暂无文件',
+        'newKnowledgePoints':'新建知识点',
+        'dataTopicTip':'请先完成当前知识点操作',
+        'editor':'编辑',
+        'addtopic':'添加同级知识点',
+        'addtopic2': '添加同级知识点',
+        'addtopic1':'添加知识点',
+        'noDataTopic':'暂无知识点',
+        'noSearchResults':'暂无匹配结果',
+        'dataTopicTip2': '请输入知识点',
+        'addTopicSuccess': '添加知识点成功',
+        'addTopicfail': '添加知识点失败',
+        'inputDataTopic': '请输入知识点',
+        'editTopicSuccess': '添加知识点成功',
+        'editTopicfail': '添加知识点失败',
+        'deleteTopicSuc': '删除知识点成功',
+        'deleteTopicFa': '删除知识点失败',
+        'setDataTopicSuc': '设置知识点成功',
+        'setDataTopicFail': '设置知识点失败',
+        'associatedKnowledge': '关联知识点',
+        'addLevel':'添加同级',
+        'addSub':'添加子级',
+        'synchronizedSuc':'同步成功',
+        'linkSuc': '关联成功',
+        'formatIncorrect':'文件格式不正确',
+        'Importing': '导入中',
+        'topicTIp4': '成功导入',
+        'strip': '条',
+        'unlock1': '取消锁定',
+        'confirmUnlock': '确认取消锁定？',
+        'QN': '确认',
+        'choiceNotEmpty': '选项内容不能为空',
+        'notAllowScore': '该题分数不合法',
+        'addBellow': '请在本题下添加小题',
+        'contentOverLength': '题干内容超出最大长度，请修改题干内容',
+        'fixQuestionNo': '第',
+        'childQuestion': '小题',
+        'sametypesamename': '同一题型类型不允许创建重名题型',
+        'typenamemaxlength': '题型名称长度不能超过',
+        'typenamemaxlength2': '个字符',
+        'entertypename': '请输入题型名称',
+        'newQuestionType': '新建题型',
+        'clearWrongQueNotic': '错题清空后不可恢复，确认清空？',
+        'clear': '清空',
+        'deleteWrongQue': '确认删除题目？',
+        'lock1': '加锁',
+        'relationsetting': '关系设置',
+        'addassociations': '添加关联',
+        'addfront': '添加前置',
+        'addpost': '添加后置',
+        'addlabel': '添加标签',
+        'propertyedit': '属性编辑',
+        'approvalSynchronizedSuc': '已发送申请',
+        'allCourseTarget': '全部课程目标',
+        'allCourseLabel': '全部标签',
+        'language': 'chinese',
+        'setWeightSucc': '设置权重成功',
+        'weightTip1': '签到0分数值必须小于满分数值',
+        'totalScore': '成绩权重总和为',
+        'saveSuccess': '保存成功',
+        'saveFailed': '保存失败',
+        'weightSaveTip': '你的线下权重之和不为100%，请重新设定！',
+        'weightEmptyTip': '添加项内容不能为空，请删除该项或为该项输入有效值',
+        'customWeightTip1': '请输入自定义权重名称',
+        'customWeightTip2': '权重描述文字不能超过50字',
+        'customWeightTip3': '自定义权重不能超过50个',
+        'customWeightTip4': '自定义权重名称不能重复',
+        'customWeightTip5': '权重名请不要超过20个字',
+        'customWeightTip6': '请输入线下权重名称',
+        'customWeightTip7': '名称请不要超过20个字',
+        'customWeightTip8': '请输入0-1440的整数',
+        'customWeightTip9': '请输入0-99的整数',
+        'customWeightTip10': '请选择任务点类型',
+        'customWeightTip11': '权重总和应该是100',
+        'customWeightTip12': '直播满分时长需大于0',
+        'customWeightTip13': '直播观看比例需大于0',
+        'customWeightTip14': '章节学习次数满分值需要大于0',
+        'customWeightTip15': '阅读满分时长需大于0',
+        'customWeightTip16': '超星课堂满分时长需大于0',
+        'customWeightTip17': '0分数值必须小于满分数值',
+        'customWeightTip18': '请输入正确的数值',
+        'customWeightTip19': '请输入0-',
+        'customWeightTip20': '之间的整数',
+        'errorTip2': '请输入0-100之间的整数',
+        'errorTip3': '请输入1-100之间的整数',
+        'modifySuc': '修改成功',
+        'modifyFail': '修改失败',
+        'setupFailed': '设置失败',
+        'noChoiceTip': '请选择题目',
+        'packup': '收起',
+        'viewmore': '显示更多',
+        'writeRightRange': '请重新输入正确率范围',
+        'writeSearchTopic': '请选择要查询的知识点',
+        'writeSearchCourse': '请选择要查询课程',
+        'writeSearchQtype': '请选择题目题型',
+        'writeSearchEasy': '请选择题目难易度',
+        'writeSearchCourseTarget': '请选择课程目标',
+        'writeSearchCourseLabel': '请选择课程标签',
+        'allEasy': '全部难度',
+        'allTopic': '全部知识点',
+        'addfolder': '新建文件夹',
+        'smartOverSize1': '题库中超过',
+        'smartOverSize2': '道题，暂不支持智能导入',
+        'search': '搜索',
+        'operationFailed': '操作失败',
+        'operateSuccess': '操作成功',
+        'operateFailed': '操作失败',
+        'root': '根目录',
+        'chooseDir':'请选择其他目录',
+        'seeDownloadCenter':'可前往下载中心查看进度并下载',
+        'chooseOperate':'请选择要操作的内容',
+        'chooseYunpanDir':'请选择云盘文件',
+        'chooseItem':'请选择要操作的内容',
+        'chooseCourse':'请选择课程',
+        'dirNameNotNull':'文件名不能为空',
+        'dirNameNotNull':'文件名不能为空',
+        'paramNotRight':'参数不正确',
+        'dirCantMoveList':'目录不允许批量移动',
+        'chooseDirDirect':'请重新选择文件位置',
+        'dirCantMove0':'此文件夹已在要移动到的目标文件夹中',
+        'dirCantMove1':'此文件夹已在要移动到的目标文件夹中',
+        'dirCantMove2':'父文件夹不能移动到里面的子文件夹中',
+        'queIsInIt':'此试题已在要移动到的目标文件夹中',
+        'inputTypeName':'请输入题型名称',
+        'typeNameOverLengt':'typeNameOverLengt',
+        'qtypeExists':'该题型已存在',
+        'chooseUpdateTyp':'chooseUpdateTyp',
+        'confirmSet':'确认修改为',
+        'chooseTeamTeacher':'请选择共享教师团队成员',
+        'chooseLockItem':'请选择要锁定的数据',
+        'yunpanFailed':'获取云盘列表失败',
+        'root':'根目录',
+        'shareDir':'共享给我的文件夹',
+        'chooseQue':'请先选择题目',
+        'pageShow':'每页显示',
+        'confirm':'确定',
+        'createFailedTip':'试卷创建失败，请联系客服。',
+        'ti':'题',
+        'moveSuc':'移动完成',
+        'moveError':'移动失败',
+        'topSuc':'置顶成功',
+        'cancelTopSuc':'取消置顶成功',
+        'selectMoveFile':'请选择需要移动的文件',
+        'delSuc':'删除成功',
+        'delError':'删除失败',
+        'addSuc':'添加成功',
+        'courseDataToast1':'请输入文件名',
+        'courseDataToast2':'文件名的正确长度为2-35个字',
+        'courseDataToast3':'名称已被使用，请使用其他名称',
+        'courseDataToast4':'重命名失败',
+        'courseDataToast5':'请选择文件',
+        'courseDataToast6':'请选择需要删除的文件',
+        'courseDataToast7':'请选择需要设置权限的资料',
+        'courseDataToast8':'数量超出限制',
+        'courseDataToast9':'下载失败',
+        'courseDataToast10':'请选择需要下载的文件',
+        'courseDataToast11':'请选择笔记',
+        'courseDataToast12':'笔记格式错误, 请联系管理员!',
+        'courseDataToast13':'分享的资源链接 禁止重复分享,请在原资源下进行分享操作',
+        'courseDataToast14':'设置成功',
+        'courseDataToast15':'设置失败',
+        'courseDataToast16':'获取预览地址失败',
+        'courseDataToast17':'添加成功',
+        'courseDataToast18':'添加失败',
+        'courseDataToast19':'获取文件夹失败',
+        'courseDataToast20':'请输入文件名',
+        'courseDataToast21':'文件名的正确长度为2-35个字',
+        'courseDataToast22':'取消添加失败',
+        'courseDataToast23':'取消添加',
+        'courseDataToast24':'请输入搜索内容',
+        'courseDataToast25':'未找到视频',
+        'courseDataToast26':'已成功添加',
+        'courseDataToast27':'设置权限成功',
+        'courseDataToast28':'设置权限失败',
+        'courseDataToast29':'新建文件夹失败',
+        'courseDataToast30':'获取云盘列表失败',
+        'courseDataToast31':'获取笔记列表失败',
+        'courseDataToast32':'请选择笔记',
+        'courseDataToast33':'最多支持10个笔记',
+        'courseDataToast34':'该笔记已存在',
+        'courseDataToast35':'添加笔记成功',
+        'courseDataToast36':'添加笔记失败',
+        'courseDataToast37':'最多支持50个文件',
+        'courseDataToast38':'该文件已存在',
+        'courseDataToast39':'添加云盘资源成功',
+        'courseDataToast40':'添加云盘资源失败',
+        'courseDataToast41':'获取失败',
+        'courseDataToast42':'获取云盘列表失败',
+        'courseDataToast43':'请选择云盘文件',
+        'courseDataToast44':'复制到云盘失败',
+        'courseDataToast45':'请输入查询条件',
+        'courseDataToast46':'排序失败',
+        'courseDataToast47':'下载失败',
+        'courseDataToast48':'请选择需要下载的文件',
+        'courseDataToast49':'条',
+        'courseDataToast50':'置顶失败',
+        'courseDataToast51':'取消置顶失败',
+        'addSuccess':'添加成功',
+        'choiceSameTip':'选项不能相同',
+        'saveWorkTip':'保存成功',
+        'Newfolder':'新建文件夹',
+        'createPaperSuccessTips' : '创建考试成功，请去试卷库发布',
+        'deleteQuestionTypeTips' : '您确定删除吗？删除该道小题以后，您的试卷将不会再出现该题！',
+        'deletesuccess' : '删除成功！',
+        'addFirst' : '请在下面添加第一组数据',
+        'addSecond' : '请在下面添加第二组数据',
+        'enterScore' : '请输入分数',
+        'enterMoudleScore' : '请输入数字格式的分数',
+        'scoreOver0' : '分数要大于0',
+        'testC' : '请输入试题的内容！',
+        'enterChoice' : '请输入选项的答案',
+        'enterChoiceScore' : '请输入选项的分数',
+        'questionexplation' : '题型说明',
+        'movingTips' : '正在移动...',
+        'moveSuccess' : '移动成功',
+        'addSonQuestion' : '请添加小题',
+        'choiceAnswer' : '请选择答案',
+        'setRightAnswer' : '请设置正确答案',
+        'sameChoice' : '选项不能相同',
+        'enterAnswers' : '请输入答案',
+        'createTip' : '当前题目未保存，是否先保存题目再继续操作？',
+        'createTip2' : '保存并继续',
+        'continue' : '继续',
+        'add' : '添加',
+        'studentAnswerLimit' : '学生答案字数限制，最少字数不能大于最多字数',
+        'paperPublishTips1' : '当前页面存在未保存的题目，您确定继续操作吗？',
+        'paperPublishTips2' : '数据加载中...',
+        'paperPublishTips3' : '请先添加题目!',
+        'paperPublishTips4' : '您确定删除吗？',
+        'paperPublishTips5' : '当前大题下，有',
+        'paperPublishTips6' : '个小题，如果您删除大题将同时删除了该题型下所有小题!',
+        'paperPublishTips7' : '您确定删除吗？如果您删除大题将同时删除了该题型下所有的小题！',
+        'paperPublishTips8' : '删除题型失败',
+        'paperPublishTips9' : '删除题目失败',
+        'paperPublishTips10' : '分值不合法，请重新输入',
+        'paperPublishTips11' : '最多保留一位小数',
+        'paperPublishTips12' : '正在修改题型分数...',
+        'paperPublishTips13' : '请添加答案',
+        'paperPublishTips14' : '第 null 空答案',
+        'paperPublishTips15' : '正在保存...',
+        'paperPublishTips16' : '试卷名称不能为空！',
+        'paperPublishTips17' : '第一组数据里面选项内容为空!',
+        'paperPublishTips18' : '第一组数据选项不能相同',
+        'paperPublishTips19' : '第二组数据里面选项内容为空!',
+        'paperPublishTips20' : '第二组数据选项不能相同!',
+        'paperPublishTips21' : '请添加选项',
+        'paperPublishTips22' : '选项内容为空',
+        'paperPublishTips23' : '选项内容不能相同',
+        'paperPublishTips24' : '无选项',
+        'paperPublishTips25' : '请调整总分或任选题数，使总分能被任选题数整除且小题分数最多保留一位小数',
+        'paperPublishTips26' : '请设置最多选项数量',
+        'paperPublishTips27' : '更新标题成功',
+        'paperPublishTips28' : '更新标题失败',
+        'paperPublishTips29' : '修改答案后学生分数会同步校正',
+        'paperPublishTips30' : '题型说明',
+        'paperPublishTips31' : '题干中空的数量不等于小题数量：题干中空的数量为：',
+        'paperPublishTips31_1' : '；小题数量为',
+        'paperPublishTips32' : '题干小题需连续编号',
+        'paperPublishTips33' : '请添加题干',
+        'paperPublishTips34' : '题干内容不能为空',
+        'paperPublishTips35' : '请设置答案',
+        'UploadSuc' : '上传成功',
+        'UploadError' : '添加到资料失败',
+        'checkAll': '全选',
+        'addQuestionTip' : '点击题型按钮添加题目',
+        'ducutip': '系统将自动通知未交学生，督促其完成作业',
+        'ducuok': '督促',
+        'popCancel': '取消',
+        'allsubtip': '学生全部提交',
+        "pleaseEnterPassword":'请输入密码',
+        "passwordLengthTips":'密码长度不够',
+        "passwordCheckTips":'密码必须由数字和字母组成',
+        "tickPaper":'请勾选要移动的试卷',
+        "deletetesttips":'删除后可在回收站还原',
+        "revert":'还原',
+        "folder":'文件夹',
+        "examinationPaper":'试卷',
+        "deleteLibrary":'删除后无法恢复，确认删除？',
+        "checkPaper":'请勾选试卷',
+        "restorePaper":'还原试卷',
+        "now":'正在',
+        "recycleAll":'回收站全部试卷，可能需要一些时间...',
+        "restoreAll":'还原全部试卷',
+        "parentMoveCheck":'父文件夹不能移动到里面的子文件夹中!',
+        "alreadyExist":'此文件已在要移动到的目标文件夹中！',
+        "moveSelf":'文件夹不能移动至文件夹自身!',
+        "restoringPaperTips":'正在还原回收站全部考试，可能需要一些时间...',
+        "reversionTest":'还原考试',
+        "restoreAllTests":'还原全部考试',
+        "enterFolder":'请输入文件夹名称',
+        "enterPaper":'请输入试卷名称',
+        "importSuccess":'导入成功',
+        "importFailed":'导入失败，请稍后重试',
+        "selectFile":'请选择上传文件',
+        "word2007support":'暂不支持word2007',
+        "synchronization":'已发起列表数据同步，请稍后...',
+        'updateExamTimeTip': '修改设置后，可能会影响进行中的考试，确认修改？',
+        "randomNotSupportEvaluation":'随机抽题考试不支持生生互评!',
+        "class1":'班',
+        "zu":'组',
+        "setLimitTime":'请设置考试限时',
+        "timeLimitIncorrect":'限时提交设置不正确',
+        "sendSuccess":'发送成功',
+        "sendFail":'发送失败',
+        "zeroconfirm":'总分为0,确认要提交批阅结果吗？',
+
+        "paperPublishPCTips":'paperPublishPCTips',
+        "paperPublishPCTips1":'含有不支持的表情或字符',
+        "paperPublishPCTips2":'随机抽题考试不支持生生互评',
+        "paperPublishPCTips3":'随机抽题数量不能大于或等于题目总数量',
+        "paperPublishPCTips4":'您输入的完成任务点百分比不正确',
+        "paperPublishPCTips5":'请选择发放班级',
+        "paperPublishPCTips6":'请选择发放时间',
+        "paperPublishPCTips7":'请选择截止时间',
+        "paperPublishPCTips8":'考试结束时间小于开始时间',
+        "paperPublishPCTips9":'考试限时设置不正确',
+
+        "paperPublishPCTips10":'请选择定时发放时间',
+        "paperPublishPCTips11":'考试通知时间需早于考试开始时间',
+        "paperPublishPCTips12":'时限不能大于起始时间差',
+        "paperPublishPCTips13":'及格标准不能大于试卷满分',
+        "paperPublishPCTips14":'交卷时间限制需大于1分钟',
+        "paperPublishPCTips15":'交卷时间限制不能大于或等于考试限定时间',
+        "paperPublishPCTips16":'请设置考试码有效期',
+        "paperPublishPCTips17":'请输入互评开始时间',
+        "paperPublishPCTips18":'请输入互评结束时间',
+        "paperPublishPCTips19":'互评开始时间不能大于互评结束时间',
+
+        "paperPublishPCTips20":'互评开始时间必须大于考试结束时间',
+        "paperPublishPCTips21":'互评数量只能是1-9的整数',
+        "paperPublishPCTips22":'请先设置考试结束时间',
+        "paperPublishPCTips23":'互评开始时间需大于考试结束时间',
+        "paperPublishPCTips24":'互评结束时间小于互评开始时间',
+        "paperPublishPCTips25":'请输入正确的ip地址',
+        "paperPublishPCTips26":'请先设置互评开始时间',
+        "paperPublishPCTips27":'限时提交设置不正确',
+        "paperPublishPCTips28":'限时提交必须小于考试限时',
+        "paperPublishPCTips29":'限时进入设置不正确',
+        "paperPublishPCTips30":'限时进入必须小于考试限时',
+        "paperPublishPCTips31":'发放时间不能早于',
+        "paperPublishPCTips32":'有效期不能超过',
+        "paperPublishPCTips33":'限时进入设置不能大于8位数，请重新设置',
+        "paperPublishPCTips34":'请选择发放对象',
+        "paperPublishPCTips35":'请输入指定ip',
+        "paperPublishPCTips36":'确认发布考试？',
+        "paperPublishPCTips37_1":'当前试卷共',
+        "paperPublishPCTips37_2":'题，满分',
+        "paperPublishPCTips37_3":'分。发布后不可修改题量和分值，确认发布考试？',
+        'curSetting': '当前设置',
+        "unCheckDifferQuestionOption":'需先取消勾选“重做时重新抽题”设置项',
+        "unCheckKeepLastAnswerOption":'需先取消勾选“学生重考保留前一次考试的作答记录”设置项',
+        "retainOldTopicRelationTip2":'关联知识点后，题目中已关联的知识点将不会保留，会替换为新的知识点，确认关联?',
+
+        "changeMarkLimitTip":'已有学生参与互评，不支持修改评分范围',
+        "markLimitMinSet":'请设置学生主观题评分范围最小值',
+        "markLimitMaxSet":'请设置学生主观题评分范围最大值',
+        "markLimitMinBetween":'评分范围最小值需在0-100之间',
+        "markLimitMaxBetween":'评分范围最大值需在0-100之间',
+        "markLimitLessThanMax":'评分范围最小值需小于最大值',
+        "placeholderTitle":'输入题干（作文提纲，写作要求，中译英文本等）',
+        "qbankOk":'知道了',
+        "recycleOk":'确定全部还原？',
+        "recycleOk1":'删除后无法恢复，确认全部删除？',
+        "Putaway": '收起',
+        "Spread": '展开',
+        "topicTipsAllDelete": '确认删除？',
+        "topicTIp6": '若该知识点下存在子级知识点将一并删除，确认删除？',
+        "courseDataTopicRelationTip": '关联知识点后，资料中已关联的知识点将不会保留，会替换为新的知识点，确认关联?',
+        "createSucc": '创建成功',
+        "invalidAction": '无效的操作',
+        "selfTestFailed": '自测试卷生成失败',
+        'exit2':'退出',
+        'questionNotEmpty':'题目不能为空，请先添加题目',
+        'settingNotSave':'当前设置内容未保存，若退出当前页面，可能不会保存您的设置内容',
+        'saveAndExit':'退出并保存',
+        'publish':'发布',
+        'forbidInputTextTips':'请设置允许学生上传的附件类型',
+        'weChatForbidInputTextTips':'微信作答不支持上传附件，请勾选拍照/录像或允许学生输入文本',
+        'gradeStandardTips':'请选择年级标准',
+        'literaryFormTips':'请选择文体'
+    };
+</script>
+    <style>
+        .content .main{
+            margin:0px;
+        }
+
+        img{
+            max-height:400px
+        }
+
+        .Loading{
+            line-height:18px;
+            font-size:12px;
+            color:#A8A8B3;
+            text-align:center;
+            padding:10px 0;
+        }
+
+        .Loading img{
+            width:14px;
+            height:14px;
+            margin:0 6px 2px 0;
+            vertical-align:middle;
+        }
+
+        .box{
+            padding:30px;
+            width:auto;
+        }
+
+        .popDiv{
+            transform:translate(-50%, -50%);
+        }
+
+        .all_delete {
+            line-height: 70px;
+            margin-right: 30px;cursor:pointer;
+        }
+        .all_delete img{width: 18px;height: 18px;margin-right: 6px;margin-top: 26px;}
+
+        /* 选词填空选项样式 */
+        .fillBlanks .blanksBox {
+            background: #F7F8FA;
+            border-radius: 4px;
+            padding: 14px 0 0 14px;
+        }
+
+        .fillBlanks .blanksBox span {
+            display: inline-block;
+            background: #fff;
+            border: solid 1px #DADFE5;
+            border-radius: 4px;
+            color: #3A8BFF;
+            line-height: 18px;
+            font-size: 12px;
+            padding: 6px 14px;
+            margin-bottom: 16px;
+            margin-right: 14px;
+            position: relative;
+            cursor: auto;
+        }
+    </style>
+</head>
+<body>
+
+<input type="hidden" name="courseid" id="courseid" value="212199092"/>
+<input type="hidden"  id="microTopicId" value="0"/>
+<input type="hidden" name="clazzid" id="clazzid" value="92975052"/>
+<input type="hidden" name="stat2Domain" id="stat2Domain" value="https://stat2-ans.chaoxing.com"/>
+<input type="hidden" name="cpi" id="cpi" value="205303641"/>
+<input type="hidden" name="pageNum" id="pageNum" value=""/>
+<input type="hidden" name="totalPage" id="totalPage" value=""/>
+<input type="hidden" name="size" id="size" value=""/>
+<input type="hidden" name="index" id="index" value=""/>
+<input type="hidden" id="noBackColor" value="true">
+<input type="hidden" id="topicArr" value="">
+<input type="hidden" id="queType" value="-1">
+<input type="hidden" name="isAccessibleCustomFid" id="isAccessibleCustomFid" value="0"/>
+<input type="hidden" name="groupCount" id="groupCount" value="1"/>
+<input type="hidden" name="lastExamId" id="lastExamId" value="0"/>
+<input type="hidden" name="mooc1Domain" id="mooc1Domain" value="https://mooc1.chaoxing.com"/>
+
+<div class="box">
+    <!------------头部结束------------>
+    <div class="content">
+        <!-- 推荐内容 -->
+        <div class="main wronggather-page">
+            <!-- 有数据 -->
+            <div id="wrong" style="display: block;">
+                <div class="select-content">
+
+                    <span class="select-label fs14 colorDeep fl">选择题型</span>
+                    <div class="select-wrap fl" style="margin-top: 18px">
+                        <input aria-hidden="true" tabindex="-1" type="text" readonly class="select-inp fs14 colorIn" id="getType" value="全部"/>
+                        <span class="icon icon-triangle-down"></span>
+                    </div>
+
+                    <span class="select-label fs14 colorDeep fl"  >选择知识点</span>
+
+                    <div class="layui-inline fl" style="margin-top: 18px">
+                        <ul class="operate-select fivlayer-box" style="">
+                            <li class="select-content_new" style="height: 34px">
+                                <div class="choosed-content">
+                                    <input aria-hidden="true" tabindex="-1" type="text" id="topicSelectNotic" value="全选知识点" title="全选知识点" readonly="" placeholder="请选择"
+                                           class="choosed-sel topicname choosed-sel-focus">
+                                    <div class="arrow">
+                                        <span class="icon icon-triangle-up"></span>
+                                    </div>
+                                </div>
+
+                                <div class="list-content" style="display: none;">
+                                    <div class="operate-choose-all">取消全选</div>
+                                    <div class="dataSearch">
+                                        <input id="topicSearch" type="text" class="dataSearch_input fl" placeholder="搜索" style="width: 100%">
+                                        <a class="dataSearch_dele unSearch" href="javascript:" style="display: none;"></a>
+                                        <input type="button" name="" value="" class="dataSearch_bnt fl">
+                                    </div>
+                                    <ul class="course-list treeBody" tabindex="4" style="overflow: hidden; outline: none;max-height: 200px">
+                                            <li class="tr topic16751365 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="综合">综合<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="16751365" name="综合">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7990440 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="服务Service">服务Service<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7990440" name="服务Service">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7990439 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="广播接收者">广播接收者<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7990439" name="广播接收者">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7935634 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="移动开发技术概述">移动开发技术概述<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7935634" name="移动开发技术概述">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7905861 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="ListView编程">ListView编程<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7905861" name="ListView编程">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7808002 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="Android本地数据存储">Android本地数据存储<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7808002" name="Android本地数据存储">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7780419 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="Activity">Activity<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7780419" name="Activity">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7655613 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="布局及控件">布局及控件<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7655613" name="布局及控件">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7594222 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="开发环境：Android Studio">开发环境：Android Studio<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7594222" name="开发环境：Android Studio">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                    </ul>
+
+                                    <div id="ascrail2002" class="nicescroll-rails nicescroll-rails-vr"
+                                         style="padding-right: 2px; width: 8px; z-index: 4; cursor: default; position: absolute; top: 108px; left: 310px; height: 230px; display: block; opacity: 0;">
+                                        <div class="nicescroll-cursors"
+                                             style="position: relative; top: 0px; float: right; width: 8px; height: 189px; background-color: rgb(202, 213, 230); background-clip: padding-box; border-radius: 5px;"></div>
+                                    </div>
+                                    <div id="ascrail2002-hr" class="nicescroll-rails nicescroll-rails-hr"
+                                         style="height: 8px; z-index: 4; top: 330px; left: 0px; position: absolute; cursor: default; display: none; width: 312px; opacity: 0;">
+                                        <div class="nicescroll-cursors"
+                                             style="position: absolute; top: 0px; height: 8px; width: 320px; background-color: rgb(202, 213, 230); background-clip: padding-box; border-radius: 5px; left: 0px;"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="jb_btn jb_btn_104 fl fs14" id="confirmBtn" onclick="getWrongQueList(1)" style="display:none;margin-top: 18px">筛选</a>
+                        <div class="all_delete colorBlue_click fr" tabindex="0" role="option"  onclick="showEmpty();">
+                            <img src="/static/images/wrongQuestion/icon-delete.png" alt="">
+                            <span class="fs14 fr">清空推荐</span>
+                        </div>
+                        <div class="all_delete colorBlue_click fr wrongQuestionSelfTest" onclick="wrongQuestionSelfTest()">
+                            <img src="/static/images/wrongQuestion/icon-selftest.png" alt="">
+                            <span class="fs14 fr">自测</span>
+                        </div>
+                                                                                                                                                                                                                            <!-- 导出 -->
+                                                                                                </div>
+                <!-- 题库列表 -->
+                <div class="wrong-topic-lists TiMu">
+                    <!-- 后台注意！！！这里因为只有一个标题，所以挪出来了，样式表随之改动，请更新相关的引用文件！！！ -->
+
+
+                </div>
+                <!-- 到底提示 -->
+                <div class="content-bottom txt-c fs14 colorShallow" id="loading">
+                </div>
+                                                            </div>
+
+        </div>
+    </div>
+<script type="text/javascript" src="//mooc-res1.chaoxing.com/static/js/common/jquery.min.js"></script>
+<script type="text/javascript" src="//mooc-res1.chaoxing.com/static/js/common/jquery.nicescroll.min.js"></script><div id="createExamId" class="maskDiv" style="display: none">
+    <div class="popDiv wid440 centerPop">
+        <div class="popHead">
+            <a href="javascript:" class="popClose popMoveDele fr" onclick="$('#createExamId').fullFadeOut();"><img src="/static/images/popClose.png" /></a>
+            <p class="fl fs18 colorDeep">提示</p>
+        </div>
+        <div class="het62" style=""></div>
+        <p class="promptPopWord fs16 colorIn" id="noLastExamTips" tabindex="0" role="option" style="height: 100px">您可重新作答推荐里的题目，确认发起自测？</p>
+        <p class="promptPopWord fs16 colorIn" id="hasLastExamTips" tabindex="0" role="option" style="height: 100px; display: none">您有正在进行的推荐自测，是否继续上次作答？</p>
+        <div class="popBottom shadowBox" id="noLastExamBtnGroup">
+            <a href="javascript:void(0);" class="jb_btn jb_btn_92 fr fs14" onclick="createSelfExam()">确定</a>
+            <a href="javascript:void(0);" class="btnBlue btn_92_cancel fr fs14" onclick="$('#createExamId').fullFadeOut();">取消</a>
+        </div>
+
+        <div class="popBottom shadowBox" id="hasLastExamBtnGroup" style="display: none">
+            <a href="javascript:void(0);" class="jb_btn jb_btn_92 fr fs14" onclick="openLastExam()">继续作答</a>
+            <a href="javascript:void(0);" class="btnBlue btn_92_cancel fr fs14" onclick="createSelfExam()">重刷</a>
+        </div>
+    </div>
+</div>
+
+<div class="maskDiv taskStatusShowHide" style="display:none;z-index:1000;" id="stuSelfTestAutoPaper">
+    <div class="popDiv wid440 centered">
+        <div class="popHead">
+            <a href="javascript:" class="popClose popMoveDele fr"><img src="/static/images/popClose.png" /></a>
+            <p class="fl fs18 colorDeep">提示</p>
+        </div>
+        <div class="het62"></div>
+        <div class="barDiv">
+            <div class="barCon" style="width:10%"></div>
+        </div>
+        <p class="barInfo" style="margin-bottom:20px">自测试卷生成中，已完成<span id="taskrate">0%</span></p>
+        <div class="het72"></div>
+    </div>
+</div>
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    <script type="text/javascript" src="/static/js/common2.js"></script>
+    <script type="text/javascript" src="/static/js/poptoast.js"></script>
+    <script type="text/javascript" src="/static/js/poplayout.js"></script>
+    <script type="text/javascript" src="/static/js/select.js"></script>
+
+    <script type="text/javascript" src="/static/js/viewer-jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/viewer.js"></script>
+    <script type="text/javascript" src="/static/js/selftest-task.js"></script>
+    <script type="text/javascript" src="/static/js/wrongQuestion.js"></script>
+    <script type="text/javascript" src="/static/js/domain.js"></script>
+    <script>
+        $(function () {
+            // 设置main区域的最少高度
+            setMainHeight();
+            wrongGatherFunc.subType = [
+                {
+                    "id": -1,
+                    "word": "全部"
+                }
+                            , {
+                            "id": 0,
+                            "courseTypeId": 3703898,
+                            "word": '单选题'
+                        }
+                            , {
+                            "id": 1,
+                            "courseTypeId": 3703899,
+                            "word": '多选题'
+                        }
+                            , {
+                            "id": 2,
+                            "courseTypeId": 3703900,
+                            "word": '填空题'
+                        }
+                            , {
+                            "id": 3,
+                            "courseTypeId": 3703901,
+                            "word": '判断题'
+                        }
+                            , {
+                            "id": 4,
+                            "courseTypeId": 3703902,
+                            "word": '简答题'
+                        }
+                            , {
+                            "id": 5,
+                            "courseTypeId": 3703903,
+                            "word": '名词解释'
+                        }
+                            , {
+                            "id": 6,
+                            "courseTypeId": 3703904,
+                            "word": '论述题'
+                        }
+                            , {
+                            "id": 7,
+                            "courseTypeId": 3703905,
+                            "word": '计算题'
+                        }
+                            , {
+                            "id": 9,
+                            "courseTypeId": 3703906,
+                            "word": '分录题'
+                        }
+                            , {
+                            "id": 10,
+                            "courseTypeId": 3703907,
+                            "word": '资料题'
+                        }
+                            , {
+                            "id": 11,
+                            "courseTypeId": 3703908,
+                            "word": '连线题'
+                        }
+                            , {
+                            "id": 13,
+                            "courseTypeId": 3703910,
+                            "word": '排序题'
+                        }
+                            , {
+                            "id": 14,
+                            "courseTypeId": 3703911,
+                            "word": '完型填空'
+                        }
+                            , {
+                            "id": 15,
+                            "courseTypeId": 3703912,
+                            "word": '阅读理解'
+                        }
+                            , {
+                            "id": 18,
+                            "courseTypeId": 3703915,
+                            "word": '口语题'
+                        }
+                            , {
+                            "id": 19,
+                            "courseTypeId": 3703916,
+                            "word": '听力题'
+                        }
+                            , {
+                            "id": 20,
+                            "courseTypeId": 3703917,
+                            "word": '共用选项题'
+                        }
+                            , {
+                            "id": 21,
+                            "courseTypeId": 3703918,
+                            "word": '测评题'
+                        }
+                            , {
+                            "id": 8,
+                            "courseTypeId": 3703919,
+                            "word": '其它'
+                        }
+                            , {
+                            "id": 0,
+                            "courseTypeId": 3703920,
+                            "word": '课后练习'
+                        }
+                            , {
+                            "id": 4,
+                            "courseTypeId": 3833075,
+                            "word": '实验1： 简单的计算器'
+                        }
+                            , {
+                            "id": 23,
+                            "courseTypeId": 25067101,
+                            "word": '钟表题'
+                        }
+                            , {
+                            "id": 24,
+                            "courseTypeId": 41615528,
+                            "word": '选词填空'
+                        }
+                            , {
+                            "id": 25,
+                            "courseTypeId": 41615529,
+                            "word": '选做题'
+                        }
+            ], wrongGatherFunc.init();
+            pactureFun();
+        })
+        // 绑定滑动事件
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            // console.log(scrollTop + $(window).height() + 1 + "********" + $(document).height())
+            try {
+                if (scrollTop + $(window).height() + 1 >= $(document).height()) {
+                    // debugger
+                    var pageNum = $("#pageNum").val();
+                    var totalPage = $("#totalPage").val();
+                    if (pageNum >= totalPage) {
+                        $("#loading").empty();
+                        $("#loading").append("<div class=\"Loading\">已经到底了</div>");
+                        return;
+                    } else {
+                        $("#loading").empty();
+                        $("#loading").append("<div class=\"Loading\"><img src=\"/static/images/coursedata/timgNew.gif\"/>正在加载，请稍后…</div>");
+                        getWrongQueList(parseInt(pageNum) + 1);
+                    }
+                    // CourseNotice.loadNoticeList(false);
+                }
+            } catch (e) {
+            }
+        });
+        // 搜索框添加 X
+        $('.dataSearch').on('input', '.dataSearch_input', function () {
+            var searchValue = $(this).val();
+            if (searchValue == "undefined" || searchValue === "") {
+                $(this).parent().find(".dataSearch_dele").hide()
+            } else {
+                $(this).parent().find(".dataSearch_dele").show()
+            }
+        })
+        $('.unSearch').click(function () {
+            getWrongQueList(1);
+        })
+        // 知识点列表展开合住
+        $('.select-content_new').each(function () {
+            $(this).on('click', '.choosed-content,.arrow', function () {
+                $(this).parents(".layui-inline").siblings().find(".list-content").hide();
+                $(this).parents(".layui-inline").siblings().find(".choosed-sel").removeClass('choosed-sel-focus');
+                $(this).siblings(".list-content").slideToggle();
+                $(this).find(".choosed-sel").toggleClass('choosed-sel-focus');
+                $(this).siblings(".list-content").find('.course-list').niceScroll(customScroll);
+                if ($(this).find(".icon").hasClass("icon-triangle-down")) {
+                    $(this).find(".icon").addClass('icon-triangle-up').removeClass('icon-triangle-down');
+                    $(this).parents(".layui-inline").siblings().find(".icon").addClass('icon-triangle-down').removeClass('icon-triangle-up');
+                } else {
+                    $(this).find(".icon").addClass('icon-triangle-down').removeClass('icon-triangle-up');
+                    $(this).parents(".layui-inline").siblings().find(".icon").addClass('icon-triangle-down').removeClass('icon-triangle-up');
+                }
+            })
+            setTimeout(function () {
+                $(_this).parents(".course-list").niceScroll(customScroll);
+            }, 50)
+        })
+        $(document).click(function () {
+            $('.list-content').slideUp();
+            $('.select-content_new .icon').addClass('icon-triangle-down').removeClass('icon-triangle-up')
+            $('.select-content_new .choosed-sel').removeClass('choosed-sel-focus');
+        });
+        $('.select-content_new , .checkPop,.topicItem').click(function (event) {
+            event.stopPropagation();
+        });
+        $('.tr .list-icon').click(function (e) {
+            e.stopPropagation();
+            var _this = this;
+            if ($(this).parent().hasClass('active')) {
+                $(this).parent().next('.tr_child').slideUp();
+                $(this).parent().removeClass('active')
+            } else {
+                $(this).parent().next('.tr_child').slideDown();
+                $(this).parent().addClass('active')
+            }
+            $(this).parents(".course-list").getNiceScroll().remove();
+            setTimeout(function () {
+                $(_this).parents(".course-list").niceScroll(customScroll);
+            }, 500)
+            //    查找最后一条线
+            var last = $(_this).parent().next('.tr_child');
+            var child = $(last).children();
+            var len = $(child).length;
+            var lastCon = $($(child)[len - 1]).find('.parent .infos')[0];
+            var lastConlen = $(lastCon).height();
+            if (lastConlen > 20) {
+                var tr = $($(child)[len - 1]);
+                $(tr).addClass('height40');
+            }
+        })
+
+        //选择框 单选
+        $('.operate-option,.tr_parent,.parent,.topicItem').on('click', function () {
+            var element = $(this).find('input:first');
+            if ($(element).prop('checked')) {
+                $(element).prop('checked', false);
+            } else {
+                $(element).prop('checked', true);
+            }
+            updateCheckListName()
+        })
+        // 课程、题型、难易度、知识点列表全选
+        $('.operate-choose-all').click(function () {
+            if ($(this).hasClass('all')) {
+                $(this).text('取消全选');
+                $(this).removeClass("all");
+                $(this).parent().find('input').prop('checked', true);
+            } else {
+                $(this).text('全选');
+                $(this).addClass("all");
+                $(this).parent().find('input').prop('checked', false);
+            }
+            $("#topicArr").val("")
+            if ($(".topicItem:checked").length == $(".topicItem").length) {
+                $("#topicSelectNotic").attr("title", "全选知识点");
+                $("#topicSelectNotic").val("全选知识点");
+                $("#confirmBtn").show();
+            } else {
+                $("#topicSelectNotic").val("");
+                $("#topicSelectNotic").attr("title", "");
+            }
+            if ($(".topicItem:checked").length == 0 && $(".topicItem").length!=0) {
+                parent.$.toast({type: 'failure', content: '选项内容不能为空'});
+                $("#confirmBtn").hide()
+            }
+        })
+        //知识点搜索
+        $('#topicSearch').change(function () {
+            var topicSw = $(this).val();
+            if (topicSw != "") {
+                var snapHtml = "";
+
+                $(".topicItem").each(function (){
+                    var topicName = $(this).attr("name");
+                    var topicId = $(this).val();
+                    var checkFlag = $(this).prop("checked")?'checked':'';
+                    if (topicName.indexOf(topicSw) > -1) {
+                        snapHtml += '<li class="tr firstLevel snapLi"> <div class="tr_parent"> <span class="infos" style="margin-left: 0px" ">'+topicName+'<span class="sum color"></span></span> <span class="ipt-checkbox"><input class="topicItemSnap" type="checkbox" '+checkFlag+' value="'+topicId+'" name="'+topicName+'"><i class="icon-checkbox"></i></span> </div></li>'
+                    }
+                })
+                $(".course-list li:not(.snapLi)").hide()
+                $(".course-list").append(snapHtml)
+
+                //选择框 单选
+                $('.topicItemSnap').on('click', function () {
+                    var topicId = $(this).val();
+                    $(".topicItem[value='"+topicId+"']").click();
+                })
+            } else {
+                $(".snapLi").remove();
+                $(".course-list li:not(.snapLi)").show()
+                $('.fivlayer-box .operate-choose-all').show()
+                $('.fivlayer-box .firstLevel').show()
+                $(".list-icon").each(function () {
+                    if ($(this).parent(".active").length == 1) {
+                        $(this).click()
+                    }
+                })
+            }
+        })
+        $('.dataSearch').on('input', '.dataSearch_input', function () {
+            var searchValue = $(this).val();
+            if (searchValue == "undefined" || searchValue === "") {
+                $(this).parent().find(".dataSearch_dele").hide()
+            } else {
+                $(this).parent().find(".dataSearch_dele").show()
+            }
+        });
+        //关键字搜索
+        $('.dataSearch .dataSearch_dele').on('click', function () {
+            $(".snapLi").remove();
+            $(".course-list li:not(.snapLi)").show()
+            $(this).hide();
+            $(this).parent().find("input").val("");
+        });
+        function updateCheckListName(){
+            var checkedBox = $(".topicItem:checked");
+            var length = checkedBox.length;
+            var courseNames = "";
+            var nameLen = 0;
+            var maxLenth = 11;
+            for (var j = 0; j < checkedBox.length; j++) {
+                var itemName = $(checkedBox[j]).prop("name");
+                if ((nameLen + itemName.length) > maxLenth) {
+                    itemName = itemName.substring(0, maxLenth - nameLen) + "...";
+                    courseNames += itemName;
+                    break;
+                } else {
+                    nameLen += itemName.length;
+                }
+                if (j === length - 1) {
+                    courseNames += $(checkedBox[j]).prop("name");
+                } else {
+                    courseNames += $(checkedBox[j]).prop("name") + ", ";
+                }
+            }
+            if ($(".topicItem:checked").length == $(".topicItem").length) {
+                $("#topicSelectNotic").attr("title", "全选知识点");
+                $("#topicSelectNotic").val( "全选知识点");
+                $("#topicArr").val("")
+                $("#confirmBtn").show()
+            } else {
+                $("#topicSelectNotic").attr("title",courseNames);
+                $("#topicSelectNotic").val(courseNames);
+                var topicIds = "";
+                var checkedBox = $(".topicItem:checked");
+                for (var j = 0; j < checkedBox.length; j++) {
+                    topicIds += $(checkedBox[j]).val()+",";
+                }
+                $("#topicArr").val(topicIds)
+                $("#confirmBtn").show()
+            }
+
+            if ($(".topicItem:checked").length == 0 && $(".topicItem").length!=0) {
+                parent.$.toast({type: 'failure', content: '选项内容不能为空'});
+                $("#confirmBtn").hide()
+            }
+        }
+    </script>
+    <script>
+        $(function () {
+            var isAccessibleCustomFid = "0";
+            if (isAccessibleCustomFid && isAccessibleCustomFid == "1") {
+                $("#tabindexWrongFirst").focus();
+            }
+	    });
+    </script>
+    <div class="viewBtnWrap">
+        <div class="viewBtn" id="viewZoomIn"></div>
+        <div class="viewBtn" id="viewZoomOut"></div>
+        <div class="viewBtn" id="viewFlip"></div>
+        <div class="viewSplit"></div>
+        <div class="viewBtn" id="viewClose"></div>
+    </div>
+
+    <div id="picturePreview" style="display: none;">
+        <img src="">
+    </div>
+
+<link rel="stylesheet" type="text/css" href="/static/css/prompt.css"/>
+
+<div class="promptMask" style="display:none;" id="workpop">
+	<div class="promptPopDiv promptWid440 Marking" id="tabindexWorkpop"  tabindex="0" role="dialog" >
+		<div class="promptPopHead">
+			<a href="javascript:;" class="promptPopClose fr" onclick="$('#workpop').hide();$('.popSetupShowHide').fullFadeOut();"  role="button" aria-label="关闭"><img tabindex="-1" aria-hidden="true" src="/static/images/popClose.png" /></a>
+			<p class="fl fs18 colorDeep" tabindex="0" role="option" >提示</p>
+		</div>
+		<div class="promptHet62"></div>
+		<p class="promptPopWord fs16 colorIn" id="popcontent" tabindex="0" role="option" ></p>
+
+		<div class="promptPopBottom">
+			<a href="javascript:;" id="popok" class="jb_btn jb_btn_92 fr fs14"></a>
+			<a href="javascript:;" id="popno" class="btnBlue btn_92_cancel fr fs14"  ></a>
+		</div>
+		<div class="promptHet72"></div>
+	</div>
+</div>
+
+<div class="promptMask" style="display:none;" id="workToast">
+	<div class="promptPopDiv promptWid440 Marking">
+		<div class="promptPopHead">
+			<a href="javascript:;" class="promptPopClose fr" onclick="$('#workToast').hide();"><img src="/static/images/popClose.png" /></a>
+			<p class="fl fs18 colorDeep">提示</p>
+		</div>
+		<div class="promptHet62"></div>
+		<p class="promptPopWord fs16 colorIn" id="toastContent"></p>
+
+		<div class="promptPopBottom">
+			<a href="javascript:;" id="toastOk" class="jb_btn jb_btn_92 fr fs14"></a>
+			<a href="javascript:;" id="toastNo" class="btnBlue btn_92_cancel fr fs14"></a>
+		</div>
+		<div class="promptHet72"></div>
+	</div>
+</div>
+
+<script>
+
+var okContent = "确定";
+var cancelContent = "取消";
+var deleteTip = "删除后可在回收站还原";
+var recycleTip = "确定恢复此作业？";
+var copyTip = "确定复制当前作业？";
+var librarydelTip = "删除后可在回收站还原，确认删除？";
+var recycledelTip = "删除后无法恢复，确认删除？";
+var isAccessibleCustomFid = "0";
+
+function workToast(content, okTent, cancelTent, okcallback, cancelCallback) {
+	var ta = $("#workToast");
+	ta.show();
+
+	$("#toastContent").html(content);
+
+	var ok = $("#toastOk");
+	ok.html(okTent);
+	ok.unbind();
+	ok.on("click", function() {
+		okcallback && okcallback(ta);
+		ta.hide();
+	});
+
+	if (typeof cancelTent == "undefined" || cancelTent == "") {
+		$("#toastNo").hide();
+	}else{
+		$("#toastNo").show();
+	}
+	var cancel = $("#toastNo");
+	cancel.html(cancelTent);
+	cancel.unbind();
+	cancel.on("click", function() {
+		cancelCallback && cancelCallback(ta);
+		ta.hide();
+	});
+}
+
+function workPop(content, okTent, cancelTent, okcallback, cancelCallback) {
+	var ta = $("#workpop");
+
+	$(".popSetupShowHide").fullFadeIn();
+	ta.show();
+	if (isAccessibleCustomFid && isAccessibleCustomFid == "1") {
+		$("#tabindexWorkpop").focus();
+	}
+	
+	$("#popcontent").html(content);
+
+	var ok = $("#popok");
+	ok.html(okTent);
+	ok.unbind();
+	ok.on("click", function() {
+		okcallback && okcallback(ta);
+		ta.hide();
+		$(".popSetupShowHide").fullFadeOut();
+	});
+
+	if (typeof cancelTent == "undefined" || cancelTent == "") {
+		$("#workpop #popno").hide();
+	}else{
+		$("#workpop #popno").show();
+	}
+	var cancel = $("#popno");
+	cancel.html(cancelTent);
+	cancel.unbind();
+	cancel.on("click", function() {
+		cancelCallback && cancelCallback(ta);
+		ta.hide();
+		$(".popSetupShowHide").fullFadeOut();
+	});
+}
+
+if (isAccessibleCustomFid && isAccessibleCustomFid == "1") {
+	// tab键聚焦到弹窗头部
+	function toPopTopFocus() {
+		if(event.keyCode == 9  && !event.shiftKey){
+			$("#tabindexWorkpop").focus();
+		}
+	}
+
+	function toPopEndFocus() {
+		tabindexEnter();
+	}
+
+	function tabindexEnter1() {
+		if(event.keyCode == 9  && event.shiftKey){
+			$("#tabindexBottom").focus();
+		}
+		tabindexEnter();
+	}
+
+	function tabindexEnter() {
+		// 回车确定
+		if(event.keyCode == 13  && !event.shiftKey){
+			$('#workpop').hide();$('.popSetupShowHide').fullFadeOut();
+			$("#tabindexWrongFirst").focus();
+		}
+	}	
+}
+
+</script></body>
+</html>

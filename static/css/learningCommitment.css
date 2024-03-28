@@ -1,0 +1,63 @@
+.popDiv .commitment-content-dialog .commitment-details {
+    padding: 24px 0 30px;
+}
+
+.popDiv .commitment-content-dialog .commitment-details .dec {
+    max-height: 500px;
+    padding: 0 32px;
+}
+
+.popDiv .commitment-content-dialog .commitment-details h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #131B26;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popDiv .commitment-content-dialog .commitment-details .p-style1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #131B26;
+}
+
+.popDiv .commitment-content-dialog .commitment-details .p-style2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #131B26;
+    margin: 20px 0;
+}
+
+.popDiv .commitment-content-dialog .commitment-details .p-style3 {
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #131B26;
+    margin-top: 20px;
+}
+
+.popDiv .commitment-content-dialog .popBottom {
+    -webkit-box-shadow: 0px -1px 0px rgba(240, 240, 240, 0.5);
+    box-shadow: 0px -1px 0px rgba(240, 240, 240, 0.5);
+}
+
+.popDiv .commitment-content-dialog .pCheckbox_label {
+    margin-left: 30px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.popDiv .commitment-content-dialog .pCheckbox_label .ipt-checkbox {
+    position: relative;
+    top: 9px;
+    margin-right: 10px;
+}
+
+.course-pop {
+    width: 640px;
+}
+简 悦

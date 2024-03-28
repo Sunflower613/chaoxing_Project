@@ -1,0 +1,1186 @@
+@charset "UTF-8";
+/* 错题集 - 所有题型样式表 */
+.wronggather-page .marginL30{
+    margin-left:30px;
+}
+
+.wronggather-page .marginR10{
+    margin-right:10px;
+}
+
+.wronggather-page .marginB10{
+    margin-bottom:10px;
+}
+
+.wronggather-page .select-content{
+    height:70px;
+    box-shadow:0 2px 8px 0 rgba(235, 235, 235, 0.5);
+    border-radius:8px 8px 0 0;
+}
+
+.wronggather-page .select-content .select-label{
+    line-height:70px;
+    margin:0 20px 0 40px;
+}
+
+.wronggather-page .select-content .select-wrap{
+    width:116px;
+    height:34px;
+    border-radius:4px;
+    border:1px solid #E5E5E5;
+}
+
+.wronggather-page .select-content .select-wrap .select-inp{
+    width:100%;
+    cursor:pointer;
+}
+
+.wronggather-page .select-content .select-wrap.export-wrap-con{
+    border-color:#FFFFFF;
+    margin-left:13px;
+    vertical-align:middle;
+}
+
+.wronggather-page .select-content .select-wrap.export-wrap-con .icon-export2{
+    left:10px;
+    right:auto;
+    font-size:14px;
+    color:#3A8BFF;
+}
+
+.wronggather-page .select-content .select-wrap.export-wrap-con .select-inp{
+    padding-left:30px;
+}
+
+.wronggather-page .select-content .select-wrap.export-wrap-con .select-inp:hover{
+    border:0;
+}
+
+.wronggather-page .select-content .select-wrap.export-wrap-con .select-inp:focus{
+    border:0;
+    box-shadow:none;
+}
+
+.wronggather-page .wrong-topic-lists{
+    padding-left:40px;
+    padding-top:20px;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.wronggather-page .wrong-topic-lists .type-title{
+    padding:30px 0 20px 0;
+    line-height:22px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list{
+    padding-right:40px;
+    box-sizing:border-box;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .type-title{
+    padding:30px 0 20px 0;
+    line-height:22px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list{
+    position:relative;
+    padding:0 0 20px 0;
+    border-bottom:1px solid #F2F2F2;
+    margin-bottom:30px;
+    /* 填空题 */
+    /* 判断题 */
+    /* 连线题 */
+    /* 阅读理解 */
+    /* 程序题 */
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .data-img{
+    max-width:560px;
+    margin:10px 10px 0 0;
+}
+
+/*.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-title-con{*/
+/*    line-height:21px;*/
+/*}*/
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-title-con .topic-title{
+    position:relative;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-title-con .topic-title .topic-number{
+    margin-right:10px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-title-con .delete-con{
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-title-con .delete-con:hover{
+    opacity:0.7;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-title-con .delete-con .delete-img{
+    width:18px;
+    height:18px;
+    margin-right:6px;
+    vertical-align:top;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .maxwidthTxt{
+    max-width:70%;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options .topic-option-list{
+    overflow:hidden;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options .topic-option-list .option-icon{
+    width:18px;
+    height:18px;
+    margin-right:10px;
+    vertical-align:top;
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options .topic-option-list .option-txt{
+    padding-left:30px;
+    display:block;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options .topic-option-list.option-correct{
+    color:#00B86E;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options .topic-option-list.option-wrong{
+    color:#F76260;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options .topic-option-list.option-correct .option-icon{
+    background-image:url("/mooc2-ans/images/wrongQuestion/icon-right.png");
+    background-size:100% 100%;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options .topic-option-list.option-wrong .option-icon{
+    background-image:url("/mooc2-ans/images/wrongQuestion/icon-wrong.png");
+    background-size:100% 100%;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .answer-my{
+    color:#F76260;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .answer-default{
+    color:#00B86E;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers .option-txt{
+    margin-right:20px;
+    /*padding-left:80px;*/
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers-panduan .answer-my{
+    color:#F76260;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers-panduan .answer-default{
+    color:#00B86E;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers-panduan .option-txt{
+    margin-right:20px;
+    padding-left:80px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options-line .topic-option-list{
+    width:39%;
+    display:inline-block;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options-line .topic-option-list:first-child{
+    margin-right:120px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-options-line .topic-option-list .option-line{
+    margin-bottom:12px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers-line .topic-answer-lists{
+    display:inline-block;
+    max-width:39%;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers-line .answer-my{
+    color:#F76260;
+    margin-right:60px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers-line .answer-default{
+    color:#00B86E;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-sub-con .topic-sub-list{
+    padding-bottom:20px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-sub-con .topic-sub-list:last-child{
+    padding-bottom:0;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-sub-con .topic-sub-list .topic-answer-lists .option-txt .option-txt-list{
+    display:inline-block;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers-example .example-list{
+    padding-left:56px;
+    padding-bottom:6px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-answers-example .example-list .example-txt{
+    padding-left:38px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-analysis{
+    margin-bottom:12px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-analysis .topic-analysis-txt{
+    margin-left:70px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-point{
+    margin-bottom:12px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-point .topic-point-txt{
+    margin-left:56px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark .topic-remark1{
+    cursor:pointer;
+    display:block;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark .topic-remark1 .edit-img{
+    width:18px;
+    height:18px;
+    margin-right:4px;
+    margin-top:1px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark .topic-remark2{
+    max-width:1000px;
+    display:none;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark .topic-remark2 .topic-remark-input{
+    width:100%;
+    min-height:40px;
+    line-height:20px;
+    padding:10px 20px;
+    box-sizing:border-box;
+    box-shadow:0 0 4px 0 rgba(54, 123, 255, 0.5);
+    border-radius:4px;
+    border:1px solid #cbdef2;
+    color:#181E33;
+    font-size:14px;
+    overflow:hidden;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark .topic-remark3{
+    background:#F7F8FA;
+    border-radius:4px;
+    padding:10px 20px 20px 20px;
+    display:none;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark .topic-remark3 .topic-remark-txt{
+    margin-left:42px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark .topic-remark3 .topic-remark-icon{
+    cursor:pointer;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark .topic-remark3 .topic-remark-icon .edit-img{
+    width:18px;
+    height:18px;
+    margin-right:4px;
+    margin-top:1px;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark.isRemark .topic-remark1{
+    display:none;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark.isRemark .topic-remark2{
+    display:block;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark.isRemark .topic-remark3{
+    display:none;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark.marked .topic-remark1{
+    display:none;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark.marked .topic-remark2{
+    display:none;
+}
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-remark.marked .topic-remark3{
+    display:block;
+}
+
+.wronggather-page .content-bottom{
+    padding:0px 0 40px 0;
+}
+
+.wronggather-page .empty-date{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+
+.wronggather-page .wrong-topic-lists .wrong-topic-list .topic-lists .topic-list .topic-zhoshi-main {
+    margin-bottom: 2px
+}
+
+.topic-zhoshi-main dt {
+    line-height: 26px
+}
+
+.topic-zhoshi-con {
+    max-width: 800px;
+}
+
+.topic-zhoshi-con span {
+    display: inline-block;
+    background: #F2F5FA;
+    border-radius: 14px;
+    padding: 0 12px;
+    color: #6B89B3;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+.topic-zhoshi-con span:hover {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.remarks {
+    color: #6B89B3;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.remarks i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #ff0;
+    vertical-align: middle;
+    margin: -2px 5px 0 0
+}
+
+.remarks i img {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.dataSearch_dele {
+    width: 14px;
+    height: 14px;
+    background: url(/mooc2-ans/images/knowledgepoints/search_dele.png) no-repeat center/14px;
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    margin-top: -7px;
+    display: none;
+    z-index: 3;
+}
+
+.operate-select.fivlayer-box {
+    width: 320px;
+}
+
+.operate-select.fivlayer-box .dataSearch {
+    padding: 11px 14px;
+    width: calc(100% - 28px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option {
+    padding: 0;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option:hover {
+    background-color: transparent;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list {
+    position: relative;
+    padding: 10px 0;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list:hover {
+    background-color: #F0F6FF;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .icon-triangle-up {
+    position: absolute;
+    left: 14px;
+    top: calc(50% - 6px);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #ACB4BF;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .icon-circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ACB4BF;
+    left: 14px;
+    top: calc(50% - 2px);
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line {
+    position: absolute;
+    top: 0;
+    border-left: 1px dashed #DBDBDB;
+    height: 100%;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-2 {
+    left: 19px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-3 {
+    left: 45px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-4 {
+    left: 66px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .list-line-ver {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 20px;
+    border-top: 1px dashed #DBDBDB;
+    height: 1px;
+    width: 12px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .list-line-ver {
+    left: 45px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .tree-list-4-box .list-line-ver {
+    left: 66px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .tree-list-4-box .tree-list-5-box .list-line-ver {
+    left: 88px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .ipt-checkbox {
+    left: auto;
+    right: 0;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .infos {
+    position: relative;
+    width: calc(100% - 80px);
+    max-width: unset;
+    margin-left: 32px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2 {
+    padding-left: 19px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2 .icon-triangle-up {
+    left: 32px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-3 {
+    padding-left: 45px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-3 .icon-triangle-up {
+    left: 56px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-4 {
+    padding-left: 66px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-4 .icon-triangle-up {
+    left: 77px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-5 {
+    padding-left: 86px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-5 .icon-circle {
+    left: 101px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody {
+    margin-top: 10px;
+    background: #ffffff;
+    font-size: 14px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr {
+    position: relative;
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #474C59;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .parent:hover {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent {
+    position: relative;
+    padding-left: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent:hover {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent.active {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent.active .icon-triangle-up {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .infos {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .icon-triangle-up {
+    position: absolute;
+    left: 3px;
+    top: calc(50% - 18px);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #ACB4BF;
+    padding: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .ipt-checkbox {
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .icon-circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ACB4BF;
+    left: 18px;
+    top: calc(50% - 2px);
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .parent {
+    position: relative;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .parent::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -1px;
+    width: 12px;
+    border-bottom: 1px dashed #DADFE6;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .parent.active .icon-triangle-up {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr:last-child::before {
+    height: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr.height40::before {
+    height: 29px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child {
+    display: none;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr::before {
+    content: '';
+    width: 0;
+    border-left: dashed #DADFE6 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    left: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent {
+    padding-left: 50px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent .list-icon {
+    left: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent .icon-circle {
+    top: calc(50% - 12px);
+    margin: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent::before {
+    left: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr:last-child::before {
+    height: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr.height40::before {
+    height: 29px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr::before {
+    left: 36px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent {
+    padding-left: 70px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent .list-icon {
+    left: 40px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent::before {
+    left: 36px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr::before {
+    left: 55px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent {
+    padding-left: 86px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent .list-icon {
+    left: 60px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent::before {
+    left: 57px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr::before {
+    left: 76px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent {
+    padding-left: 110px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent .list-icon {
+    left: 90px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent::before {
+    left: 81px;
+}
+
+.operate-select.fivlayer-box {
+    width: 320px;
+}
+
+.operate-select.fivlayer-box .dataSearch {
+    padding: 11px 14px;
+    width: calc(100% - 28px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option {
+    padding: 0;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option:hover {
+    background-color: transparent;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list {
+    position: relative;
+    padding: 10px 0;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list:hover {
+    background-color: #F0F6FF;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .icon-triangle-up {
+    position: absolute;
+    left: 14px;
+    top: calc(50% - 6px);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #ACB4BF;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .icon-circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ACB4BF;
+    left: 14px;
+    top: calc(50% - 2px);
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line {
+    position: absolute;
+    top: 0;
+    border-left: 1px dashed #DBDBDB;
+    height: 100%;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-2 {
+    left: 19px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-3 {
+    left: 45px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list .list-line.list-line-4 {
+    left: 66px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .list-line-ver {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 20px;
+    border-top: 1px dashed #DBDBDB;
+    height: 1px;
+    width: 12px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .list-line-ver {
+    left: 45px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .tree-list-4-box .list-line-ver {
+    left: 66px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2-box .tree-list-3-box .tree-list-4-box .tree-list-5-box .list-line-ver {
+    left: 88px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .ipt-checkbox {
+    left: auto;
+    right: 0;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .infos {
+    position: relative;
+    width: calc(100% - 80px);
+    max-width: unset;
+    margin-left: 32px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2 {
+    padding-left: 19px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-2 .icon-triangle-up {
+    left: 32px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-3 {
+    padding-left: 45px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-3 .icon-triangle-up {
+    left: 56px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-4 {
+    padding-left: 66px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-4 .icon-triangle-up {
+    left: 77px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-5 {
+    padding-left: 86px;
+}
+
+.operate-select.fivlayer-box .list-content .operate-option .tree-list-5 .icon-circle {
+    left: 101px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody {
+    margin-top: 10px;
+    background: #ffffff;
+    font-size: 14px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr {
+    position: relative;
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #474C59;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .parent:hover {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent {
+    position: relative;
+    padding-left: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent:hover {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent.active {
+    background: #F0F6FF;
+    color: #3A8BFF;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_parent.active .icon-triangle-up {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .infos {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    line-height: 20px;
+    max-height: 40px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .icon-triangle-up {
+    position: absolute;
+    left: 3px;
+    top: calc(50% - 18px);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #ACB4BF;
+    padding: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .ipt-checkbox {
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .icon-circle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ACB4BF;
+    left: 18px;
+    top: calc(50% - 2px);
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .parent {
+    position: relative;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .parent::before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -1px;
+    width: 12px;
+    border-bottom: 1px dashed #DADFE6;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .parent.active .icon-triangle-up {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child {
+    display: none;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr::before {
+    content: '';
+    width: 0;
+    border-left: dashed #DADFE6 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    left: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent {
+    padding-left: 50px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent .list-icon {
+    left: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent::before {
+    left: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr:last-child::before {
+    height: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr::before {
+    left: 36px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent {
+    padding-left: 70px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent .list-icon {
+    left: 40px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr .parent::before {
+    left: 36px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr::before {
+    left: 55px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent {
+    padding-left: 86px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent .list-icon {
+    left: 60px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr .parent::before {
+    left: 57px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr::before {
+    left: 76px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent {
+    padding-left: 110px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent .list-icon {
+    left: 90px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr_child .tr_child .tr_child .tr .parent::before {
+    left: 81px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr:last-child::before {
+    height: 20px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr.height40::before {
+    height: 29px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr .parent .icon-circle {
+    top: calc(50% - 12px);
+    margin: 10px;
+}
+
+.operate-select.fivlayer-box .list-content .treeBody .tr .tr_child .tr.height40::before {
+    height: 29px;
+}
+
+.list-content .operate-choose-all {
+    font-size: 12px;
+    color: #6B89B3;
+    line-height: 40px;
+    cursor: pointer;
+    padding-left: 14px;
+}
+
+.filter .operate-label {
+    float: left;
+    font-size: 14px;
+    line-height: 34px;
+    margin-right: 14px;
+    color: #131B26;
+}
+
+.select-content_new .choosed-content .choosed-sel {
+    /*border: 1px solid #E1E1E5;*/
+    /*border-radius: 4px;*/
+    display: inline-block;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #131B26;
+    letter-spacing: 0.27px;
+    cursor: pointer;
+    padding-left: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+
+.select-content_new {
+    width: 100%;
+    height: 34px;
+    position: relative;
+}
+
+.select-content_new .choosed-content {
+    width: 292px;
+    height: 34px;
+    float: left;
+    line-height: 34px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.list-content {
+    width: 100%;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    box-shadow: 0 2px 12px 0 rgba(175, 187, 204, 0.75);
+    border-radius: 6px;
+    position: absolute;
+    top: 38px;
+    left: 1px;
+    background: white;
+    z-index: 4;
+    display: none;
+    padding-bottom: 6px;
+}
+
+.list-content .dataSearch {
+    height: 34px;
+    margin: 12px auto;
+}
+
+/*无障碍元素隐藏*/
+.element-invisible-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*2023年错题集新建自测弹窗*/
+.centerPop{left:50%;top: 50%;transform: translate(-50%, -50%);}
+
+/* 新版音频高度样式 */
+.ans-insertaudio-module{height: 84px !important;}

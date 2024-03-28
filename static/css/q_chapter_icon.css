@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Chapter';
+  src:  url('/mooc2-ans/css/fonts/Chapter.eot?ifehio');
+  src:  url('/mooc2-ans/css/fonts/Chapter.eot?ifehio#iefix') format('embedded-opentype'),
+    url('/mooc2-ans/css/fonts/Chapter.ttf?ifehio') format('truetype'),
+    url('/mooc2-ans/css/fonts/Chapter.woff?ifehio') format('woff'),
+    url('/mooc2-ans/css/fonts/Chapter.svg?ifehio#Chapter') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Chapter' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-up:before {
+  content: "\e900";
+  color: #3a8bff;
+}
+.icon-down:before {
+  content: "\e902";
+  color: #3a8bff;
+}
+.icon-edit:before {
+  content: "\e903";
+  color: #f5f9ff;
+}
+.icon-search:before {
+  content: "\e904";
+  color: #e1e1e5;
+}
+.icon-122:before {
+  content: "\e905";
+  color: #cad5e6;
+}
+.icon-123:before {
+  content: "\e906";
+  color: #cad5e6;
+}
+.icon-chuangguan:before {
+  content: "\e907";
+  color: #d0d5db;
+}
+.icon-dingshi:before {
+  content: "\e908";
+  color: #d0d5db;
+}
+.icon-kaifang:before {
+  content: "\e909";
+  color: #d0d5db;
+}
+.icon-bukaifang:before {
+  content: "\e90a";
+  color: #d0d5db;
+}

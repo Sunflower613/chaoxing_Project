@@ -1,0 +1,431 @@
+@charset "utf-8";
+/* CSS Document */
+
+.maskDiv{width:100%;height:100%;position:fixed;top:0;left:0;background: rgba(16,26,41,0.76);z-index:2000;}
+.wid440{width:440px;max-height:360px}
+.popDiv{min-height:100px;background: #FFFFFF;border-radius: 10px;position:fixed;left:50%;overflow:hidden}
+.popHead{line-height:60px;height:60px;background: #FFFFFF;box-shadow: inset 0 -1px 0 0 rgba(242,242,242,0.80);position:absolute;left:0;top:0;width:100%;padding:0 30px;box-sizing: border-box;background:#fff}
+.popClose{display:inline-block;width:18px;height:18px;margin-top:19px}
+.het62{width:100%;height:60px;}
+.popBottom{width:100%;height:53px;background:#fff;position:absolute;left:0;bottom:0;padding-top:17px;}
+.popBottom a{margin-right:30px;}
+.shadowBox{box-shadow: 0 -1px 4px 0 rgba(209,209,209,0.18);}
+.het72{width:100%;height:72px;}
+.popWord{padding:26px 30px;}
+
+
+/*作业批阅-打分*/
+.pad125{padding-left:125px;}
+.Marking{left:50%;top:50%;margin-left:-220px;margin-top:-180px}
+.line66{line-height:40px;font-size: 14px;color: #A8A8B3;padding-top:16px;}
+.grade{padding:8px 0;}
+.grade_check{display:inline-block;width:16px;height:16px;background:url(/mooc2-ans/module/exam/images/task_check.png) no-repeat;background-size:100%;float:left;line-height:34px;margin-right:10px;margin-top:9px;}
+.grade_checked{background:url(/mooc2-ans/module/exam/images/task_checked.png) no-repeat;background-size:100%;}
+.zf{font-size: 14px;width:30px;text-align:right;line-height:34px;color: #181E33;}
+.inp60{width:58px;margin:0 10px;}
+.line34{font-size: 14px;line-height:34px;color: #181E33;}
+
+
+.Textcontent{display:block;width:380px;margin:0 auto;margin:26px auto;max-height:180px;box-sizing:border-box;border-radius: 4px;height:80px;line-height: 22px;font-size: 16px;color: #181E33;outline: none;border:1px solid #F2F2F2;padding:6px;font-family:"微软雅黑"}
+.Textcontent:hover{border:1px solid #CCDEF3;}
+.Textcontent:focus{background: #FFFFFF;border: 1px solid #FFFFFF;box-shadow: 0 0 4px 0px #75BAFF;border-radius: 4px;}
+
+/*发放对象谈弹窗*/
+.grantPop{width:640px;left:50%;top:50%;margin-left:-320px;margin-top:-300px}
+.seacher_320{width:320px;}
+.seacher_320 .dataSearch_input{width:290px}
+.pop480{width:100%;height:468px;}
+.grantPop_left{width:349px;height:466px;padding-left:30px;padding-top:14px;border-right:1px solid #F2F2F2;}
+.object_tit{font-size: 14px;color: #A8A8B3;line-height:35px;margin-top:12px;overflow:hidden;padding-right:30px}
+.object_tit span{display:inline-block;}
+.grantPop_right{width:260px;}
+.SelectedTit{line-height:54px;font-size: 14px;color: #A8A8B3;padding-left:14px;}
+.selectedCon{padding-left:6px;height:412px}
+.selectedCon ul li{padding-left:10px;height:50px;  display: flex;align-items: center;width:240px;position:relative}
+.li_pic_select{display:inline-block;width:26px;height:26px;border-radius:50%;overflow:hidden;text-align:center;line-height:26px;color:#fff;font-size:12px;margin-right:10px;}
+.rgBlue{background:#09f;}
+.rgYellow{background:#faaf43;}
+.li_con{width:180px}
+.li_con p{font-size: 14px;color: #181E33;width:100%;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow: hidden;}
+.li_con span{font-size: 12px;color: #A8A8B3;line-height:16px}
+.del_Icon{display:inline-block;width:42px;height:50px;text-align:center;line-height:50px;background:rgba(247,250,252, 0.9);position:absolute;right:0;top:0;display:none}
+.libg_cur{background:#F7FAFC;}
+.objectList{width:350px;height:370px;margin-left:-16px;}
+.objectList ul{position:relative;}
+.objectList ul li a{display:block;padding-left:16px;width:80%;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow: hidden;float:left;height:40px;line-height:40px;}
+.manageTitl:hover{background: #F7FAFC;}
+.objectList ul li div{height:40px;line-height:40px;font-size:14px;cursor:pointer;position:relative;z-index:3;}
+.objectList ul li a{font-size: 14px;color: #181E33;}
+.objectList ul li ul{display:none}
+.objectList ul li ul div{font-weight:normal;padding-left:22px}
+.objectList ul li ul li ul div{font-weight:normal;padding-left:45px}
+.icon-arrowRight{display:inline-block;margin-right:10px;;}
+.arrowTop{transform:rotate(90deg)}
+.objectList ul li ul .current{background:none;color:#116AE4 ;}
+.objectList ul li ul .current .icon-arrowRight{display:inline-block;}
+.class_check{display:inline-block;width:18px;height:18px;background:url(/mooc2-ans/module/exam/images/dxcheck.png) no-repeat;background-size:100%;float:right;margin:10px 16px 0 0;}
+.class_checked{background:url(/mooc2-ans/module/exam/images/dxchecked.png) no-repeat;background-size:100%;}
+
+.class_checked_disable{
+    background:url(/mooc2-ans/module/exam/images/dxchecked.png) no-repeat;
+    background-size:100%;
+    opacity:0.3
+}
+.head_class{display:inline-block;width:44px;height:44px;border-radius:50%;overflow:hidden;float:left;margin: 8px 10px 0 0;}
+.objectList ul li div.lastLever{height:60px;line-height:60px;}
+.objectList ul li div.lastLever a{height:60px;line-height:60px;}
+.objectList ul li div.lastLever .class_check{margin-top:21px}
+.allcheck{cursor:pointer;color:#91a0b5}
+.allcheck:hover{opacity:0.7}
+.popWord{padding:26px 30px;}
+
+
+/*新建题型*/
+.newBulit{padding:30px 0 0 30px}
+.newB_div {padding-bottom:15px;padding-top:7px;}
+.newB_div span.wid76{display:inline-block;float:left;line-height:34px;font-size:14px;color:#181E33;width:76px;}
+.newB_div input{width:282px;height:32px;border:1px solid #E1E1E5;line-height:32px;padding:0 10px;border-radius:4px;}
+.newB_div input:hover{border:1px solid #CCDEF3;}
+.newB_div input:focus{box-shadow:0px 0px 4px 0px rgba(117,186,255,1);}
+.typeName{width:334px;}
+.typeName span{padding-right:25px;display:inline-block;line-height:34px;font-size:14px;color:#181E33}
+
+/*从题库选择*/
+.het210{height:210px;}
+.wid56{width:56px;display:inline-block;float:left;line-height:34px;font-size:14px;color:#181E33;}
+
+.knowledgePop{width:640px;left:50%;top:50%;margin-left:-320px;margin-top:-240px}
+.bodyhet300{height:300px;}
+.dataCon350{height:350px;}
+.dataHeadPop{ background:#F5F6F7; border-radius:2px;position:absolute;left:0;top:60px;width:100%;z-index:10}
+.het44{width:100%;height:44px;}
+.dataHead_th_pop{ height:40px; line-height:40px; font-size:12px; color:#A8A8B3; position:relative;}
+.dataHead_name_pop{ position:absolute; left:52px;width:70%}
+.dataHead_file_pop{ width:70%; height:100%; float:left;}
+.dataHead_read_con_pop{ width:25%; height:100%; float:left;text-align:right;padding-right:5%;}
+.dataHead_down{ width:12%; height:100%; float:left;}
+.dataHead_time{ width:31%; height:100%; float:left;}
+.sort_up,.sort_down{ width:13px; height:13px; margin:0 0 3px 3px; *margin:0 0 0 3px; display:inline-block; overflow:hidden; vertical-align:middle; cursor:pointer;}
+.sort_up{ background:url(/mooc2-ans/module/exam/images/sort_ico_up.png) no-repeat center/11px 13px;}
+.sort_down{ background:url(/mooc2-ans/module/exam/images/sort_ico_down.png) no-repeat center/11px 13px;}
+.sort_up:hover,.sort_down:hover{ opacity:.7;}
+
+.dataBody_td{ height:44px; line-height:44px; font-size:12px; color:#646873; position:relative;}
+.dataBody_td:not(.topicChecked):hover{ background:#F7FAFC;}
+.dataBody_active,.dataBody_active:hover{ background:#f0f6ff;}
+.dataBody_active:before{ width:100%; height:1px; content:''; display:block; background:#d6e8ff; position:absolute; top:-1px;}
+.dataBody_active:after{ width:100%; height:1px; content:''; display:block; background:#d6e8ff; position:absolute; bottom:0px;}
+.dataHead_check,.dataBody_check,.dataBody_disabled,.dataHead_disabled{ line-height:18px; width:18px; height:18px; background:#09f; overflow:hidden; position:absolute; left:20px; top:13px; z-index:3;}
+.dataHead_check,.dataBody_check{ background:url(/mooc2-ans/images/dx_check.png) no-repeat;}
+.dataHead_checked,.dataBody_checked{ background:url(/mooc2-ans/images/dx_checked.png) no-repeat;}
+.dataHead_disabled,.dataBody_disabled{ background:url(/mooc2-ans/images/dx_check_disable.png) no-repeat;}
+.dataCon input[type="checkbox"]{filter:alpha(opacity=0); opacity:0; position:absolute; left:30px;}
+.dataBody_file{ height:30px; position:absolute; left:52px; top:50%; margin-top:-15px; z-index:3;}
+.dataBody_file img{ width:30px; height:30px; display:block; border-radius:3px;}
+.dataBody_name{ width:70%; height:100%; float:left; position:relative;}
+.dataBody_time{ width:30%; height:100%; float:left;position:relative;}
+.operate a{font-size:12px;}
+.dataBody_read a,.dataBody_down a{font-size: 12px;color: #646873;}
+.dataBody_text_file{ padding:0 30px 0 54px;font-size: 14px;color: #181E33;}
+.dataBody_text{ padding:0 30px 0 52px;font-size: 14px;color: #181E33;}
+.dataBody_ellipsis{ max-width:100%; padding-right:46px; position:relative; float:left;}
+.dataBody_text  a{ max-width:84%; color:#181E33; float:left; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.dataBody_text  a:hover{ color:#3A4B87;}
+.dataBody_text_file  a{ max-width:100%; color:#181E33; float:left; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.dataBody_text_file  a:hover{ color:#3A4B87;}
+.placed_top{ width:34px; height:18px; line-height:18px; position:absolute; right:0; top:0; background:#F9F9FA; border:1px solid #D8E4EC; font-size:12px; color:#819DC6; border-radius:4px; float:left; display:block; text-align:center;}
+.incomplete{color:#F33F34;font-size:12px;float:left;}
+.rename_con{ padding:3px 0 3px 54px; width:288px; position:absolute; left:0; top:0}
+.rename_input{ width:200px; height:24px; line-height:24px; padding:5px 7px; font-size:14px; color:#333; background:#FFFFFF; border:1px solid #CCDEF3; border-radius:4px;}
+/*.rename_shadow{-webkit-box-shadow: 0 0 7px 1px #75BAFF; box-shadow: 0 0 7px 1px #75BAFF;}*/
+.rename_input:focus{-webkit-box-shadow: 0 0 7px 1px #75BAFF; box-shadow: 0 0 7px 1px #75BAFF;}
+.rename_yes,.rename_no{ width:24px; height:24px; background:url(/mooc2-ans/module/exam/images/rename_ico.png) no-repeat; overflow:hidden; margin-top:6px;}
+.rename_yes{ background-position:0 0; margin-left:14px;}
+.rename_yes:hover{ background-position:0 -30px;}
+.rename_no{ background-position:-30px 0; margin-left:10px;}
+.rename_no:hover{ background-position:-30px -30px;}
+
+.operate{ height:30px; line-height:30px; display:table; position:absolute; right:16px; top:50%; margin-top:-15px;}
+.operate_share{ margin-right:20px; float:left;}
+.operate_down{ margin-right:20px; float:left;}
+.operate_rename{ margin-right:20px; float:left;}
+.operateCon a:hover{opacity:0.7}
+.operate_more{ margin-right:24px; float:left; position:relative;}
+.operate_con{ width:116px; padding:6px 0; font-size:14px; background:#FFF; border-radius:6px; position:absolute; right:-20px; top:30px; z-index:3; -webkit-box-shadow: 0 2px 12px 0 rgba(175,187,204,0.75); box-shadow: 0 2px 12px 0 rgba(175,187,204,0.75);}
+.operate_con a{ display:block; line-height:40px; color:#646873; padding-left:20px;}
+.operate_con a:hover{ background:#F5F8FB; color:#3A8BFF}
+.operate_line{ display:block; width:100%; height:1px; background:#f2f2f2; margin:6px 0;}
+.pop100{width:100px;right:50%;margin-right:-50px;}
+.readNumber{ width:326px; height:324px; overflow:hidden; background:#FFF; border-radius:6px; position:absolute; top:40px; left:50%; /*margin-left:-173px; */z-index:3999;  -webkit-box-shadow: 0 2px 12px 0 rgba(175,187,204,0.75); box-shadow: 0 2px 12px 0 rgba(175,187,204,0.75);}
+.readNumber_arrow{ display:block; width:0; height:0; border:solid #FFFFFF 4px; border-color:transparent transparent #FFFFFF transparent; position:absolute; top:-8px; left:50%; margin-left:-4px;}
+.readNumber_tab{ height:36px; padding-top:8px; padding-left:34px; background:#F5F6F7;}
+.readNumber_tab li{ width:116px; height:36px; line-height:36px; margin-right:30px; font-size:14px; color:#A8A8B3; text-align:center; float:left; cursor:pointer;}
+.readNumber_tab li.active{ background:#FFF; color:#181E33; border-radius: 8px 8px 0 0;}
+.readNumber_list{ height:270px; overflow:hidden; margin:0 2px;}
+.readNumber_soller{ padding-top:10px;}
+.readNumber_row{ height:40px; padding:10px 18px;}
+.readNumber_row:hover{ background:#f7fafc;}
+.readNumber_row img{ width:40px; height:40px; margin-right:14px; display:block; border-radius:50%; float:left;}
+.readNumber_name{ line-height:22px; font-size:14px; color:#181E33; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.readNumber_name a{ color:#181E33;}
+.readNumber_name a:hover{ color:#3A4B87;}
+.readNumber_text{ line-height:18px; font-size:12px; color:#A8A8B3;}
+.readNumber_time{ line-height:40px; font-size:12px; color:#A8A8B3; float:right; margin-left:30px;}
+#readNumberScroll_down{ margin-top:6px;}
+.dataBody_read a:hover, .dataBody_down a:hover, .dataUnderline {    text-decoration: underline;}
+.EstablishFolder{display:inline-block;color:#3A8BFF;font-size:13px;margin-left:30px;line-height:36px;}
+.EstablishFolder i{margin-top:1px;}
+.Icdrag{position:relative;z-index:999}
+.dragCon{position:absolute;left:-23px;top:-42px;width:80px;height:37px;background: rgba(24,30,51,0.80);border-radius: 4px;opacity: 0; visibility: hidden;-webkit-transition: opacity 0.1s 1s, visibility 0s 0.3s;transition: opacity 0.1s 1s, visibility 0s 0.3s;text-align:center;line-height:37px;color:#fff;font-size:12px;z-index:999}
+.dragCon i{ display:block; width:0px; height:0px; border:solid rgba(24,30,51,0.80) 4px; position:absolute; left:35px; top:37px; bottom:auto; border-color:rgba(24,30,51,0.80) transparent transparent transparent;}
+.Icdrag:hover .dragCon{ display:block; opacity:1; visibility:visible; 	-webkit-transition:opacity 0.3s 0.1s, visibility 0.3s 0.1s; 	transition:opacity 0.3s 0.1s, visibility 0.3s 0.1s;}
+.Icdrag:hover:before {color:#8ABBFF}
+.sortable-ghost{ height:2px;overflow:hidden;margin:0;padding:0;margin-bottom:20px;border:0;border-radius:10px;}
+.sortable-ghost:after{position:absolute;width:100%;height:2px;background:#3A8BFF;top:0;left:0;content:'';}
+.sortable-fallback{background:#F7FAFC}
+
+
+/*9.3移动到弹窗*/
+.wid640{width:640px;max-height:480px}
+.popOverflow{ overflow:hidden;}
+.popMove_module{ height:339px; margin:0 2px; margin-top:10px;}
+.popMove_name{ height:46px; line-height:46px; padding:0 22px; display:block; position:relative; cursor:pointer;}
+.popMove_name:hover{ background-color:#F7FAFC;}
+.popMove_text{ display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.popMove_active,.popMove_active:hover{ background:#f0f6ff; border-bottom:solid #d6e8ff 1px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box;}
+.popMove_active:before,.popMove_active:hover:before{ width:100%; height:1px; content:''; display:block; background:#d6e8ff; position:absolute; top:0px; left:0; right:0;}
+.popMove_name img{ width:30px; height:30px; margin:8px 14px 0 0; float:left; display:block; border-radius:3px;}
+.popMove_putit>.popMove_name{ background-image:url(/mooc2-ans/images/sj_right.png); background-repeat:no-repeat;}
+.popMove_open>.popMove_name{ background-image:url(/mooc2-ans/images/sj_down.png); background-repeat:no-repeat;}
+.popMove_list li>.popMove_name{ padding-left:40px; background-position:18px center;}
+.popMove_list li li>.popMove_name{ padding-left:62px; background-position:42px center;}
+.popMove_list li li li>.popMove_name{ padding-left:84px; background-position:64px center;}
+.popMove_list li li li li>.popMove_name{ padding-left:106px; background-position:86px center;}
+.popMove_list li li li li li>.popMove_name{ padding-left:128px; background-position:108px center;}
+.popMove_newFolder{ height:20px; line-height:20px; padding-left:26px; margin:8px 0 0 30px; background:url(/mooc2-ans/images/new_wjj.png) no-repeat left center;}
+.popMove_newFolder:hover{ opacity:.7;}
+.popMove_list .rename_con{ height:36px; padding:5px 0; position:inherit; width:auto;}
+.popCopyLinks{ height:36px; padding:25px 30px;}
+.popCopyLinks_input{ width:258px; height:20px; line-height:20px; padding:7px 0 7px 10px;font-size:14px; color: #646873; border:1px solid #E1E1E5; border-radius:4px;}
+.popCopyLinks_tips{ height:62px; line-height:18px; padding:0 30px;}
+
+
+/*9.5导入成绩*/
+.Import_info{color:#A8A8B3;font-size:12px;line-height:40px;text-align:center}
+.popLocal_con{ width:580px; height:351px; border:1px dashed #A0B5D1; border-radius:6px; margin:0 auto;margin-bottom:30px}
+.popLocal_active{ background:#F1F6FF; border:1px dashed #3A8BFF; opacity:0.5;}
+.popLocal_text{ line-height:36px; padding-top:112px; text-align:center;}
+.popLocal_text .jb_btn{ display:block; margin:24px auto 0; position:relative; overflow:hidden;}
+.popLocal_text .jb_btn input{ position:absolute; font-size:40px; right:0; top:0; opacity:0; filter:alpha(opacity=0); cursor:pointer;}
+.loadIcon{display:inline-block;width:16px;height:16px;vertical-align:middle}
+.popLocal_p{color:#91A0B5}
+
+
+/*导入中*/
+.barDiv{margin:40px auto 25px;width:380px;height:16px;background:#EBF0F5;border-radius:8px;position:relative}
+.barCon{height:16px;background: linear-gradient(to right,#6CC7FF ,#5A33FF);border-radius:8px;box-shadow:0px 2px 9px 0px rgba(103,161,255,0.5);}
+
+.barInfo{color:#A8A8B3;font-size:12px;width:370px;margin:0 auto;margin-bottom:40px;padding-left:5px;}
+.barInfo span{color:#F7704E;padding-left:5px;}
+
+.relation_knowledge{width:840px;}
+.knowBg{ background-color:#f2f4f7;}
+
+.knowMain_padd{height:420px;padding:0 14px}
+.bntLinear{ padding:0 16px; min-width:60px; height:36px; line-height:36px; font-size:14px; color:#FFFFFF; font-weight:500; border-radius:18px; box-shadow:0px 3px 8px 0px rgba(58,107,255,0.33); text-align:center;
+    background:#5a33ff;
+    background:-webkit-linear-gradient(140deg, #6cc7ff 0%, #5a33ff 100%);
+    background:-moz-linear-gradient(140deg, #6cc7ff 0%, #5a33ff 100%);
+    background:-o-linear-gradient(140deg, #6cc7ff 0%, #5a33ff 100%);
+    background:linear-gradient(140deg, #6cc7ff 0%, #5a33ff 100%);
+}
+.bntLinear:hover{
+    background:#6c4aff;
+    background:-webkit-linear-gradient(140deg, #89d9ff 0%, #6c4aff 100%);
+    background:-moz-linear-gradient(140deg, #89d9ff 0%, #6c4aff 100%);
+    background:-o-linear-gradient(140deg, #89d9ff 0%, #6c4aff 100%);
+    background:linear-gradient(140deg, #89d9ff 0%, #6c4aff 100%);
+}
+.bntLinear:active{
+    background:#7b66f1;
+    background:-webkit-linear-gradient(318deg, #69cafa 0%, #7b66f1 100%);
+    background:-moz-linear-gradient(318deg, #69cafa 0%, #7b66f1 100%);
+    background:-o-linear-gradient(318deg, #69cafa 0%, #7b66f1 100%);
+    background:linear-gradient(318deg, #69cafa 0%, #7b66f1 100%);
+}
+.bntLinear.bntDis{
+    background:#ab99ff; cursor:context-menu;
+    background: -webkit-linear-gradient(140deg, #ace7ff 0%, #ab99ff 100%);
+    background: -moz-linear-gradient(140deg, #ace7ff 0%, #ab99ff 100%);
+    background: -o-linear-gradient(140deg, #ace7ff 0%, #ab99ff 100%);
+    background: linear-gradient(140deg, #ace7ff 0%, #ab99ff 100%);
+}
+.bntAdd:before{ content:''; width:12px; height:12px; margin:-2px 6px 0 0; background:url(/mooc2-ans/images/ico-add-bnt.png) no-repeat; display:inline-block; vertical-align:middle;}
+.bntWhite{ padding:0 16px; min-width:60px; height:34px; line-height:34px; border:solid #94c1ff 1px; font-size:14px; color:#3a8bff; font-weight:500; border-radius:20px; text-align:center;}
+.bntWhite:hover{background:#eaf0ff;}
+.bntWhite:active{background:#e4ecff;}
+
+.bntChild{ border-color:#d4e6ff; color:#b0d1ff;}
+.addChild{ border-color:#94c1ff; color:#3A8BFF;}
+.addTopic{ border-color:#94c1ff; color:#3A8BFF;}
+
+.bnt_group{ height:24px; padding:16px 16px 0;}
+.bnt_group a{padding:0 15px;font-size:14px;}
+.bnt_group a.addLvevl{color:#3A8BFF}
+.bntView{ margin-left:30px; line-height:36px; font-size:14px; color:#6B89B3;}
+.bntKnow{ line-height:36px; font-size:14px; color:#6B89B3;}
+.bntView:hover,.bntKnow:hover{ color:#3a8bff;}
+.bntView:before,.bntKnow:before{ content:''; margin:-2px 6px 0 0; width:16px; height:16px; background:url(/mooc2-ans/images/ico-know.png) no-repeat; background-size:16px auto; overflow:hidden; display:inline-block; vertical-align:middle;}
+.bntView:before{ background-position:0 0; background-size:16px auto;}
+.bntView:hover:before{ background-position:0 -20px; background-size:16px auto;}
+.bntKnow:before{ background-position:0 -40px; background-size:16px auto;}
+.bntKnow:hover:before{ background-position:0 -60px; background-size:16px auto;}
+
+.divKnow{ height:36px; position:relative; margin-left:30px;}
+.divKnow_con{ min-width:134px; background:#FFF; border-radius:6px; position:absolute; top:36px; left:0; z-index:9; -webkit-box-shadow: 0 2px 12px 0 rgba(175,187,204,0.75); box-shadow: 0 2px 12px 0 rgba(175,187,204,0.75);white-space:nowrap;}
+.divKnow_con{padding:6px 0;}
+.divKnow_con li{ display:block; line-height:44px; font-size:14px; color:#646873; padding:0 20px; text-align:center; position:relative; cursor:pointer;}
+.divKnow_con li:hover{ background:#F5F8FB; color:#3A8BFF}
+.divKnow .divKnow_con{ display:none;}
+.divKnow:hover .divKnow_con{ display:block;}
+
+.dataSearch{ width:200px; height:36px; border-radius:40px;position:relative;}
+.dataSearch_input{ width:122px; height:34px;font-size:14px; color:#131B26;  border:1px solid #D5D7D9;background:none;position:absolute;left:0;top:0;z-index:2;padding:0 62px 0 14px; border-radius:40px;font-family:microsoft Yahei;}
+.dataSearch_input:hover,.dataSearch:hover .dataSearch_input{border:1px solid #3a8bff;}
+.dataSearch_input:focus{outline:none;border:1px solid #3a8bff;}
+.dataSearch_bnt{ width:16px; height:16px;background:url(/mooc2-ans/images/knowledgepoints/ico-search.png) no-repeat 0 0; background-size:16px auto; border:0 none; cursor:pointer;position:absolute;right:14px;top:50%;margin-top:-8px;z-index:3;outline:none; overflow:hidden;}
+.dataSearch_dele1{ width:14px; height:14px; background:url(/mooc2-ans/images/knowledgepoints/search_dele.png) no-repeat center/14px; display:block; position:absolute; right:40px; top:50%; margin-top:-7px; display:none; z-index:3;}
+.dataSearch:hover .dataSearch_bnt{ width:16px; height:16px;background:url(/mooc2-ans/images/knowledgepoints/ico-search.png) no-repeat 0 -20px; background-size:16px auto; }
+@supports (caret-color:#3a8bff) {
+    .dataSearch_input{
+        color:#131B26;
+        caret-color:#3a8bff;
+    }
+}
+
+.knowTitle{ padding:12px 30px; height:36px; line-height:36px; border-bottom:solid #F2F2F2 1px;}
+.knowTitle_h2{ font-size:16px; color:#131B26; font-weight:600;}
+
+.knowNumbar{ height:18px; line-height:18px; font-size:12px; color:#8A8B99;}
+
+
+.treeBox{ margin-top:10px;}
+.treeBox li{ width:100%; position:relative;}
+
+
+.treeBox li .tree_entry{ min-height:40px; line-height:20px; position:relative; cursor:pointer;}
+.treeBox li .tree_entry:hover{ background-color:#F0F6FF;}
+.treeBox li .tree_main{ width:620px; padding:8px 0; position:relative;display:inline-block}/**/
+.treeBox li .tree_icon{ width:12px; height:12px; background:url(/mooc2-ans/images/knowledgepoints/ico-tree-arrow.png) no-repeat; background-size:12px 12px; position:absolute; left:10px; top:50%; margin-top:-6px;}
+.treeBox li .tree_icon{ -webkit-transform:rotate(0deg); -webkit-transition:all .2s linear;}
+.treeBox li .tree_down{ -webkit-transform:rotate(90deg);}
+.treeBox li .tree_file{ width:12px; height:12px; background:url(/mooc2-ans/images/knowledgepoints/ico-tree-file.png) no-repeat; background-size:12px 12px; position:absolute; left:10px; top:50%; margin-top:-6px;}
+.treeBox li .tree_text{ padding-left:28px; max-height:40px; font-size:14px; color:#131b26; display:block; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;}
+.treeBox li .tree_relat{ padding-left:28px; margin-top:4px; font-size:14px; color:#8A8B99; display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.treeBox li .tree_form{ padding:2px 0 2px 28px;}
+.treeBox li .tree_input{ width:216px; height:20px; line-height:20px; padding:5px 9px; font-size:14px; color:#131B26; border:solid #3a8bff 1px; background:#FFFFFF; border-radius:4px; vertical-align:top;}
+.treeBox li .tree_yes,.treeBox li .tree_not{ margin:4px 0 0 10px; width:24px; height:24px; background:url(/mooc2-ans/images/knowledgepoints/rename_ico.png) no-repeat; overflow:hidden; display:inline-block; vertical-align:top;}
+.treeBox li .tree_yes:hover{ background-position:0 -30px}
+.treeBox li .tree_not{ background-position:-30px 0;}
+.treeBox li .tree_not:hover{ background-position:-30px -30px;}
+.treeBox li .tree_active,.treeBox li .tree_active:hover{ background:#eaf2ff;;}
+
+.treeBox li .tree_entry .tree_group{ display:none;}
+.treeBox li .tree_entry:hover .tree_group{ display:block !important;}
+.treeBox li .editShowHide .tree_group{ display:none;}
+.treeBox li .editShowHide:hover .tree_group{ display:none !important;}
+.treeBox li .colorBlue{ margin-right:24px; color:#3A8BFF;}
+.treeBox li .tree_more{ display:inline-block; position:relative;}
+.treeBox li .tree_con{ width:76px; padding:6px 0; font-size:14px; background:#FFF; border-radius:6px; position:absolute; left:-20px; top:100%; z-index:11; -webkit-box-shadow:0 2px 12px 0 rgba(175,187,204,0.75); box-shadow:0 2px 12px 0 rgba(175,187,204,0.75);}
+.treeBox li .tree_con a{ display:block; line-height:40px; color:#474C59; padding-left:20px;}
+.treeBox li .tree_con a:hover{ background:#F0F6FF; color:#3A8BFF}
+
+.treeBox li .tree_main{ width:90%;}
+/*.treeBox li li .tree_main{ width:590px;}
+.treeBox li li li .tree_main{ width:560px;}
+.treeBox li li li li .tree_main{ width:530px;}
+.treeBox li li li li li .tree_main{ width:500px;}
+.treeBox li li li li li li .tree_main{ width:470px;}
+.treeBox li li li li li li li .tree_main{ width:440px;}
+.treeBox li li li li li li li li .tree_main{ width:410px;}
+.treeBox li li li li li li li li li .tree_main{ width:380px;}
+.treeBox li li li li li li li li li li .tree_main{ width:350px;}*/
+
+/*.treeBox li li .tree_group{ left:630px;}
+.treeBox li li li .tree_group{ left:600px;}
+.treeBox li li li li .tree_group{ left:570px;}
+.treeBox li li li li li .tree_group{ left:540px;}
+.treeBox li li li li li li .tree_group{ left:510px;}
+.treeBox li li li li li li li .tree_group{ left:480px;}
+.treeBox li li li li li li li li .tree_group{ left:450px;}
+.treeBox li li li li li li li li li .tree_group{ left:420px;}
+.treeBox li li li li li li li li li li .tree_group{ left:390px;}*/
+
+
+.treeBox li .tree_pack{ padding-left:30px; display:none;}
+.treeBox li .tree_pack li:before{ content:''; width:0; border-left:dashed #DBDBDB 1px; position:absolute; top:-6px; bottom:-6px; left:-14px;}
+.treeBox li .tree_pack li .tree_entry:after{ content:''; width:16px; height:0; border-top:dashed #DBDBDB 1px; position:absolute; top:50%; left:-8px;}
+.treeBox li .tree_pack li li:last-child:before{ bottom:18px;}
+.treeBox li:last-child .tree_pack>li:last-child:before{ bottom:18px;}
+
+.treeBox li .tree_pack li li.lineOne:last-child:before{ height:24px; }
+.treeBox li:last-child .tree_pack>li.lineOne:last-child:before{ height:24px;}
+
+.treeBox li .tree_pack li li.lineTwo:last-child:before{ height:34px;}
+.treeBox li:last-child .tree_pack>li.lineTwo:last-child:before{ height:34px;}
+
+.treeBox li .tree_pack li li.lineThree:last-child:before{ height:46px;}
+.treeBox li:last-child .tree_pack>li.lineThree:last-child:before{ height:46px;}
+
+.treeBox li.lineOne.tree_dotted>.tree_entry:before{ content:''; width:0; height:0; border-left:dashed #DBDBDB 1px; position:absolute; top:30px; left:16px;}
+.treeBox li.lineTwo.tree_dotted>.tree_entry:before{ content:''; width:0; height:24px; border-left:dashed #DBDBDB 1px; position:absolute; top:40px; left:16px;}
+.treeBox li.lineThree.tree_dotted>.tree_entry:before{ content:''; width:0; height:24px; border-left:dashed #DBDBDB 1px; position:absolute; top:52px; left:16px;}
+
+.treeBox li.lineOne.tree_duan>.tree_entry:before{ height:0;}
+.treeBox li.lineTwo.tree_duan>.tree_entry:before{ height:0;}
+.treeBox li.lineThree.tree_duan>.tree_entry:before{ height:0;}
+
+
+.ddCheck{ width:18px; height:18px; overflow:hidden; position:relative; display:inline-block; vertical-align:middle;}
+.ddCheck input{ width:18px; height:18px; filter:alpha(opacity=0); opacity:0; cursor:pointer; display:block; position:absolute; left:0; top:0; z-index:2;}
+.ddCheck input+i{ width:18px; height:18px; background:url(/mooc2-ans/images/knowledgepoints/ico-check.png) no-repeat; overflow:hidden; position:absolute; left:0; top:0; z-index:1;}
+.ddCheck input:checked+i{ background-position:0 -20px;}
+
+.ppRadio{ width:18px; height:18px; overflow:hidden; position:relative; display:inline-block; vertical-align:middle;}
+.ppRadio input{ width:18px; height:18px; filter:alpha(opacity=0); opacity:0; cursor:pointer; display:block; position:absolute; left:0; top:0; z-index:2;}
+.ppRadio input+i{ width:18px; height:18px; background:url(/mooc2-ans/images/knowledgepoints/ico-radio.png) no-repeat; overflow:hidden; position:absolute; left:0; top:0; z-index:1;}
+.ppRadio input:checked+i{ background-position:0 -20px;}
+
+/*pop*/
+.popOverflow{ overflow:hidden;}
+.maskDiv{width:100%;height:100%;position:fixed;top:0;left:0;background:rgba(16,26,41,0.76);z-index:2000}
+.wid840{width:840px;}
+.popDiv{min-height:100px;background:#FFFFFF;border-radius:10px;position:fixed;overflow:hidden}
+.popHead{line-height:60px;height:60px;background: #FFFFFF;box-shadow: inset 0 -1px 0 0 rgba(242,242,242,0.80);position:absolute;left:0;top:0;width:100%;padding:0 30px;box-sizing: border-box;background:#fff}
+.popClose{display:inline-block;width:18px;height:18px;margin-top:19px}
+.het62{width:100%;height:60px;}
+.popBottom{width:100%;height:53px;background:#fff;position:absolute;left:0;bottom:0;padding-top:17px;}
+.popBottom a{margin-right:30px;}
+.shadowBox{box-shadow: 0 -1px 4px 0 rgba(209,209,209,0.18);}
+.het72{width:100%;height:72px;}
+.het6512{height:512px;}
+.leftCon{width:580px;border-right:1px solid #f2f2f2}
+
+
+.tree_group{display: -webkit-box;height:100%;line-height: 100%; font-size:14px;    position: absolute;    right: 34px;    top: 0;background: linear-gradient(90deg,rgba(240,246,255,0.15), #f0f6ff 8%);}
+.tree_group a {padding: 0 12px;float:left;height: 100%;line-height: 100%;;color: #6B89B3;font-size: 14px;display: flex;align-items: center;justify-content: center}
+.class_check{display:inline-block;width:18px;height:18px;background:url(/mooc2-ans/images/work/dxcheck.png) no-repeat;background-size:100%;display: inline-block;width: 18px;height: 18px;background: url(/mooc2-ans/images/work/dxcheck.png) no-repeat;background-size: 100%;position: absolute;right: 0px;top: 50%;transform: translate(-50%, -50%);}
+.class_checked{background:url(/mooc2-ans/images/work/dxchecked.png) no-repeat;background-size:100%;}
+.class_checked_disable{background:url(/mooc2-ans/images/work/dxchecked.png) no-repeat;background-size:100%;opacity:0.3}
+
+.rightCon{padding:0 24px;width:210px}
+.checkPcon{padding:20px 0;color:#A8A8B3;font-size: 12px;}
+.checkPcon span{padding:0 4px;}
+.selectDiv span{cursor:pointer;display:inline-block;padding:5px 10px;border-radius: 4px;position:relative;border: 2px dashed #D5E2F1;margin:0 12px 12px 0;float:left}
+.selectDiv span b{display:block;max-width:170px;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow: hidden}
+.closeImg{display:inline-block;width:16px;height:16px;background:url(/mooc2-ans/images/knowledgepoints/ico-popLedge.png) no-repeat;background-size:100%;position:absolute;right:-8px;top:-6px;display:none}
+.selectDiv span:hover .closeImg{display:block}
+
+.selectDiv{padding-top:10px;}
+.mid{top: 50%;left: 50%}
+.tempDivContainer .tree_edit,.tempDivContainer .tree_dele{display: none}
