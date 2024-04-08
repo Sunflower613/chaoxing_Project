@@ -59,7 +59,9 @@ img{ border:0;}
 input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
 input{caret-color:#3A8BFF;}
 
-
+.mr-0{margin-right:0px;}
+.mt-0{margin-top:0px;}
+.i-block{display: inline-block;}
 /*padding,margin值*/
 .pad30lr{padding:0 30px;}
 .padTop30{padding-top:30px;}
@@ -84,15 +86,15 @@ input{caret-color:#3A8BFF;}
 
 /************渐变按钮样式************/
 .jb_btn{display:inline-block;box-shadow: 0 3px 12px 0 rgba(39,125,255,0.30);color: #FFFFFF;text-align:center;line-height:36px;border-radius: 20px;}
-.jb_btn_92{width:92px;height:36px;background:url(/mooc2-ans/images/jb_btn_92.png) no-repeat 0 0;}
+.jb_btn_92{width:92px;height:36px;background:url(/static/img/jb_btn_92.png) no-repeat 0 0;}
 .jb_btn_92:hover{background-position:0 -48px;color: #ffffff;}
 .jb_btn_92:active{background-position:left -96px}
-.jb_btn_92_disable{width:92px;height:36px;background:url(/mooc2-ans/images/jb_disable.png) no-repeat!important;box-shadow: 0 4px 11px 0 rgba(86,82,255,0.17);
+.jb_btn_92_disable{width:92px;height:36px;background:url(/static/img/jb_disable.png) no-repeat!important;box-shadow: 0 4px 11px 0 rgba(86,82,255,0.17);
   border-radius: 20px;}
-.jb_btn_104{width:104px;height:36px;background:url(/mooc2-ans/images/jb_btn_104.png) no-repeat 0 0;}
+.jb_btn_104{width:104px;height:36px;background:url(/static/img/jb_btn_104.png) no-repeat 0 0;}
 .jb_btn_104:hover{background-position:0 -48px;color: #ffffff;}
 .jb_btn_104:active{background-position:left -96px}
-.jb_btn_168{width:168px;height:44px;line-height:44px;background:url(/mooc2-ans/images/jb_btn_168.png) no-repeat 0 0;}
+.jb_btn_168{width:168px;height:44px;line-height:44px;background:url(/static/img/jb_btn_168.png) no-repeat 0 0;}
 .jb_btn_168:hover{background-position:0 -56px;color: #ffffff;}
 .jb_btn_168:active{background-position:left -112px}
 
@@ -109,8 +111,8 @@ input{caret-color:#3A8BFF;}
 .dataSearch{ width:200px; height:36px; border-radius:40px;position:relative}
 .dataSearch .icon-search{ color:#ACB4BF;}
 .dataSearch_input{ width:170px; height:34px;font-size:14px; color:#131B26;  border:1px solid #D4D6D9;background:none;position:absolute;left:0;top:0;z-index:2;padding:0 14px; border-radius:40px;}
-.dataSearch_bnt{ width:16px; height:16px;background:url(/mooc2-ans/images/search_ico.png) no-repeat center; border:0 none; cursor:pointer;position:absolute;right:14px;top:10px;z-index:3;outline:none}
-.dataSearch:hover .dataSearch_bnt{ background:url(/mooc2-ans/images/seacher18-hover.png) no-repeat center;background-size: 100%;}
+.dataSearch_bnt{ width:16px; height:16px;background:url(/static/img/search_ico.png) no-repeat center; border:0 none; cursor:pointer;position:absolute;right:14px;top:10px;z-index:3;outline:none}
+.dataSearch:hover .dataSearch_bnt{ background:url(/static/img/seacher18-hover.png) no-repeat center;background-size: 100%;}
 .dataSearch:hover .dataSearch_input{ border: 1px solid #3A8BFF;}
 .dataSearch:hover .icon-search{ color:#3A8BFF;}
 .dataSearch_input:hover{border: 1px solid #3A8BFF;}
@@ -126,7 +128,7 @@ input{caret-color:#3A8BFF;}
 .breadcrumb>li.active{ color:#8A8B99;}
 .breadcrumb>li>a{ font-size:12px; color:#3A8BFF; display:block; max-width:100px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .breadcrumb>li>a:hover{ text-decoration:underline;}
-.breadcrumb>li+li { background:url(/mooc2-ans/images/breadcrumb.png) no-repeat 4px center; padding-left:14px;}
+.breadcrumb>li+li { background:url(/static/img/breadcrumb.png) no-repeat 4px center; padding-left:14px;}
 
 .PlusIcon{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:middle;margin-top:-2px;}
 /*********Reset************/
@@ -143,10 +145,10 @@ body{background: #f2f4f7}
 
 .loginCon li a i{display:inline-block;width:16px;height:16px;vertical-align:middle;margin-right:8px;margin-top:-1px;}
 .loginCon{position:absolute;left:-25px;top:34px;height:0}
-.loginCon li a i.user{background:url(/mooc2-ans/images/user.png) no-repeat}
-.loginCon li a i.eidt{background:url(/mooc2-ans/images/eidt.png) no-repeat}
-.loginCon li a:hover i.user{background:url(/mooc2-ans/images/user_hover.png) no-repeat}
-.loginCon li a:hover i.eidt{background:url(/mooc2-ans/images/eidt_hover.png) no-repeat}
+.loginCon li a i.user{background:url(/static/img/user.png) no-repeat}
+.loginCon li a i.eidt{background:url(/static/img/eidt.png) no-repeat}
+.loginCon li a:hover i.user{background:url(/static/img/user_hover.png) no-repeat}
+.loginCon li a:hover i.eidt{background:url(/static/img/eidt_hover.png) no-repeat}
 .name:hover .arrowDown{-moz-transform: rotate(180deg);-moz-transform-origin: 50% 30%;-webkit-transform: rotate(180deg);-webkit-transform-origin: 50% 30%;-o-transform: rotate(180deg);-o-transform-origin: 50% 30%;
   transform: rotate(180deg);transform-origin: 50% 30%;    margin: 12px 0 0 8px;    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);}
 
@@ -156,7 +158,7 @@ body{background: #f2f4f7}
 .classDl dt{width:138px;height:78px;border-radius:6px;overflow:hidden;position:relative;}
 .classDl dt:hover{filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;}
 .classDl dt span{display:inline-block;width:100%;height:24px;background:rgba(0,0,0,0.2);position:absolute;bottom:0;left:0;text-align:center;line-height:24px;font-size:12px;color:#fff;}
-.classDl dt span .left_join{display:inline-block;width:10px;height:10px;vertical-align:middle;background:url(/mooc2-ans/images/left_join.png) no-repeat;margin-left:4px;margin-top:-2px;}
+.classDl dt span .left_join{display:inline-block;width:10px;height:10px;vertical-align:middle;background:url(/static/img/left_join.png) no-repeat;margin-left:4px;margin-top:-2px;}
 .classDl dd{font-size: 16px;text-align:center;width:100%;line-height:21px;margin-top:12px;}
 .nav-content{margin-top:8px; padding-bottom:30px;}
 .nav-content ul{border-bottom:2px solid  #F8F8F8;padding:12px 0;}
@@ -165,7 +167,7 @@ body{background: #f2f4f7}
 .nav-content ul li a{display:block;height:54px;line-height:54px;font-size: 14px;color: #474C59;}
 .nav-content ul li a:hover{background:#F0F6FF}
 .nav-content ul li a{padding-left:47px;}
-.nav-content ul li a i{display:inline-block;width:24px;height:24px;background:url(/mooc2-ans/images/nav_icon.png) no-repeat;background-size:1800%;vertical-align:middle;margin-right:6px;margin-top:-2px;}
+.nav-content ul li a i{display:inline-block;width:24px;height:24px;background:url(/static/img/nav_icon.png) no-repeat;background-size:1800%;vertical-align:middle;margin-right:6px;margin-top:-2px;}
 .nav-content ul li a .custom-icon{display:inline-block;width:24px;height:24px;background-size:1800%;vertical-align:middle;margin-right:6px;margin-top:-2px;}
 .nav-content ul li a i.hd{background-position:0 0;}
 .nav-content ul li a i.ppt{background-position:-408px 0;}
@@ -179,9 +181,9 @@ body{background: #f2f4f7}
 .nav-content ul li a i.tj{background-position:-192px 0}
 .nav-content ul li a i.gl{background-position:-216px 0}
 .nav-content ul li a i.kj{background-position:-24px 0;}
-.nav-content ul li a i.tk{background:url(/mooc2-ans/images/tiku_icon.png) no-repeat;background-position: 0 0;background-size:200%}
-.nav-content ul li a i.zsd{background:url(/mooc2-ans/images/zhishidian_icon2.png) no-repeat;background-size:100%}
-.nav-content ul li a i.expandread{background:url(/mooc2-ans/images/coursedata/expandread.png) no-repeat;}
+.nav-content ul li a i.tk{background:url(/static/img/tiku_icon.png) no-repeat;background-position: 0 0;background-size:200%}
+.nav-content ul li a i.zsd{background:url(/static/img/zhishidian_icon2.png) no-repeat;background-size:100%}
+.nav-content ul li a i.expandread{background:url(/static/img/coursedata/expandread.png) no-repeat;}
 .nav-content ul li.curNav a{color: #3B90FF;background:#F0F6FF}
 .nav-content ul li.curNav a i.hd{background-position:0 -24px;}
 .nav-content ul li.curNav a i.ppt{background-position:-408px -24px;}
@@ -195,9 +197,9 @@ body{background: #f2f4f7}
 .nav-content ul li.curNav a i.tj{background-position:-192px -24px}
 .nav-content ul li.curNav a i.gl{background-position:-216px -24px}
 .nav-content ul li.curNav a i.kj{background-position:-24px -24px;}
-.nav-content ul li.curNav a i.tk{background:url(/mooc2-ans/images/tiku_icon.png) no-repeat;background-position: -23px 0;background-size:200%}
-.nav-content ul li.curNav a i.zsd{background:url(/mooc2-ans/images/zhishidiancur_icon2.png) no-repeat;background-size:100%}
-.nav-content ul li.curNav a i.expandread{background:url(/mooc2-ans/images/coursedata/expandreadcur.png) no-repeat;}
+.nav-content ul li.curNav a i.tk{background:url(/static/img/tiku_icon.png) no-repeat;background-position: -23px 0;background-size:200%}
+.nav-content ul li.curNav a i.zsd{background:url(/static/img/zhishidiancur_icon2.png) no-repeat;background-size:100%}
+.nav-content ul li.curNav a i.expandread{background:url(/static/img/coursedata/expandreadcur.png) no-repeat;}
 /*12.25学生端新加*/
 .nav-content ul li a i.ctj{background-position:-240px 0}
 .nav-content ul li a i.zc{background-position:-288px 0}
@@ -209,7 +211,7 @@ body{background: #f2f4f7}
 .nav-content ul li.curNav a i.dy{background-position:-312px -24px}
 .nav-content ul li a  b.number{display:inline-block;padding:0 5px;height:18px;color:#fff;border-radius:50%;background:#F33F34;line-height:18px;font-size:13px;margin-left:10px;}
 
-.nav-content ul li a i.zb_jm{display:inline-block;background:url(/mooc2-ans/images/zb.png) no-repeat;background-size:200%;background-position:0 0;}
+.nav-content ul li a i.zb_jm{display:inline-block;background:url(/static/img/zb.png) no-repeat;background-size:200%;background-position:0 0;}
 .nav-content ul li.curNav a i.zb_jm{background-position:-24px 0;}
 
 
@@ -223,11 +225,11 @@ body{background: #f2f4f7}
 #page {text-align: center;height:26px;}
 #page li {display:inline-block;min-width:24px;height:24px;border-radius:99px;text-align:center;line-height:24px;color: #8A8B99;font-size:14px;margin:0 2px;cursor: pointer;overflow:hidden;padding:0 8px;box-sizing:border-box;}
 #page li:hover{color: #474C59;}
-#page li.xl-nextPage i{display:block;width:9px;height:14px;background:url(/mooc2-ans/images/page_next.png) no-repeat;margin:0 auto;vertical-align:middle;margin-top:5px;}
-#page li.xl-prevPage i{display:block;width:9px;height:14px;background:url(/mooc2-ans/images/page_prve.png) no-repeat;margin:0 auto;vertical-align:middle;margin-top:5px;}
+#page li.xl-nextPage i{display:block;width:9px;height:14px;background:url(/static/img/page_next.png) no-repeat;margin:0 auto;vertical-align:middle;margin-top:5px;}
+#page li.xl-prevPage i{display:block;width:9px;height:14px;background:url(/static/img/page_prve.png) no-repeat;margin:0 auto;vertical-align:middle;margin-top:5px;}
 #page li.xl-active {background: linear-gradient(139.98deg, #6CC7FF -38.96%, #5A33FF 168.95%), #FFFFFF;color:#fff; box-shadow: 0 2px 6px 0 rgba(39,125,255,0.30);color:#fff}
-#page li.xl-disabled i{display:block;width:9px;height:14px;background:url(/mooc2-ans/images/disable_page_prve.png) no-repeat;vertical-align:middle;margin-top:5px;}
-#page li.xl-nextPage.xl-disabled i{display:block;width:9px;height:14px;background:url(/mooc2-ans/images/disable_page_next.png) no-repeat;vertical-align:middle;margin-top:5px;}
+#page li.xl-disabled i{display:block;width:9px;height:14px;background:url(/static/img/disable_page_prve.png) no-repeat;vertical-align:middle;margin-top:5px;}
+#page li.xl-nextPage.xl-disabled i{display:block;width:9px;height:14px;background:url(/static/img/disable_page_next.png) no-repeat;vertical-align:middle;margin-top:5px;}
 
 /*开关与文字注解*/
 

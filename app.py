@@ -5,11 +5,7 @@ app = Flask(__name__, static_folder='static')
 # 模拟返回目录数据的路由
 @app.route('/get_directory_data')
 def get_directory_data():
-    # 这里可以替换成你实际的目录数据
-    # directory_data = [
-    #     {"title": "第一讲：有用之用与无用之用", "sub_items": ["软件过程规范", "排版要求", "PSP中文"]},
-    #     {"title": "PSP0", "sub_items": ["Using PSP0", "Program1"]}
-    # ]
+
     directory_data = [
         {"title": "第一讲", "sub_items": ["有用之用与无用之用"]},
         {"title": "第二讲", "sub_items": ["弱德之美——上善若水，道法自然"]},
@@ -39,6 +35,10 @@ def studentcourse():
 @app.route('/recommend')
 def recommend():
     return render_template('recommend.html')
+
+@app.route('/QandA')
+def QandA():
+    return render_template('QandA.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

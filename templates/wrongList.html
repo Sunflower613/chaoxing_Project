@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>推荐</title>
+    <title>错题集</title>
     <link rel="stylesheet" type="text/css" href="/static/css/common.css"/>
 	<link rel="stylesheet" type="text/css" href="/static/css/pop.css"/>
 	<link href="/static/css/iconstyle.css" type="text/css" rel="stylesheet">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/static/css/kctl.css"/>
     <link type="text/css" rel="stylesheet" href="/static/css/questionList.css">
     <link type="text/css" rel="stylesheet" href="/static/css/task_pop.css">
-<script type="text/javascript">
+    <script type="text/javascript">
     I18N_Config = {
         'excelExport': 'Excel模板下载',
         'dragFile':'将excel、ti文件拖拽到此区域',
@@ -449,6 +449,7 @@
         "markLimitMaxBetween":'评分范围最大值需在0-100之间',
         "markLimitLessThanMax":'评分范围最小值需小于最大值',
         "placeholderTitle":'输入题干（作文提纲，写作要求，中译英文本等）',
+        "writingplaceholder":'输入题干（作文提纲，写作要求等）',
         "qbankOk":'知道了',
         "recycleOk":'确定全部还原？',
         "recycleOk1":'删除后无法恢复，确认全部删除？',
@@ -468,7 +469,19 @@
         'forbidInputTextTips':'请设置允许学生上传的附件类型',
         'weChatForbidInputTextTips':'微信作答不支持上传附件，请勾选拍照/录像或允许学生输入文本',
         'gradeStandardTips':'请选择年级标准',
-        'literaryFormTips':'请选择文体'
+        'literaryFormTips':'请选择文体',
+        'Tuda':'答案',
+        'rightChoice':'对',
+        'wrongChoice':'错',
+        'knowledgePoint2':'知识点',
+        'pblScore':'分',
+        'emptyAnswer':'答案为空',
+        'emptyOptionValue':'选项内容为空',
+        'smartCommentNew1': '1.本功能支持导入基础题型：单选题、多选题、填空题、判断题、简答题、组合题型、完形填空、共用选项题。',
+        'smartCommentNew2': '2.若要导入组合题型、完形填空和共用选项题题型，请在题目前后使用一对“{{”、“}}”将内容标出；大题题干和小题题干之间不需要空行；大题和小题题干都需标注题号；小题答案可跟在小题题干后，并用空格与题干内容隔开。范例可参考推荐格式。',
+        'smartCommentNew3': '3.若要导入其他名称题型，可在题干前用“【自定义的题型名称】”标出，如：【名词解释】风雅颂。',
+        'smartCommentNew4': '4.导入支持文本、图片、公式。题目结构支持识别答案解析、难易度、知识点、课程目标。',
+        'smartCommentNew5': '5.若识别有误，可在左侧修改题目内容后重新识别，或下载推荐格式，按格式修改后重新导入识别。'
     };
 </script>
     <style>
@@ -531,13 +544,6 @@
             position: relative;
             cursor: auto;
         }
-        input[type="radio" i]{
-            appearance: auto;
-            margin: 3px 3px 0px 5px;
-        }
-        .topic-answer-lists{
-            display:flex;
-        }
     </style>
 </head>
 <body>
@@ -562,7 +568,7 @@
 <div class="box">
     <!------------头部结束------------>
     <div class="content">
-        <!-- 推荐内容 -->
+        <!-- 错题集内容 -->
         <div class="main wronggather-page">
             <!-- 有数据 -->
             <div id="wrong" style="display: block;">
@@ -605,6 +611,86 @@
                                                     </span>
                                                 </div>
                                             </li>
+                                            <li class="tr topic7990440 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="服务Service">服务Service<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7990440" name="服务Service">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7990439 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="广播接收者">广播接收者<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7990439" name="广播接收者">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7935634 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="移动开发技术概述">移动开发技术概述<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7935634" name="移动开发技术概述">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7905861 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="ListView编程">ListView编程<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7905861" name="ListView编程">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7808002 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="Android本地数据存储">Android本地数据存储<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7808002" name="Android本地数据存储">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7780419 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="Activity">Activity<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7780419" name="Activity">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7655613 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="布局及控件">布局及控件<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7655613" name="布局及控件">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="tr topic7594222 firstLevel">
+                                                <div class="tr_parent">
+                                                        <i class="list-icon icon-circle"></i>
+                                                    <span class="infos" style="margin-left: 0px" name="开发环境：Android Studio">开发环境：Android Studio<span class="sum color"></span></span>
+                                                    <span class="ipt-checkbox">
+                                                        <input class="topicItem" type="checkbox" checked value="7594222" name="开发环境：Android Studio">
+                                                        <i class="icon-checkbox"></i>
+                                                    </span>
+                                                </div>
+                                            </li>
                                     </ul>
 
                                     <div id="ascrail2002" class="nicescroll-rails nicescroll-rails-vr"
@@ -621,13 +707,10 @@
                             </li>
                         </ul>
                     </div>
-
-                    <a class="jb_btn fl fs14" id="confirmBtn" onclick="getWrongQueList(1)" style="display:none;margin-top: 18px;width: 104px;
-    height: 36px;background:url(/static/img/jb_btn_104.png);">筛选</a>
-
-                    <div class="all_delete colorBlue_click fr" tabindex="0" role="option"  onclick="showEmpty();">
+                    <a class="jb_btn jb_btn_104 fl fs14" id="confirmBtn" onclick="getWrongQueList(1)" style="display:none;margin-top: 18px">筛选</a>
+                        <div class="all_delete colorBlue_click fr" tabindex="0" role="option"  onclick="showEmpty();">
                             <img src="/static/img/icon-delete.png" alt="">
-                            <span class="fs14 fr">清空推荐</span>
+                            <span class="fs14 fr">清空错题集</span>
                         </div>
                         <div class="all_delete colorBlue_click fr wrongQuestionSelfTest" onclick="wrongQuestionSelfTest()">
                             <img src="/static/img/icon-selftest.png" alt="">
@@ -637,74 +720,8 @@
                                                                                                 </div>
                 <!-- 题库列表 -->
                 <div class="wrong-topic-lists TiMu">
-                    <div class="wrong-topic-list wrong-DanXuan">
-            <!--<div class="type-title fs16 colorDeep font500">单选题<span>(2)</span></div>-->
-            <div class="topic-lists">
-                <!-- 第一题 -->
-                <div class="topic-list">
-                    <div class="maxwidthTxt">
-                        <!-- 题目标题 -->
-                        <div class="topic-title-con padBom20">
-                            <div class="topic-title fs0 colorDeep" tabindex="0" role="option">
-                                <span class="topic-number fs15 fl">1.</span>
-                                <span class="fs15 colorShallow">[单选题]</span>
-                                <span class="topic-txt fs15"><p>《论语》是中国传统文化最基本的典籍，总共有多少篇？</p><p><br></p></span>
+                    <!-- 后台注意！！！这里因为只有一个标题，所以挪出来了，样式表随之改动，请更新相关的引用文件！！！ -->
 
-                            </div>
-
-                            <div class="delete-con fs0 colorBlue_click" recordid="9972582">
-                                <!-- 当前选项 -->
-                                （<span style="font-size:25px;margin:20px;">D</span>）
-                                <a class="jb_btn fs14" onclick="topic_commit()" style="width: 104px;
-    height: 36px;background:url(/static/img/jb_btn_104.png);">提交</a>
-
-                            </div>
-                        </div>
-                        <div class=" fs14 lineheight20">
-                                <div class="fs14 lineheight20">
-                                    <!-- 题目选项 -->
-                                    <ul class="topic-answers marginL30">
-
-                                        <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
-                                            <span class="fl fontBold">A.</span>
-                                            <div class="option-txt">10</div>
-                                            <input type="radio" name="answer1" value="A"/>
-                                        </li>
-                                        <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
-                                            <span class="fl fontBold">B.</span>
-                                            <div class="option-txt">15</div>
-                                            <input type="radio" name="answer1" value="B"/>
-                                        </li>
-
-                                        <li tabindex="0" role="option" class="topic-answer-lists padBom20 answer-default clearfix">
-                                            <span class="fl fontBold">C.</span>
-                                            <div class="option-txt">20</div>
-                                            <input type="radio" name="answer1" value="C"/>
-                                        </li>
-                                        <li tabindex="0" role="option" class="topic-answer-lists padBom20 answer-my clearfix">
-                                            <span class="fl fontBold">D.</span>
-                                            <div class="option-txt">30</div>
-                                            <input type="radio" name="answer1" value="D" checked/>
-                                        </li>
-                                    </ul>
-                                </div>
-                            <!-- 题目解析 -->
-
-
-                                <!-- 知识点 -->
-                                    <dl class="topic-point colorShallow marginL30 clearfix">
-                                        <dt class="topic-point-label fontBold inlineBlock fl">知识点：</dt>
-                                        <dd class="topic-point-txt ">
-                                            论语
-                                        </dd>
-                                    </dl>
-
-                            <!-- 备注 -->
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
                 </div>
                 <!-- 到底提示 -->
@@ -723,8 +740,8 @@
             <p class="fl fs18 colorDeep">提示</p>
         </div>
         <div class="het62" style=""></div>
-        <p class="promptPopWord fs16 colorIn" id="noLastExamTips" tabindex="0" role="option" style="height: 100px">您可重新作答推荐里的题目，确认发起自测？</p>
-        <p class="promptPopWord fs16 colorIn" id="hasLastExamTips" tabindex="0" role="option" style="height: 100px; display: none">您有正在进行的推荐自测，是否继续上次作答？</p>
+        <p class="promptPopWord fs16 colorIn" id="noLastExamTips" tabindex="0" role="option" style="height: 100px">您可重新作答错题集里的题目，确认发起自测？</p>
+        <p class="promptPopWord fs16 colorIn" id="hasLastExamTips" tabindex="0" role="option" style="height: 100px; display: none">您有正在进行的错题集自测，是否继续上次作答？</p>
         <div class="popBottom shadowBox" id="noLastExamBtnGroup">
             <a href="javascript:void(0);" class="jb_btn jb_btn_92 fr fs14" onclick="createSelfExam()">确定</a>
             <a href="javascript:void(0);" class="btnBlue btn_92_cancel fr fs14" onclick="$('#createExamId').fullFadeOut();">取消</a>
@@ -762,54 +779,6 @@
     <script type="text/javascript" src="/static/js/selftest-task.js"></script>
     <script type="text/javascript" src="/static/js/wrongQuestion.js"></script>
     <script type="text/javascript" src="/static/js/domain.js"></script>
-    <script type="text/javascript">
-// 定义一个函数来生成列表项
-function createListItem(topicId, topicName) {
-    return `<li class="tr topic${topicId} firstLevel">
-                <div class="tr_parent">
-                    <i class="list-icon icon-circle"></i>
-                    <span class="infos" style="margin-left: 0px" name="${topicName}">${topicName}<span class="sum color"></span></span>
-                    <span class="ipt-checkbox">
-                        <input class="topicItem" type="checkbox" checked value="${topicId}" name="${topicName}">
-                        <i class="icon-checkbox"></i>
-                    </span>
-                </div>
-            </li>`;
-}
-
-fetch('/get_directory_data')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        // 成功获取数据后的处理逻辑
-        const listContainer = document.querySelector('.course-list');
-        // 清空列表容器
-        listContainer.innerHTML = '';
-
-        // 生成列表项并添加到列表容器中
-        data.forEach((item, index) => {
-            const topicId = index + 1; // 暂时使用索引作为话题 ID，您可以根据需要修改
-            const subItems = item.sub_items;
-            subItems.forEach(subItem => {
-                listContainer.innerHTML += createListItem(topicId, subItem);
-            });
-        });
-    })
-    .catch(error => {
-        // 处理错误情况
-        console.error('There was a problem with the fetch operation:', error);
-    });
-
-    </script>
-
-    <script type="text/javascript">
-
-    </script>
-
     <script>
         $(function () {
             // 设置main区域的最少高度
@@ -890,6 +859,26 @@ fetch('/get_directory_data')
                             "word": '阅读理解'
                         }
                             , {
+                            "id": 18,
+                            "courseTypeId": 3703915,
+                            "word": '口语题'
+                        }
+                            , {
+                            "id": 19,
+                            "courseTypeId": 3703916,
+                            "word": '听力题'
+                        }
+                            , {
+                            "id": 20,
+                            "courseTypeId": 3703917,
+                            "word": '共用选项题'
+                        }
+                            , {
+                            "id": 21,
+                            "courseTypeId": 3703918,
+                            "word": '测评题'
+                        }
+                            , {
                             "id": 8,
                             "courseTypeId": 3703919,
                             "word": '其它'
@@ -898,6 +887,26 @@ fetch('/get_directory_data')
                             "id": 0,
                             "courseTypeId": 3703920,
                             "word": '课后练习'
+                        }
+                            , {
+                            "id": 4,
+                            "courseTypeId": 3833075,
+                            "word": '实验1： 简单的计算器'
+                        }
+                            , {
+                            "id": 23,
+                            "courseTypeId": 25067101,
+                            "word": '钟表题'
+                        }
+                            , {
+                            "id": 24,
+                            "courseTypeId": 41615528,
+                            "word": '选词填空'
+                        }
+                            , {
+                            "id": 25,
+                            "courseTypeId": 41615529,
+                            "word": '选做题'
                         }
             ], wrongGatherFunc.init();
             pactureFun();
@@ -917,7 +926,7 @@ fetch('/get_directory_data')
                         return;
                     } else {
                         $("#loading").empty();
-                        $("#loading").append("<div class=\"Loading\"><img src=\"/static/images/coursedata/timgNew.gif\"/>正在加载，请稍后…</div>");
+                        $("#loading").append("<div class=\"Loading\"><img src=\"/mooc2-ans/images/coursedata/timgNew.gif\"/>正在加载，请稍后…</div>");
                         getWrongQueList(parseInt(pageNum) + 1);
                     }
                     // CourseNotice.loadNoticeList(false);
@@ -1139,12 +1148,12 @@ fetch('/get_directory_data')
         <img src="">
     </div>
 
-<link rel="stylesheet" type="text/css" href="/static/css/prompt.css"/>
+<link rel="stylesheet" type="text/css" href="/mooc2-ans/module/work/style/prompt.css?v=2023-0509-1800"/>
 
 <div class="promptMask" style="display:none;" id="workpop">
 	<div class="promptPopDiv promptWid440 Marking" id="tabindexWorkpop"  tabindex="0" role="dialog" >
 		<div class="promptPopHead">
-			<a href="javascript:;" class="promptPopClose fr" onclick="$('#workpop').hide();$('.popSetupShowHide').fullFadeOut();"  role="button" aria-label="关闭"><img tabindex="-1" aria-hidden="true" src="/static/images/popClose.png" /></a>
+			<a href="javascript:;" class="promptPopClose fr" onclick="$('#workpop').hide();$('.popSetupShowHide').fullFadeOut();"  role="button" aria-label="关闭"><img tabindex="-1" aria-hidden="true" src="/mooc2-ans/images/popClose.png" /></a>
 			<p class="fl fs18 colorDeep" tabindex="0" role="option" >提示</p>
 		</div>
 		<div class="promptHet62"></div>
@@ -1161,7 +1170,7 @@ fetch('/get_directory_data')
 <div class="promptMask" style="display:none;" id="workToast">
 	<div class="promptPopDiv promptWid440 Marking">
 		<div class="promptPopHead">
-			<a href="javascript:;" class="promptPopClose fr" onclick="$('#workToast').hide();"><img src="/static/images/popClose.png" /></a>
+			<a href="javascript:;" class="promptPopClose fr" onclick="$('#workToast').hide();"><img src="/mooc2-ans/images/popClose.png" /></a>
 			<p class="fl fs18 colorDeep">提示</p>
 		</div>
 		<div class="promptHet62"></div>
