@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, send_from_directory
 
 app = Flask(__name__, static_folder='static')
 
@@ -23,6 +23,10 @@ def get_directory_data():
     ]
 
     return jsonify(directory_data)
+
+@app.route('/get_quiz_data')
+def get_quiz_data():
+    return send_from_directory(directory='.', filename='quiz_data.json')
 
 @app.route('/')
 def index():
