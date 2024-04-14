@@ -7,7 +7,7 @@
     <title>推荐</title>
     <link rel="stylesheet" type="text/css" href="/static/css/common.css"/>
 	<link rel="stylesheet" type="text/css" href="/static/css/pop.css"/>
-	<link href="/static/css/iconstyle.css" type="text/css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="/static/css/rqstyle.css">
     <link href="/static/css/wrongQuestion.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/viewer.min.css"/>
@@ -536,13 +536,16 @@
             margin: 3px 3px 0px 5px;
         }
         input[type="checkbox" i]{
-            opacity:0.5;
+            opacity:0.8;
         }
         .topic-answer-lists{
             display:flex;
         }
         .option-txt{
         flex:1;
+        }
+        .hover_op07:hover{
+            opacity:0.7;
         }
     </style>
 </head>
@@ -577,20 +580,17 @@
                     <span class="select-label fs14 colorDeep fl">选择题型</span>
                     <div class="select-wrap fl" style="margin-top: 18px">
                         <input aria-hidden="true" tabindex="-1" type="text" readonly class="select-inp fs14 colorIn" id="getType" value="全部"/>
-                        <span class="icon icon-triangle-down"></span>
+                        <span class="icon">▼</span>
                     </div>
 
                     <span class="select-label fs14 colorDeep fl"  >选择知识点</span>
-
                     <div class="layui-inline fl" style="margin-top: 18px">
                         <ul class="operate-select fivlayer-box" style="">
                             <li class="select-content_new" style="height: 34px">
                                 <div class="choosed-content">
                                     <input aria-hidden="true" tabindex="-1" type="text" id="topicSelectNotic" value="全选知识点" title="全选知识点" readonly="" placeholder="请选择"
                                            class="choosed-sel topicname choosed-sel-focus">
-                                    <div class="arrow">
-                                        <span class="icon icon-triangle-up"></span>
-                                    </div>
+                                        <span class="icon arrow">▼</span>
                                 </div>
 
                                 <div class="list-content" style="display: none;">
@@ -628,7 +628,7 @@
                         </ul>
                     </div>
 
-                    <a class="jb_btn fl fs14" id="confirmBtn" onclick="getWrongQueList(1)" style="display:none;margin-top: 18px;width: 104px;
+                    <a class="jb_btn fl fs14 hover_op07" id="confirmBtn" onclick="screen()" style="margin-top: 18px;width: 104px;
     height: 36px;background:url(/static/img/jb_btn_104.png);">筛选</a>
 
                     <div class="all_delete colorBlue_click fr" tabindex="0" role="option"  onclick="showEmpty();">
@@ -654,16 +654,17 @@
                             <div class="topic-title fs0 colorDeep" tabindex="0" role="option">
                                 <span class="topic-number fs15 fl">1.</span>
                                 <span class="fs15 colorShallow">[单选题]</span>
-                                <span class="topic-txt fs15"><p>《论语》是中国传统文化最基本的典籍，总共有多少篇？</p><p><br></p></span>
+                                <span class="topic-txt fs15"><p>中华传统文化号为儒释道三家并存，释家文化作为外来文化传入中国的朝代是 _______</p><p><br/></p>
+                                </span>
 
                             </div>
 
-                            <div class="delete-con fs0 colorBlue_click" recordid="9972582">
+                            <div class="delete-con fs0 colorBlue_click" recordid="2023001">
                                 <!-- 当前选项 -->
-                                （<span id="answer001" style="font-size:25px;margin:20px;"></span>）
-                                <a class="jb_btn fs14" onclick="topic_commit()" style="width: 104px;
+                                （<span id="answer2023001" style="font-size:25px;margin:20px;"></span>）
+                                <a class="jb_btn fs14" onclick="topic_commit(this)" style="width: 104px;
     height: 36px;background:url(/static/img/jb_btn_104.png);">提交</a>
-
+                            <span class="right_answer" style="font-size:20px;display:none;">正确答案：D</span>
                             </div>
                         </div>
 
@@ -673,24 +674,24 @@
 
                                         <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                                             <span class="fl fontBold">A.</span>
-                                            <div class="option-txt">10</div>
-                                            <input type="radio" name="answer001" value="A" onchange="updateCurrentOption(this)"/>
+                                            <div class="option-txt">南朝（梁）</div>
+                                            <input type="radio" name="answer2023001" value="A" onchange="updateCurrentOption(this)"/>
                                         </li>
                                         <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                                             <span class="fl fontBold">B.</span>
-                                            <div class="option-txt">15</div>
-                                            <input type="radio" name="answer001" value="B" onchange="updateCurrentOption(this)"/>
+                                            <div class="option-txt">三国</div>
+                                            <input type="radio" name="answer2023001" value="B" onchange="updateCurrentOption(this)"/>
                                         </li>
 
                                         <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                                             <span class="fl fontBold">C.</span>
-                                            <div class="option-txt">20</div>
-                                            <input type="radio" name="answer001" value="C" onchange="updateCurrentOption(this)"/>
+                                            <div class="option-txt">唐代</div>
+                                            <input type="radio" name="answer2023001" value="C" onchange="updateCurrentOption(this)"/>
                                         </li>
                                         <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                                             <span class="fl fontBold">D.</span>
-                                            <div class="option-txt">30</div>
-                                            <input type="radio" name="answer001" value="D" onchange="updateCurrentOption(this)"/>
+                                            <div class="option-txt">东汉</div>
+                                            <input type="radio" name="answer2023001" value="D" onchange="updateCurrentOption(this)"/>
                                         </li>
                                     </ul>
                                 </div>
@@ -700,7 +701,7 @@
                                 <!-- 知识点 -->
                                     <dl class="topic-point colorShallow marginL30 clearfix">
                                         <dt class="topic-point-label fontBold inlineBlock fl">知识点：</dt>
-                                        <dd class="topic-point-txt ">论语</dd>
+                                        <dd class="topic-point-txt ">中华文化</dd>
                                     </dl>
                         <!-- 备注 -->
                     </div>
@@ -717,7 +718,8 @@
 
         </div>
     </div>
-<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="//mooc-res1.chaoxing.com/mooc2-ans/js/common/jquery.min.js"></script>-->
 <script type="text/javascript" src="/static/js/jquery.nicescroll.min.js"></script>
     <div id="createExamId" class="maskDiv" style="display: none">
     <div class="popDiv wid440 centerPop">
@@ -729,7 +731,8 @@
         <p class="promptPopWord fs16 colorIn" id="noLastExamTips" tabindex="0" role="option" style="height: 100px">您可重新作答推荐里的题目，确认发起自测？</p>
         <p class="promptPopWord fs16 colorIn" id="hasLastExamTips" tabindex="0" role="option" style="height: 100px; display: none">您有正在进行的推荐自测，是否继续上次作答？</p>
         <div class="popBottom shadowBox" id="noLastExamBtnGroup">
-            <a href="javascript:void(0);" class="jb_btn jb_btn_92 fr fs14" onclick="createSelfExam()">确定</a>
+            <a href="javascript:void(0);" class="jb_btn jb_btn_92 fr fs14" onclick="createSelfExam()" style="width: 104px;
+    height: 36px;background:url(/static/img/jb_btn_104.png);">确定</a>
             <a href="javascript:void(0);" class="btnBlue btn_92_cancel fr fs14" onclick="$('#createExamId').fullFadeOut();">取消</a>
         </div>
 
@@ -784,7 +787,7 @@ function createListItem(topicId, topicName) {
 const listContainer = document.querySelector('.course-list');
 
 // 生成静态知识点列表项
-const knowPoints = ["儒家", "道家", "佛学", "中华文化", "西方文化", "艺术", "文艺复兴", "古希腊哲学"];
+const knowPoints = ["儒家", "道家", "释家", "中华文化", "西方文化", "艺术", "文艺复兴", "古希腊哲学"];
 knowPoints.forEach((point, index) => {
     const topicId = index + 1;
     listContainer.innerHTML += createListItem(topicId, point);
@@ -829,19 +832,67 @@ fetch('/get_directory_data')
     // 将当前选项的值设置为文本
     document.getElementById(answerId).textContent = currentOption;
     }
+
+// 提交函数
+function topic_commit(button) {
+    // 获取当前按钮所在的父元素
+    var parentElement = button.parentElement;
+    // 获取当前答案节点
+    var answerId = parentElement.querySelector('span[id^="answer"]').id;
+    var answerNode = document.getElementById(answerId);
+    // 获取当前答案内容
+    var currentAnswer = answerNode.textContent.trim();
+    // 获取当前题目的 recordid
+    var recordId = parentElement.getAttribute("recordid");
+    // 获取正确答案节点
+    var correctAnswerNode = parentElement.querySelector(".right_answer");
+    // 获取正确答案内容
+    var correctAnswer = correctAnswerNode.textContent.trim().split("：")[1];
+    // 检查用户是否选择了答案
+    if (!currentAnswer) {
+        alert("请先选择答案！");
+        return;
+    }
+    // 如果当前答案与正确答案不一致
+    if (currentAnswer !== correctAnswer) {
+        // 设置当前答案为红色
+        answerNode.style.color = "red";
+    }
+
+    // 显示正确答案
+    correctAnswerNode.style.display = "inline";
+
+    // 禁用提交按钮
+    button.disabled = true;
+}
+function showEmpty(){
+// 清空现有题库
+document.querySelector('.topic-lists').innerHTML = '';
+}
+
     </script>
 <!-- HTML 页面中的 JavaScript 代码 -->
 <script>
+function screen() {
+    // 清空现有题库
+    document.querySelector('.topic-lists').innerHTML = '';
+
+    // 获取题目类型和知识点的筛选条件
+    var typeFilter = document.getElementById('getType').value;
+    var pointFilter = document.getElementById('topicSelectNotic').value;
+    console.log(pointFilter);
+
     // 使用 AJAX 请求获取题库数据
     fetch('/get_quiz_data?timestamp=' + Date.now())
         .then(response => response.json())
         .then(data => {
-            // 在这里处理获取到的题库数据
-            console.log(data); // 可以先查看一下数据结构
 
             // 遍历题库数据，并将题目动态添加到页面中
             data.forEach((question, index) => {
-                // 创建题目的 HTML 结构
+            // 检查题目是否符合筛选条件
+                if ((!typeFilter || typeFilter == "全部" || question['题目类型'] == typeFilter) &&
+                     (!pointFilter || pointFilter == "全选知识点" || question['知识点'].includes(pointFilter))) {
+                      // 创建题目的 HTML 结构
                 var questionHTML = `
                     <div class="topic-list">
                         <div class="maxwidthTxt">
@@ -853,11 +904,12 @@ fetch('/get_directory_data')
                                     <span class="topic-txt fs15">${question['大题题干']}</span>
                                 </div>
 
-                                <div class="delete-con fs0 colorBlue_click">
+                                <div class="delete-con fs0 colorBlue_click recordid="${index + 2024001}">
                                     <!-- 当前选项 -->
-                                    （<span id="answer${index + 1}" style="font-size:25px;margin:20px;"></span>）
-                                    <a class="jb_btn fs14" onclick="topic_commit()" style="width: 104px; height: 36px;background:url(/static/img/jb_btn_104.png);">提交</a>
-                                </div>
+                                    （<span id="answer${index + 2024001}" style="font-size:25px;margin:20px;"></span>）
+                                    <a class="jb_btn fs14" onclick="topic_commit(this)" style="width: 104px; height: 36px;background:url(/static/img/jb_btn_104.png);">提交</a>
+                                    <span class="right_answer" style="font-size:20px;display:none;">正确答案：${question['正确答案']}</span>
+                            </div>
                             </div>
                             <div class="fs14 lineheight20">
                                 <!-- 题目选项 -->
@@ -876,10 +928,11 @@ fetch('/get_directory_data')
 
                 // 将题目 HTML 结构添加到题库列表中
                 document.querySelector('.topic-lists').innerHTML += questionHTML;
+            }
             });
         })
         .catch(error => console.error('Error fetching quiz data:', error));
-
+}
     // 生成题目选项的 HTML 结构
     function generateOptionsHTML(question,index) {
         var optionsHTML = '';
@@ -891,7 +944,7 @@ fetch('/get_directory_data')
             <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                 <span class="fl fontBold">${optionKey.charAt(2)}.</span>
                 <div class="option-txt">${question[optionKey]}</div>
-                <input type="radio" name="answer${index + 1}" value="${optionKey.charAt(2)}" onchange="updateCurrentOption(this)"/>
+                <input type="radio" name="answer${index + 2024001}" value="${optionKey.charAt(2)}" onchange="updateCurrentOption(this)"/>
             </li>
         `;
         }

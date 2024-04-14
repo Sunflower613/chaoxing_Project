@@ -226,7 +226,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: inline-block;
 }
 
-.select-wrap > .icon {
+.icon {
     position: absolute;
     right: 14px;
     top: 50%;
