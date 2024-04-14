@@ -535,6 +535,9 @@
             appearance: auto;
             margin: 3px 3px 0px 5px;
         }
+        input[type="checkbox" i]{
+            opacity:0.5;
+        }
         .topic-answer-lists{
             display:flex;
         }
@@ -657,7 +660,7 @@
 
                             <div class="delete-con fs0 colorBlue_click" recordid="9972582">
                                 <!-- 当前选项 -->
-                                （<span id="answer1" style="font-size:25px;margin:20px;"></span>）
+                                （<span id="answer001" style="font-size:25px;margin:20px;"></span>）
                                 <a class="jb_btn fs14" onclick="topic_commit()" style="width: 104px;
     height: 36px;background:url(/static/img/jb_btn_104.png);">提交</a>
 
@@ -671,23 +674,23 @@
                                         <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                                             <span class="fl fontBold">A.</span>
                                             <div class="option-txt">10</div>
-                                            <input type="radio" name="answer1" value="A" onchange="updateCurrentOption(this)"/>
+                                            <input type="radio" name="answer001" value="A" onchange="updateCurrentOption(this)"/>
                                         </li>
                                         <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                                             <span class="fl fontBold">B.</span>
                                             <div class="option-txt">15</div>
-                                            <input type="radio" name="answer1" value="B" onchange="updateCurrentOption(this)"/>
+                                            <input type="radio" name="answer001" value="B" onchange="updateCurrentOption(this)"/>
                                         </li>
 
                                         <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                                             <span class="fl fontBold">C.</span>
                                             <div class="option-txt">20</div>
-                                            <input type="radio" name="answer1" value="C" onchange="updateCurrentOption(this)"/>
+                                            <input type="radio" name="answer001" value="C" onchange="updateCurrentOption(this)"/>
                                         </li>
                                         <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
                                             <span class="fl fontBold">D.</span>
                                             <div class="option-txt">30</div>
-                                            <input type="radio" name="answer1" value="D" onchange="updateCurrentOption(this)"/>
+                                            <input type="radio" name="answer001" value="D" onchange="updateCurrentOption(this)"/>
                                         </li>
                                     </ul>
                                 </div>
@@ -777,6 +780,17 @@ function createListItem(topicId, topicName) {
             </li>`;
 }
 
+// 获取列表容器
+const listContainer = document.querySelector('.course-list');
+
+// 生成静态知识点列表项
+const knowPoints = ["儒家", "道家", "佛学", "中华文化", "西方文化", "艺术", "文艺复兴", "古希腊哲学"];
+knowPoints.forEach((point, index) => {
+    const topicId = index + 1;
+    listContainer.innerHTML += createListItem(topicId, point);
+});
+
+// 从服务器获取动态知识点列表项
 fetch('/get_directory_data')
     .then(response => {
         if (!response.ok) {
@@ -785,31 +799,32 @@ fetch('/get_directory_data')
         return response.json();
     })
     .then(data => {
-        // 成功获取数据后的处理逻辑
-        const listContainer = document.querySelector('.course-list');
-        // 清空列表容器
-        listContainer.innerHTML = '';
-
-        // 生成列表项并添加到列表容器中
+        // 生成列表项字符串
+        let listItemHTML = '';
         data.forEach((item, index) => {
-            const topicId = index + 1; // 暂时使用索引作为话题 ID，您可以根据需要修改
+            const topicId = index + 101; // 暂时使用索引作为话题 ID，您可以根据需要修改
             const subItems = item.sub_items;
             subItems.forEach(subItem => {
-                listContainer.innerHTML += createListItem(topicId, subItem);
+                listItemHTML += createListItem(topicId, subItem);
             });
         });
+        // 添加列表项到列表容器中
+        listContainer.innerHTML += listItemHTML;
     })
     .catch(error => {
         // 处理错误情况
         console.error('There was a problem with the fetch operation:', error);
     });
 
-    </script>
+</script>
+
 
     <script type="text/javascript">
     function updateCurrentOption(radio) {
         var answerId = radio.name;
         // 获取当前选项的值
+        console.log(answerId);
+        console.log(document.getElementById(answerId));
     var currentOption = radio.value;
     // 将当前选项的值设置为文本
     document.getElementById(answerId).textContent = currentOption;
@@ -818,7 +833,7 @@ fetch('/get_directory_data')
 <!-- HTML 页面中的 JavaScript 代码 -->
 <script>
     // 使用 AJAX 请求获取题库数据
-    fetch('/get_quiz_data')
+    fetch('/get_quiz_data?timestamp=' + Date.now())
         .then(response => response.json())
         .then(data => {
             // 在这里处理获取到的题库数据
@@ -847,7 +862,7 @@ fetch('/get_directory_data')
                             <div class="fs14 lineheight20">
                                 <!-- 题目选项 -->
                                 <ul class="topic-answers marginL30">
-                                    ${generateOptionsHTML(question)}
+                                    ${generateOptionsHTML(question,index)}
                                 </ul>
                             </div>
                             <!-- 知识点 -->
@@ -866,19 +881,19 @@ fetch('/get_directory_data')
         .catch(error => console.error('Error fetching quiz data:', error));
 
     // 生成题目选项的 HTML 结构
-    function generateOptionsHTML(question) {
+    function generateOptionsHTML(question,index) {
         var optionsHTML = '';
         var optionKeys = ['选项A', '选项B', '选项C', '选项D', '选项E']; // 假设最多有五个选项
 
         for (var i = 0; i < question['选项数']; i++) {
             var optionKey = optionKeys[i];
-            optionsHTML += `
-                <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
-                    <span class="fl fontBold">${optionKey.charAt(2)}.</span>
-                    <div class="option-txt">${question[optionKey]}</div>
-                    <input type="radio" name="answer${index + 1}" value="${optionKey.charAt(2)}" onchange="updateCurrentOption(this)"/>
-                </li>
-            `;
+        optionsHTML += `
+            <li tabindex="0" role="option" class="topic-answer-lists padBom20 clearfix">
+                <span class="fl fontBold">${optionKey.charAt(2)}.</span>
+                <div class="option-txt">${question[optionKey]}</div>
+                <input type="radio" name="answer${index + 1}" value="${optionKey.charAt(2)}" onchange="updateCurrentOption(this)"/>
+            </li>
+        `;
         }
 
         return optionsHTML;

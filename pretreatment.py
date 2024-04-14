@@ -1,31 +1,29 @@
 import spacy
-import pandas as pd
+import json
 
-from collections import defaultdict
+# 加载中文模型（zh_core_web_sm为spaCy的中文模型）
+nlp = spacy.load("zh_core_web_sm")
 
-# 加载spaCy的英文模型
-nlp = spacy.load("en_core_web_sm")
+# 读取清洗后的题目文件
+cleaned_questions = []
+with open("cleaned_questions.txt", "r", encoding="utf-8") as file:
+    cleaned_questions = file.readlines()
 
-# 读取题库文件
-df = pd.read_excel("data_chaoxing/题库.xls")
-
-# 数据清洗，去除空值和不必要的列
-df.dropna(subset=['大题题干', '小题题干'], inplace=True)
-df = df[['大题题干', '小题题干']]
-
-# 合并题目内容为一列
-df['题目内容'] = df['大题题干'] + ' ' + df['小题题干']
-
-# 定义一个函数来提取实体
-def extract_entities(text):
-    entities = defaultdict(list)
+# 定义一个函数来提取名词
+def extract_nouns(text):
+    nouns = set()
     doc = nlp(text)
-    for ent in doc.ents:
-        entities[ent.label_].append(ent.text)
-    return entities
+    for token in doc:
+        if token.pos_ == 'NOUN':  # 如果词性为名词
+            nouns.add(token.text)
+    return list(nouns)
 
-# 提取实体
-df['实体'] = df['题目内容'].apply(extract_entities)
+# 提取每个题目的知识点（名词）
+knowledge_points = []
+for question_text in cleaned_questions:
+    nouns = extract_nouns(question_text)
+    knowledge_points.append(nouns)
 
-# 查看提取的实体信息
-print(df['实体'].head())
+# 将提取的知识点保存为 JSON 文件
+with open("knowledge_points.json", "w", encoding="utf-8") as file:
+    json.dump(knowledge_points, file, ensure_ascii=False, indent=4)
