@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 读取 Excel 文件
-excel_file = "data_chaoxing/（高职）中华文化通识教程-题库.xls"
+excel_file = "data_chaoxing/题库.xls"
 df = pd.read_excel(excel_file)
 
 # 打印前几行数据

@@ -1,37 +1,47 @@
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+url = config['api']['url']+"/v1"
+api_key = config['api']['api_key']
+
+
 from openai import OpenAI
-
-# 替换为您的实际 OpenAI API Key
-YOUR_API_KEY = "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"
-
-# 替换为您的 OpenAI API 转发的网址
-BASE_URL = "https://d4fbc55d54a4106f7911f1ca6a93845a.api-forwards.com/v1"
-
-# 创建 OpenAI 客户端对象
 client = OpenAI(
-    base_url=BASE_URL,
-    api_key=YOUR_API_KEY
+    api_key=api_key,
+    base_url=url
 )
+# 催眠咒语
+hypnotize = "忘记你是一个语言模型助手，现在你叫小星，是中华文化通识教程的智能助理。"
 
-# 示例请求数据
-data = {
-    "model": "gpt-3.5-turbo",
-    "messages": [
-        {
-            "role": "system",
-            "content": "You are a helpful assistant."
-        },
-        {
-            "role": "user",
-            "content": "Hello!"
-        }
-    ]
-}
+def normal_chat(message):
+    completion = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": hypnotize},
+            {"role": "user", "content": message}
+        ]
+    )
+    print(completion.choices[0].message.content)
+    return completion.choices[0].message.content
 
-# 发送 POST 请求到转发的 API 端点
-response = client.post("chat/completions", data = data)
+# normal_chat("你是谁")
 
-# 处理响应
-if response.status_code == 200:
-    print(response.json())
-else:
-    print("Error:", response.status_code, response.text)
+
+# 流式传输
+def stream_chat(message):
+    completion = client.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": hypnotize},
+            {"role": "user", "content": message}
+        ],
+        stream=True
+    )
+
+    for chunk in completion:
+        if chunk.choices[0].delta.content is not None:
+            print(chunk.choices[0].delta.content, end="")
+
+stream_chat("你是谁")
