@@ -18,7 +18,7 @@ def extract_nouns(text):
             nouns.add(token.text)
     return list(nouns)
 
-# 提取每个题目的知识点（名词）
+# 提取每个题目的知识点
 knowledge_points = []
 for question_text in cleaned_questions:
     nouns = extract_nouns(question_text)

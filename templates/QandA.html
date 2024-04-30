@@ -38,6 +38,7 @@
             border-radius: 5px;
             background-color: #e0f7fa;
             max-width: 70%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .user-message {
@@ -80,37 +81,59 @@
         .input-box input[type="submit"]:hover {
             background-color: #0d47a1;
         }
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="chat-box" id="chat-box">
-            <div class="message bot-message">欢迎使用智能问答系统！请问有什么可以帮到您的吗？</div>
-        </div>
-        <div class="input-box">
-            <input type="text" id="user-input" placeholder="请输入您的问题...">
-            <input type="submit" value="发送" onclick="sendMessage()">
-        </div>
+<div class="container">
+    <div class="chat-box" id="chat-box">
+        <div class="message bot-message">欢迎使用智能问答系统！请问有什么可以帮到您的吗？</div>
     </div>
-
-    <script>
+    <div class="input-box">
+        <input type="text" id="user-input" placeholder="请输入您的问题...">
+        <input type="submit" value="发送" onclick="sendMessage()">
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
         function sendMessage() {
             var userInput = document.getElementById("user-input").value;
             var chatBox = document.getElementById("chat-box");
 
-            if (userInput.trim() === "") {
-                return;
-            }
+            if (userInput.trim() === "") {return;}
 
-            var userMessage = '<div class="message user-message">' + userInput + '</div>';
-<!--            var botMessage = '<div class="message bot-message">对不起，我还不够聪明，无法理解您的问题。</div>';-->
-            var botMessage = '<div class="message bot-message">五伦是指儒家伦理学中的五种基本人际关系，包括：<br>1. 君臣：指统治者与被统治者之间的关系，即政治上的上下级关系。<br>2. 父子：指父母与子女之间的关系，即家庭中的父母与子女之间的亲属关系。<br>3. 夫妇：指夫妻之间的关系，即家庭中的丈夫和妻子之间的夫妻关系。<br>4. 兄弟：指兄弟姐妹之间的关系，即家庭中兄弟姐妹之间的兄弟关系。<br>5. 朋友：指朋友之间的关系，即社会中个人之间的友谊关系。<br>这五伦是儒家伦理学的基本框架，强调了人与人之间的不同角色和关系，以及在这些关系中应当如何相处的道理。</div>';
+            // 追加用户消息到聊天框中
+            chatBox.innerHTML += '<div class="message user-message">' + userInput + '</div>';
 
-            chatBox.innerHTML += userMessage;
-            chatBox.innerHTML += botMessage;
+            // 使用 AJAX 发送 POST 请求到后端
+            $.ajax({
+                type: "POST",
+                url: "/get_gpt_response",
+                contentType: "application/json",
+                data: JSON.stringify({ "message": userInput }),
+                success: function(response) {
+                    // 如果后端返回的消息不为空，则将消息追加到聊天框中
+                    if (response.trim() !== "") {
+                        chatBox.innerHTML += '<div class="message bot-message">' + response + '</div>';
+                    } else {
+                        // 如果后端返回的消息为空，则追加固定的机器人回复到聊天框中
+                        chatBox.innerHTML += '<div class="message bot-message">对不起，我还不够聪明，无法理解您的问题。</div>';
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error("Error:", error);
+                }
+            });
+
+            // 滚动聊天框到底部
             chatBox.scrollTop = chatBox.scrollHeight;
+
+            // 清空输入框内容
             document.getElementById("user-input").value = "";
         }
-    </script>
+
+
+</script>
+
 </body>
 </html>
